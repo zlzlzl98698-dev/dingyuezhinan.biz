@@ -84,7 +84,7 @@ dingyuezhinan.biz/
 
 ## 本地开发与构建命令
 
-> 环境要求：Node.js 20+ 与 npm。
+> 环境要求：Node.js 22.22+（推荐 Node 24 LTS）与 npm 10.9+。
 
 ```bash
 # 1. 安装依赖
