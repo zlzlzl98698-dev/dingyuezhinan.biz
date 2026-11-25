@@ -1,0 +1,1206 @@
+[
+  {
+    "brandSlug": "guangsuyun",
+    "brandName": "光速云",
+    "textRecord20261019": {
+      "testedAt": "2026-10-19",
+      "condition": "非晚高峰（上传资料原文标注）",
+      "dataStatus": "historical",
+      "nodes": [
+        {
+          "region": "香港",
+          "latencyRaw": "22ms",
+          "latencyMs": 22,
+          "downloadRaw": "529Mbps",
+          "downloadMbps": 529
+        },
+        {
+          "region": "台湾",
+          "latencyRaw": "41ms",
+          "latencyMs": 41,
+          "downloadRaw": "114Mbps",
+          "downloadMbps": 114
+        },
+        {
+          "region": "新加坡",
+          "latencyRaw": "46ms",
+          "latencyMs": 46,
+          "downloadRaw": "387Mbps",
+          "downloadMbps": 387
+        },
+        {
+          "region": "日本",
+          "latencyRaw": "57ms",
+          "latencyMs": 57,
+          "downloadRaw": "135Mbps",
+          "downloadMbps": 135
+        },
+        {
+          "region": "美国",
+          "latencyRaw": "143ms",
+          "latencyMs": 143,
+          "downloadRaw": "18Mbps",
+          "downloadMbps": 18
+        }
+      ]
+    },
+    "screenshot20260811": {
+      "file": "/images/speedtests/光速云-节点测速实测.png",
+      "testedAt": "2026-08-11T14:32:56+08:00",
+      "protocolDisplayed": "Shadowsocks",
+      "toolFamily": "MAI-TEST-BOT 2.0.0-dev",
+      "dateConfidence": "visible-in-image",
+      "reviewNote": null,
+      "dataStatus": "measured",
+      "limitations": [
+        "single-day snapshot",
+        "brands tested at different times",
+        "not a controlled cross-brand ranking",
+        "does not test AI or streaming unlock",
+        "does not prove long-term stability",
+        "raw machine-readable measurements were not included"
+      ],
+      "thumbFile": "/images/thumbs/speedtests/guangsuyun-2026-08-11.webp",
+      "thumbWidth": 780,
+      "thumbHeight": 975
+    },
+    "additionalScreenshots": [
+      {
+        "file": "/images/guangsuyun/photo_2026-08-19_12-13-01.jpg",
+        "title": "光速云 MiaoKo 62节点普通测速（长沙电信 @2Gbps）",
+        "testedAt": "2026-08-19",
+        "protocol": "Shadowsocks",
+        "backend": "长沙电信@2Gbps（6线程，62/62节点）",
+        "summary": "日本平均 39.92–49.38MB/s，香港专线平均 35.35–42.57MB/s，OpenAI 香港专线仅APP(HK)，Gemini 仅新加坡/土耳其/马来西亚解锁",
+        "thumbFile": "/images/thumbs/guangsuyun/photo_2026-08-19_12-13-01.webp",
+        "thumbWidth": 780,
+        "thumbHeight": 764
+      },
+      {
+        "file": "/images/guangsuyun/photo_2026-08-19_12-13-50.jpg",
+        "title": "光速云 MiaoKo 62节点普通测速（广西移动 @2Gbps）",
+        "testedAt": "2026-08-19",
+        "protocol": "Shadowsocks",
+        "backend": "广西移动@2Gbps（6线程，62/62节点）",
+        "summary": "新加坡与日本头部节点均值 50–53MB/s，香港专线 33–52MB/s，德国01 出现 43.08KB/s 低速样本",
+        "thumbFile": "/images/thumbs/guangsuyun/photo_2026-08-19_12-13-50.webp",
+        "thumbWidth": 780,
+        "thumbHeight": 760
+      },
+      {
+        "file": "/images/guangsuyun/photo_2026-08-19_12-13-58.jpg",
+        "title": "光速云 MiaoKo 62节点普通测速（河北联通 @2Gbps）",
+        "testedAt": "2026-08-19",
+        "protocol": "Shadowsocks",
+        "backend": "河北联通@2Gbps（6线程，62/62节点）",
+        "summary": "新加坡01 41.85MB/s，台湾03 37.49MB/s，香港专线部分节点出现 1200ms+ HTTPS 延迟波动",
+        "thumbFile": "/images/thumbs/guangsuyun/photo_2026-08-19_12-13-58.webp",
+        "thumbWidth": 780,
+        "thumbHeight": 766
+      },
+      {
+        "file": "/images/guangsuyun/photo_2026-08-19_12-18-40.jpg",
+        "title": "光速云 MiaoKo 70节点基础流媒体与 AI 解锁检测",
+        "testedAt": "2026-08-19",
+        "protocol": "VLESS + AnyTLS",
+        "backend": "珠海联通 9Gbps 单线程（70/70节点）",
+        "summary": "日本/美国/香港 YouTube 与 Netflix 多数解锁，新加坡与台湾 YouTube 呈“送中(CN)”提示，OpenAI 多节点可用",
+        "thumbFile": "/images/thumbs/guangsuyun/photo_2026-08-19_12-18-40.webp",
+        "thumbWidth": 780,
+        "thumbHeight": 958
+      },
+      {
+        "file": "/images/guangsuyun/photo_2026-08-19_12-20-10.jpg",
+        "title": "光速云 MiaoKo 订阅单线程测速（珠海联通 9Gbps）",
+        "testedAt": "2026-08-19",
+        "protocol": "VLESS",
+        "backend": "珠海联通 9Gbps 单线程（60/70显示）",
+        "summary": "香港节点平均 375–424MB/s，美国节点平均 313–370MB/s（美国02出现 1.60KB/s 异常节点）",
+        "thumbFile": "/images/thumbs/guangsuyun/photo_2026-08-19_12-20-10.webp",
+        "thumbWidth": 592,
+        "thumbHeight": 1064
+      }
+    ],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "muguang",
+    "brandName": "暮光加速",
+    "textRecord20261019": {
+      "testedAt": "2026-10-19",
+      "condition": "非晚高峰（上传资料原文标注）",
+      "dataStatus": "historical",
+      "nodes": [
+        {
+          "region": "香港",
+          "latencyRaw": "26ms",
+          "latencyMs": 26,
+          "downloadRaw": "509Mbps",
+          "downloadMbps": 509
+        },
+        {
+          "region": "台湾",
+          "latencyRaw": "40ms",
+          "latencyMs": 40,
+          "downloadRaw": "107Mbps",
+          "downloadMbps": 107
+        },
+        {
+          "region": "新加坡",
+          "latencyRaw": "43ms",
+          "latencyMs": 43,
+          "downloadRaw": "419Mbps",
+          "downloadMbps": 419
+        },
+        {
+          "region": "日本",
+          "latencyRaw": "53ms",
+          "latencyMs": 53,
+          "downloadRaw": "150Mbps",
+          "downloadMbps": 150
+        },
+        {
+          "region": "美国",
+          "latencyRaw": "160ms",
+          "latencyMs": 160,
+          "downloadRaw": "19Mbps",
+          "downloadMbps": 19
+        }
+      ]
+    },
+    "screenshot20260811": null,
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "feimao",
+    "brandName": "飞猫云",
+    "textRecord20261019": {
+      "testedAt": "2026-10-19",
+      "condition": "非晚高峰（上传资料原文标注）",
+      "dataStatus": "historical",
+      "nodes": [
+        {
+          "region": "香港",
+          "latencyRaw": "21ms",
+          "latencyMs": 21,
+          "downloadRaw": "526Mbps",
+          "downloadMbps": 526
+        },
+        {
+          "region": "台湾",
+          "latencyRaw": "41ms",
+          "latencyMs": 41,
+          "downloadRaw": "116Mbps",
+          "downloadMbps": 116
+        },
+        {
+          "region": "新加坡",
+          "latencyRaw": "45ms",
+          "latencyMs": 45,
+          "downloadRaw": "413Mbps",
+          "downloadMbps": 413
+        },
+        {
+          "region": "日本",
+          "latencyRaw": "54ms",
+          "latencyMs": 54,
+          "downloadRaw": "138Mbps",
+          "downloadMbps": 138
+        },
+        {
+          "region": "美国",
+          "latencyRaw": "178ms",
+          "latencyMs": 178,
+          "downloadRaw": "14Mbps",
+          "downloadMbps": 14
+        }
+      ]
+    },
+    "screenshot20260811": {
+      "file": "/images/speedtests/飞猫云-节点测速实测.png",
+      "testedAt": "2026-08-11T08:52:30+08:00",
+      "protocolDisplayed": "Shadowsocks",
+      "toolFamily": "MAI-TEST-BOT 2.0.0-dev",
+      "dateConfidence": "visible-in-image",
+      "reviewNote": null,
+      "dataStatus": "measured",
+      "limitations": [
+        "single-day snapshot",
+        "brands tested at different times",
+        "not a controlled cross-brand ranking",
+        "does not test AI or streaming unlock",
+        "does not prove long-term stability",
+        "raw machine-readable measurements were not included"
+      ],
+      "thumbFile": "/images/thumbs/speedtests/feimao-2026-08-11.webp",
+      "thumbWidth": 780,
+      "thumbHeight": 975
+    },
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "weifeng",
+    "brandName": "微风网络",
+    "textRecord20261019": {
+      "testedAt": "2026-10-19",
+      "condition": "非晚高峰（上传资料原文标注）",
+      "dataStatus": "historical",
+      "nodes": [
+        {
+          "region": "香港",
+          "latencyRaw": "25ms",
+          "latencyMs": 25,
+          "downloadRaw": "546Mbps",
+          "downloadMbps": 546
+        },
+        {
+          "region": "台湾",
+          "latencyRaw": "40ms",
+          "latencyMs": 40,
+          "downloadRaw": "115Mbps",
+          "downloadMbps": 115
+        },
+        {
+          "region": "新加坡",
+          "latencyRaw": "43ms",
+          "latencyMs": 43,
+          "downloadRaw": "384Mbps",
+          "downloadMbps": 384
+        },
+        {
+          "region": "日本",
+          "latencyRaw": "54ms",
+          "latencyMs": 54,
+          "downloadRaw": "131Mbps",
+          "downloadMbps": 131
+        },
+        {
+          "region": "美国",
+          "latencyRaw": "167ms",
+          "latencyMs": 167,
+          "downloadRaw": "17Mbps",
+          "downloadMbps": 17
+        }
+      ]
+    },
+    "screenshot20260811": null,
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "dalaoyun",
+    "brandName": "大佬云",
+    "textRecord20261019": null,
+    "screenshot20260811": null,
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "xingdaomeng",
+    "brandName": "星岛梦",
+    "textRecord20261019": {
+      "testedAt": "2026-10-19",
+      "condition": "非晚高峰（上传资料原文标注）",
+      "dataStatus": "historical",
+      "nodes": [
+        {
+          "region": "香港",
+          "latencyRaw": "27ms",
+          "latencyMs": 27,
+          "downloadRaw": "504Mbps",
+          "downloadMbps": 504
+        },
+        {
+          "region": "台湾",
+          "latencyRaw": "41ms",
+          "latencyMs": 41,
+          "downloadRaw": "103Mbps",
+          "downloadMbps": 103
+        },
+        {
+          "region": "新加坡",
+          "latencyRaw": "44ms",
+          "latencyMs": 44,
+          "downloadRaw": "411Mbps",
+          "downloadMbps": 411
+        },
+        {
+          "region": "日本",
+          "latencyRaw": "57ms",
+          "latencyMs": 57,
+          "downloadRaw": "136Mbps",
+          "downloadMbps": 136
+        },
+        {
+          "region": "美国",
+          "latencyRaw": "177ms",
+          "latencyMs": 177,
+          "downloadRaw": "18Mbps",
+          "downloadMbps": 18
+        }
+      ]
+    },
+    "screenshot20260811": {
+      "file": "/images/speedtests/星岛梦-节点测速实测.png",
+      "testedAt": "2026-08-11T01:48:13+08:00",
+      "protocolDisplayed": "Shadowsocks",
+      "toolFamily": "MAI-TEST-BOT 2.0.0-dev",
+      "dateConfidence": "visible-in-image",
+      "reviewNote": null,
+      "dataStatus": "measured",
+      "limitations": [
+        "single-day snapshot",
+        "brands tested at different times",
+        "not a controlled cross-brand ranking",
+        "does not test AI or streaming unlock",
+        "does not prove long-term stability",
+        "raw machine-readable measurements were not included"
+      ],
+      "thumbFile": "/images/thumbs/speedtests/xingdaomeng-2026-08-11.webp",
+      "thumbWidth": 780,
+      "thumbHeight": 975
+    },
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "yinxingren",
+    "brandName": "隐形人",
+    "textRecord20261019": null,
+    "screenshot20260811": null,
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "ermao",
+    "brandName": "二猫云",
+    "textRecord20261019": {
+      "testedAt": "2026-10-19",
+      "condition": "非晚高峰（上传资料原文标注）",
+      "dataStatus": "historical",
+      "nodes": [
+        {
+          "region": "香港",
+          "latencyRaw": "22ms",
+          "latencyMs": 22,
+          "downloadRaw": "481Mbps",
+          "downloadMbps": 481
+        },
+        {
+          "region": "台湾",
+          "latencyRaw": "41ms",
+          "latencyMs": 41,
+          "downloadRaw": "118Mbps",
+          "downloadMbps": 118
+        },
+        {
+          "region": "新加坡",
+          "latencyRaw": "46ms",
+          "latencyMs": 46,
+          "downloadRaw": "407Mbps",
+          "downloadMbps": 407
+        },
+        {
+          "region": "日本",
+          "latencyRaw": "53ms",
+          "latencyMs": 53,
+          "downloadRaw": "143Mbps",
+          "downloadMbps": 143
+        },
+        {
+          "region": "美国",
+          "latencyRaw": "134ms",
+          "latencyMs": 134,
+          "downloadRaw": "17Mbps",
+          "downloadMbps": 17
+        }
+      ]
+    },
+    "screenshot20260811": {
+      "file": "/images/speedtests/二猫云-节点测速实测.png",
+      "testedAt": "2026-08-11T10:45:27+08:00",
+      "protocolDisplayed": "Shadowsocks",
+      "toolFamily": "MAI-TEST-BOT 2.0.0-dev",
+      "dateConfidence": "visible-in-image",
+      "reviewNote": null,
+      "dataStatus": "measured",
+      "limitations": [
+        "single-day snapshot",
+        "brands tested at different times",
+        "not a controlled cross-brand ranking",
+        "does not test AI or streaming unlock",
+        "does not prove long-term stability",
+        "raw machine-readable measurements were not included"
+      ],
+      "thumbFile": "/images/thumbs/speedtests/ermao-2026-08-11.webp",
+      "thumbWidth": 780,
+      "thumbHeight": 975
+    },
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "wuyou",
+    "brandName": "无忧链接",
+    "textRecord20261019": {
+      "testedAt": "2026-10-19",
+      "condition": "非晚高峰（上传资料原文标注）",
+      "dataStatus": "historical",
+      "nodes": [
+        {
+          "region": "香港",
+          "latencyRaw": "23ms",
+          "latencyMs": 23,
+          "downloadRaw": "531Mbps",
+          "downloadMbps": 531
+        },
+        {
+          "region": "台湾",
+          "latencyRaw": "41ms",
+          "latencyMs": 41,
+          "downloadRaw": "107Mbps",
+          "downloadMbps": 107
+        },
+        {
+          "region": "新加坡",
+          "latencyRaw": "42ms",
+          "latencyMs": 42,
+          "downloadRaw": "418Mbps",
+          "downloadMbps": 418
+        },
+        {
+          "region": "日本",
+          "latencyRaw": "55ms",
+          "latencyMs": 55,
+          "downloadRaw": "147Mbps",
+          "downloadMbps": 147
+        },
+        {
+          "region": "美国",
+          "latencyRaw": "145ms",
+          "latencyMs": 145,
+          "downloadRaw": "17Mbps",
+          "downloadMbps": 17
+        }
+      ]
+    },
+    "screenshot20260811": null,
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "weitu",
+    "brandName": "唯兔云",
+    "textRecord20261019": {
+      "testedAt": "2026-10-19",
+      "condition": "非晚高峰（上传资料原文标注）",
+      "dataStatus": "historical",
+      "nodes": [
+        {
+          "region": "香港",
+          "latencyRaw": "27ms",
+          "latencyMs": 27,
+          "downloadRaw": "500Mbps",
+          "downloadMbps": 500
+        },
+        {
+          "region": "台湾",
+          "latencyRaw": "37ms",
+          "latencyMs": 37,
+          "downloadRaw": "100Mbps",
+          "downloadMbps": 100
+        },
+        {
+          "region": "新加坡",
+          "latencyRaw": "44ms",
+          "latencyMs": 44,
+          "downloadRaw": "414Mbps",
+          "downloadMbps": 414
+        },
+        {
+          "region": "日本",
+          "latencyRaw": "56ms",
+          "latencyMs": 56,
+          "downloadRaw": "147Mbps",
+          "downloadMbps": 147
+        },
+        {
+          "region": "美国",
+          "latencyRaw": "179ms",
+          "latencyMs": 179,
+          "downloadRaw": "17Mbps",
+          "downloadMbps": 17
+        }
+      ]
+    },
+    "screenshot20260811": {
+      "file": "/images/speedtests/唯兔云-节点测速实测.png",
+      "testedAt": "2026-08-11T13:55:08+08:00",
+      "protocolDisplayed": "Shadowsocks",
+      "toolFamily": "MAI-TEST-BOT 2.0.0-dev",
+      "dateConfidence": "visible-in-image",
+      "reviewNote": null,
+      "dataStatus": "measured",
+      "limitations": [
+        "single-day snapshot",
+        "brands tested at different times",
+        "not a controlled cross-brand ranking",
+        "does not test AI or streaming unlock",
+        "does not prove long-term stability",
+        "raw machine-readable measurements were not included"
+      ],
+      "thumbFile": "/images/thumbs/speedtests/weitu-2026-08-11.webp",
+      "thumbWidth": 780,
+      "thumbHeight": 975
+    },
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "firefly",
+    "brandName": "Firefly",
+    "textRecord20261019": {
+      "testedAt": "2026-10-19",
+      "condition": "非晚高峰（上传资料原文标注）",
+      "dataStatus": "historical",
+      "nodes": [
+        {
+          "region": "香港",
+          "latencyRaw": "27ms",
+          "latencyMs": 27,
+          "downloadRaw": "547Mbps",
+          "downloadMbps": 547
+        },
+        {
+          "region": "台湾",
+          "latencyRaw": "39ms",
+          "latencyMs": 39,
+          "downloadRaw": "135Mbps",
+          "downloadMbps": 135
+        },
+        {
+          "region": "新加坡",
+          "latencyRaw": "42ms",
+          "latencyMs": 42,
+          "downloadRaw": "445Mbps",
+          "downloadMbps": 445
+        },
+        {
+          "region": "日本",
+          "latencyRaw": "57ms",
+          "latencyMs": 57,
+          "downloadRaw": "147Mbps",
+          "downloadMbps": 147
+        },
+        {
+          "region": "美国",
+          "latencyRaw": "143ms",
+          "latencyMs": 143,
+          "downloadRaw": "30Mbps",
+          "downloadMbps": 30
+        }
+      ]
+    },
+    "screenshot20260811": null,
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "yuzhou",
+    "brandName": "宇宙云",
+    "textRecord20261019": null,
+    "screenshot20260811": {
+      "file": "/images/speedtests/宇宙云-节点测速实测.png",
+      "testedAt": "2026-08-11T21:04:24+08:00",
+      "protocolDisplayed": "VLESS",
+      "toolFamily": "main 4.3.3 (696) / miaosu 4.7.0 (A11-32)",
+      "dateConfidence": "visible-in-image",
+      "reviewNote": null,
+      "dataStatus": "measured",
+      "limitations": [
+        "single-day snapshot",
+        "brands tested at different times",
+        "not a controlled cross-brand ranking",
+        "does not test AI or streaming unlock",
+        "does not prove long-term stability",
+        "raw machine-readable measurements were not included"
+      ],
+      "thumbFile": "/images/thumbs/speedtests/yuzhou-2026-08-11.webp",
+      "thumbWidth": 780,
+      "thumbHeight": 975
+    },
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "u1s1",
+    "brandName": "U1S1",
+    "textRecord20261019": {
+      "testedAt": "2026-10-19",
+      "condition": "非晚高峰（上传资料原文标注）",
+      "dataStatus": "historical",
+      "nodes": [
+        {
+          "region": "香港",
+          "latencyRaw": "24ms",
+          "latencyMs": 24,
+          "downloadRaw": "538Mbps",
+          "downloadMbps": 538
+        },
+        {
+          "region": "台湾",
+          "latencyRaw": "39ms",
+          "latencyMs": 39,
+          "downloadRaw": "107Mbps",
+          "downloadMbps": 107
+        },
+        {
+          "region": "新加坡",
+          "latencyRaw": "46ms",
+          "latencyMs": 46,
+          "downloadRaw": "414Mbps",
+          "downloadMbps": 414
+        },
+        {
+          "region": "日本",
+          "latencyRaw": "57ms",
+          "latencyMs": 57,
+          "downloadRaw": "133Mbps",
+          "downloadMbps": 133
+        },
+        {
+          "region": "美国",
+          "latencyRaw": "134ms",
+          "latencyMs": 134,
+          "downloadRaw": "20Mbps",
+          "downloadMbps": 20
+        }
+      ]
+    },
+    "screenshot20260811": {
+      "file": "/images/speedtests/U1S1-节点测速实测.png",
+      "testedAt": "2026-08-11T22:33:29+08:00",
+      "protocolDisplayed": "Shadowsocks",
+      "toolFamily": "MAI-TEST-BOT 2.0.0-dev",
+      "dateConfidence": "visible-in-image",
+      "reviewNote": null,
+      "dataStatus": "measured",
+      "limitations": [
+        "single-day snapshot",
+        "brands tested at different times",
+        "not a controlled cross-brand ranking",
+        "does not test AI or streaming unlock",
+        "does not prove long-term stability",
+        "raw machine-readable measurements were not included"
+      ],
+      "thumbFile": "/images/thumbs/speedtests/u1s1-2026-08-11.webp",
+      "thumbWidth": 780,
+      "thumbHeight": 975
+    },
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "lingmao",
+    "brandName": "灵猫网络",
+    "textRecord20261019": {
+      "testedAt": "2026-10-19",
+      "condition": "非晚高峰（上传资料原文标注）",
+      "dataStatus": "historical",
+      "nodes": [
+        {
+          "region": "香港",
+          "latencyRaw": "22ms",
+          "latencyMs": 22,
+          "downloadRaw": "492Mbps",
+          "downloadMbps": 492
+        },
+        {
+          "region": "台湾",
+          "latencyRaw": "40ms",
+          "latencyMs": 40,
+          "downloadRaw": "109Mbps",
+          "downloadMbps": 109
+        },
+        {
+          "region": "新加坡",
+          "latencyRaw": "46ms",
+          "latencyMs": 46,
+          "downloadRaw": "409Mbps",
+          "downloadMbps": 409
+        },
+        {
+          "region": "日本",
+          "latencyRaw": "57ms",
+          "latencyMs": 57,
+          "downloadRaw": "147Mbps",
+          "downloadMbps": 147
+        },
+        {
+          "region": "美国",
+          "latencyRaw": "164ms",
+          "latencyMs": 164,
+          "downloadRaw": "19Mbps",
+          "downloadMbps": 19
+        }
+      ]
+    },
+    "screenshot20260811": {
+      "file": "/images/speedtests/灵猫网络-节点测速实测.png",
+      "testedAt": "2026-08-11T18:45:40+08:00",
+      "protocolDisplayed": "Shadowsocks",
+      "toolFamily": "MAI-TEST-BOT 2.0.0-dev",
+      "dateConfidence": "visible-in-image",
+      "reviewNote": null,
+      "dataStatus": "measured",
+      "limitations": [
+        "single-day snapshot",
+        "brands tested at different times",
+        "not a controlled cross-brand ranking",
+        "does not test AI or streaming unlock",
+        "does not prove long-term stability",
+        "raw machine-readable measurements were not included"
+      ],
+      "thumbFile": "/images/thumbs/speedtests/lingmao-2026-08-11.webp",
+      "thumbWidth": 780,
+      "thumbHeight": 975
+    },
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "jilian",
+    "brandName": "极连云",
+    "textRecord20261019": null,
+    "screenshot20260811": {
+      "file": "/images/speedtests/极连云-节点测速实测.png",
+      "testedAt": "2026-08-11T22:46:50+08:00",
+      "protocolDisplayed": "Shadowsocks",
+      "toolFamily": "MAI-TEST-BOT 2.0.0-dev",
+      "dateConfidence": "visible-in-image",
+      "reviewNote": null,
+      "dataStatus": "measured",
+      "limitations": [
+        "single-day snapshot",
+        "brands tested at different times",
+        "not a controlled cross-brand ranking",
+        "does not test AI or streaming unlock",
+        "does not prove long-term stability",
+        "raw machine-readable measurements were not included"
+      ],
+      "thumbFile": "/images/thumbs/speedtests/jilian-2026-08-11.webp",
+      "thumbWidth": 780,
+      "thumbHeight": 975
+    },
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "guangnian",
+    "brandName": "光年梯",
+    "textRecord20261019": null,
+    "screenshot20260811": {
+      "file": "/images/speedtests/光年梯-节点测速实测.png",
+      "testedAt": "2026-08-11T14:38:04+08:00",
+      "protocolDisplayed": "Shadowsocks",
+      "toolFamily": "MAI-TEST-BOT 2.0.0-dev",
+      "dateConfidence": "visible-in-image",
+      "reviewNote": null,
+      "dataStatus": "measured",
+      "limitations": [
+        "single-day snapshot",
+        "brands tested at different times",
+        "not a controlled cross-brand ranking",
+        "does not test AI or streaming unlock",
+        "does not prove long-term stability",
+        "raw machine-readable measurements were not included"
+      ],
+      "thumbFile": "/images/thumbs/speedtests/guangnian-2026-08-11.webp",
+      "thumbWidth": 780,
+      "thumbHeight": 975
+    },
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "yifan",
+    "brandName": "一翻云",
+    "textRecord20261019": {
+      "testedAt": "2026-10-19",
+      "condition": "非晚高峰（上传资料原文标注）",
+      "dataStatus": "historical",
+      "nodes": [
+        {
+          "region": "香港",
+          "latencyRaw": "23ms",
+          "latencyMs": 23,
+          "downloadRaw": "477Mbps",
+          "downloadMbps": 477
+        },
+        {
+          "region": "台湾",
+          "latencyRaw": "40ms",
+          "latencyMs": 40,
+          "downloadRaw": "117Mbps",
+          "downloadMbps": 117
+        },
+        {
+          "region": "新加坡",
+          "latencyRaw": "42ms",
+          "latencyMs": 42,
+          "downloadRaw": "390Mbps",
+          "downloadMbps": 390
+        },
+        {
+          "region": "日本",
+          "latencyRaw": "53ms",
+          "latencyMs": 53,
+          "downloadRaw": "136Mbps",
+          "downloadMbps": 136
+        },
+        {
+          "region": "美国",
+          "latencyRaw": "180ms",
+          "latencyMs": 180,
+          "downloadRaw": "20Mbps",
+          "downloadMbps": 20
+        }
+      ]
+    },
+    "screenshot20260811": {
+      "file": "/images/speedtests/一翻云-节点测速实测.png",
+      "testedAt": "2026-08-11T00:21:30+08:00",
+      "protocolDisplayed": "Shadowsocks",
+      "toolFamily": "MAI-TEST-BOT 2.0.0-dev",
+      "dateConfidence": "visible-in-image",
+      "reviewNote": null,
+      "dataStatus": "measured",
+      "limitations": [
+        "single-day snapshot",
+        "brands tested at different times",
+        "not a controlled cross-brand ranking",
+        "does not test AI or streaming unlock",
+        "does not prove long-term stability",
+        "raw machine-readable measurements were not included"
+      ],
+      "thumbFile": "/images/thumbs/speedtests/yifan-2026-08-11.webp",
+      "thumbWidth": 780,
+      "thumbHeight": 975
+    },
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "sogo",
+    "brandName": "SOGO云",
+    "textRecord20261019": {
+      "testedAt": "2026-10-19",
+      "condition": "非晚高峰（上传资料原文标注）",
+      "dataStatus": "historical",
+      "nodes": [
+        {
+          "region": "香港",
+          "latencyRaw": "26ms",
+          "latencyMs": 26,
+          "downloadRaw": "488Mbps",
+          "downloadMbps": 488
+        },
+        {
+          "region": "台湾",
+          "latencyRaw": "39ms",
+          "latencyMs": 39,
+          "downloadRaw": "118Mbps",
+          "downloadMbps": 118
+        },
+        {
+          "region": "新加坡",
+          "latencyRaw": "43ms",
+          "latencyMs": 43,
+          "downloadRaw": "401Mbps",
+          "downloadMbps": 401
+        },
+        {
+          "region": "日本",
+          "latencyRaw": "57ms",
+          "latencyMs": 57,
+          "downloadRaw": "137Mbps",
+          "downloadMbps": 137
+        },
+        {
+          "region": "美国",
+          "latencyRaw": "140ms",
+          "latencyMs": 140,
+          "downloadRaw": "17Mbps",
+          "downloadMbps": 17
+        }
+      ]
+    },
+    "screenshot20260811": {
+      "file": "/images/speedtests/SOGO云-节点测速实测.png",
+      "testedAt": "2026-08-11T18:57:59+08:00",
+      "protocolDisplayed": "Shadowsocks",
+      "toolFamily": "MAI-TEST-BOT 2.0.0-dev",
+      "dateConfidence": "visible-in-image",
+      "reviewNote": null,
+      "dataStatus": "measured",
+      "limitations": [
+        "single-day snapshot",
+        "brands tested at different times",
+        "not a controlled cross-brand ranking",
+        "does not test AI or streaming unlock",
+        "does not prove long-term stability",
+        "raw machine-readable measurements were not included"
+      ],
+      "thumbFile": "/images/thumbs/speedtests/sogo-2026-08-11.webp",
+      "thumbWidth": 780,
+      "thumbHeight": 975
+    },
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "kexin",
+    "brandName": "可信云",
+    "textRecord20261019": null,
+    "screenshot20260811": {
+      "file": "/images/speedtests/可信云-节点测速实测.png",
+      "testedAt": "2026-08-11T15:32:35+08:00",
+      "protocolDisplayed": "Shadowsocks",
+      "toolFamily": "MAI-TEST-BOT 2.0.0-dev",
+      "dateConfidence": "date-inferred-from-batch-time-visible-in-image",
+      "reviewNote": "Full calendar date should be checked against the original test record before publication.",
+      "dataStatus": "measured",
+      "limitations": [
+        "single-day snapshot",
+        "brands tested at different times",
+        "not a controlled cross-brand ranking",
+        "does not test AI or streaming unlock",
+        "does not prove long-term stability",
+        "raw machine-readable measurements were not included"
+      ],
+      "thumbFile": "/images/thumbs/speedtests/kexin-2026-08-11.webp",
+      "thumbWidth": 780,
+      "thumbHeight": 975
+    },
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "sujie",
+    "brandName": "速界",
+    "textRecord20261019": null,
+    "screenshot20260811": {
+      "file": "/images/speedtests/速界-节点测速实测.png",
+      "testedAt": "2026-08-11T15:39:36+08:00",
+      "protocolDisplayed": "Shadowsocks",
+      "toolFamily": "MAI-TEST-BOT 2.0.0-dev",
+      "dateConfidence": "visible-in-image",
+      "reviewNote": null,
+      "dataStatus": "measured",
+      "limitations": [
+        "single-day snapshot",
+        "brands tested at different times",
+        "not a controlled cross-brand ranking",
+        "does not test AI or streaming unlock",
+        "does not prove long-term stability",
+        "raw machine-readable measurements were not included"
+      ],
+      "thumbFile": "/images/thumbs/speedtests/sujie-2026-08-11.webp",
+      "thumbWidth": 780,
+      "thumbHeight": 975
+    },
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "shanyue",
+    "brandName": "闪跃",
+    "textRecord20261019": {
+      "testedAt": "2026-10-19",
+      "condition": "非晚高峰（上传资料原文标注）",
+      "dataStatus": "historical",
+      "nodes": [
+        {
+          "region": "香港",
+          "latencyRaw": "23ms",
+          "latencyMs": 23,
+          "downloadRaw": "548Mbps",
+          "downloadMbps": 548
+        },
+        {
+          "region": "台湾",
+          "latencyRaw": "38ms",
+          "latencyMs": 38,
+          "downloadRaw": "110Mbps",
+          "downloadMbps": 110
+        },
+        {
+          "region": "新加坡",
+          "latencyRaw": "44ms",
+          "latencyMs": 44,
+          "downloadRaw": "383Mbps",
+          "downloadMbps": 383
+        },
+        {
+          "region": "日本",
+          "latencyRaw": "53ms",
+          "latencyMs": 53,
+          "downloadRaw": "144Mbps",
+          "downloadMbps": 144
+        },
+        {
+          "region": "美国",
+          "latencyRaw": "143ms",
+          "latencyMs": 143,
+          "downloadRaw": "18Mbps",
+          "downloadMbps": 18
+        }
+      ]
+    },
+    "screenshot20260811": null,
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "quanqiu",
+    "brandName": "全球云",
+    "textRecord20261019": {
+      "testedAt": "2026-10-19",
+      "condition": "非晚高峰（上传资料原文标注）",
+      "dataStatus": "historical",
+      "nodes": [
+        {
+          "region": "香港",
+          "latencyRaw": "25ms",
+          "latencyMs": 25,
+          "downloadRaw": "489Mbps",
+          "downloadMbps": 489
+        },
+        {
+          "region": "台湾",
+          "latencyRaw": "37ms",
+          "latencyMs": 37,
+          "downloadRaw": "117Mbps",
+          "downloadMbps": 117
+        },
+        {
+          "region": "新加坡",
+          "latencyRaw": "45ms",
+          "latencyMs": 45,
+          "downloadRaw": "430Mbps",
+          "downloadMbps": 430
+        },
+        {
+          "region": "日本",
+          "latencyRaw": "55ms",
+          "latencyMs": 55,
+          "downloadRaw": "133Mbps",
+          "downloadMbps": 133
+        },
+        {
+          "region": "美国",
+          "latencyRaw": "138ms",
+          "latencyMs": 138,
+          "downloadRaw": "18Mbps",
+          "downloadMbps": 18
+        }
+      ]
+    },
+    "screenshot20260811": {
+      "file": "/images/speedtests/全球云-节点测速实测.png",
+      "testedAt": "2026-08-11T15:50:43+08:00",
+      "protocolDisplayed": "Shadowsocks",
+      "toolFamily": "MAI-TEST-BOT 2.0.0-dev",
+      "dateConfidence": "visible-in-image",
+      "reviewNote": null,
+      "dataStatus": "measured",
+      "limitations": [
+        "single-day snapshot",
+        "brands tested at different times",
+        "not a controlled cross-brand ranking",
+        "does not test AI or streaming unlock",
+        "does not prove long-term stability",
+        "raw machine-readable measurements were not included"
+      ],
+      "thumbFile": "/images/thumbs/speedtests/quanqiu-2026-08-11.webp",
+      "thumbWidth": 780,
+      "thumbHeight": 975
+    },
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "shandianshu",
+    "brandName": "闪电鼠",
+    "textRecord20261019": null,
+    "screenshot20260811": null,
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "yunjiexian",
+    "brandName": "云界线",
+    "textRecord20261019": null,
+    "screenshot20260811": null,
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "liulianyun",
+    "brandName": "榴莲云",
+    "textRecord20261019": null,
+    "screenshot20260811": null,
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "shenxing",
+    "brandName": "神行加速",
+    "textRecord20261019": null,
+    "screenshot20260811": null,
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "huanqiuti",
+    "brandName": "环球梯",
+    "textRecord20261019": null,
+    "screenshot20260811": null,
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "tiziyun",
+    "brandName": "梯子云",
+    "textRecord20261019": null,
+    "screenshot20260811": null,
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "lingdong",
+    "brandName": "灵动云",
+    "textRecord20261019": null,
+    "screenshot20260811": null,
+    "additionalScreenshots": [],
+    "specialSummaryNote": "2026-07-20/21 珠海联通 9Gbps（60 测速 / 60 解锁）历史摘要：速度 20–80MB/s、HTTPS 延迟偏高，OpenAI 基本全解锁，TikTok 多失败、新/台 YouTube 送中、美国01 整节点失败。"
+  },
+  {
+    "brandSlug": "langwang",
+    "brandName": "浪网",
+    "textRecord20261019": null,
+    "screenshot20260811": null,
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  },
+  {
+    "brandSlug": "edgenova",
+    "brandName": "边缘节点 EdgeNova",
+    "textRecord20261019": null,
+    "screenshot20260811": null,
+    "additionalScreenshots": [],
+    "specialSummaryNote": null
+  }
+]

@@ -1,0 +1,97 @@
+---
+import TopicLayout from '../../layouts/TopicLayout.astro';
+import brands from '../../data/brands.json';
+import { AFFILIATE_LINKS } from '../../data/affiliate-links';
+import CopyCouponButton from '../../components/brands/CopyCouponButton';
+
+const sorted = [...brands].sort((a, b) => a.priorityRank - b.priorityRank);
+---
+
+<TopicLayout
+  title="机场优惠码与折扣规则核验汇总 | 订阅指南"
+  description="汇总 31 家机场品牌资料记录的优惠码、折扣限制及多源冲突提示，下单前先核对适用套餐周期与最新有效性。"
+  h1="机场优惠信息与优惠码核验汇总"
+  eyebrow="Deals & Coupon Verification"
+  breadcrumbs={[
+    { name: '首页', url: '/' },
+    { name: '机场品牌', url: '/brands/' },
+    { name: '品牌优惠信息', url: '/deals/' },
+  ]}
+  pubDate={new Date('2026-11-24')}
+  updatedDate={new Date('2026-11-24')}
+  dataStatus="conflicting"
+  showDisclosure={true}
+  tags={['机场优惠码', '光速云优惠码', 'AMM', '年付折扣']}
+  faq={[
+    {
+      question: '为什么部分品牌同时列出了两个不同的优惠码？',
+      answer: '源资料不同章节（例如分段基础数据与文末完整数据表）记录了不同时期的优惠码，本站不擅自删除其中任何一条，全部标记 conflicting 供用户在结账页尝试核对。',
+    },
+    {
+      question: '优惠码是否适用于年付轻量包或永久套餐？',
+      answer: '多数品牌的折扣码明确限制不适用于年付特价小包或一次性永久版（如光速云 147 永久版与轻量版标明不打折，Firefly 年付版不适用 8 折码）。',
+    },
+  ]}
+  relatedLinks={[
+    { title: '光速云优惠码 AMM 与套餐适用范围', href: '/reviews/guangsuyun/', category: '旗舰品牌', description: '核对光速云 7 档套餐中哪些支持周期折扣或优惠码' },
+    { title: '机场订阅费用与单GB对比工具', href: '/plans/cost-comparison/', category: '费用计算', description: '实测输入折扣后金额计算单 GB 成本' },
+  ]}
+>
+  <div class="rounded-xl border border-slate-200 bg-white overflow-hidden">
+    <div class="px-5 py-4 border-b border-slate-200 bg-slate-50/70">
+      <h2 class="text-base font-bold text-ink">全品牌优惠码与折扣记录表（按资料核实状态标注）</h2>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="w-full text-left border-collapse text-xs">
+        <thead>
+          <tr class="border-b border-slate-200 bg-slate-50 text-ink-muted font-semibold">
+            <th class="py-3 px-4">品牌</th>
+            <th class="py-3 px-3">记录优惠码</th>
+            <th class="py-3 px-3">折扣及限制说明</th>
+            <th class="py-3 px-3">状态</th>
+            <th class="py-3 px-4">评测与入口</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-100">
+          {sorted.map((b) => {
+            const aff = AFFILIATE_LINKS[b.slug];
+            return (
+              <tr class="hover:bg-slate-50/70">
+                <td class="py-3 px-4 font-semibold text-ink">
+                  <a href={b.reviewUrl} class="hover:text-brand">{b.name}</a>
+                </td>
+                <td class="py-3 px-3 font-mono">
+                  {b.coupons.map((c) =>
+                    c.code && c.code !== '待核实' ? (
+                      <CopyCouponButton client:visible code={c.code} compact />
+                    ) : (
+                      <span class="inline-block mr-1.5 mb-1 px-2 py-0.5 rounded bg-slate-100 border border-slate-200 text-ink font-semibold">
+                        {c.code}
+                      </span>
+                    ),
+                  )}
+                </td>
+                <td class="py-3 px-3 text-ink-muted">
+                  {b.coupons.map((c) => c.discount).join('；')}
+                </td>
+                <td class="py-3 px-3 font-mono">
+                  <span class={b.coupons.some((c) => c.status === 'conflicting') ? 'text-rose-700 font-semibold' : 'text-ink-faint'}>
+                    {b.coupons[0]?.status || 'unverified'}
+                  </span>
+                </td>
+                <td class="py-3 px-4 space-x-2 whitespace-nowrap">
+                  <a href={b.reviewUrl} class="text-brand hover:underline">查看评测</a>
+                  {aff?.registerUrl && !aff.isHistoricalUrl && (
+                    <a href={aff.registerUrl} target="_blank" rel="nofollow sponsored noopener" class="text-ink-muted hover:text-brand underline">
+                      注册入口
+                    </a>
+                  )}
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</TopicLayout>

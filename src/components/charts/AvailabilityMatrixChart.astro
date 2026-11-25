@@ -1,0 +1,84 @@
+---
+interface Props {
+  brandName: string;
+  accentColor: string;
+  supported: string[];
+  conditional: string[];
+  rawNote: string | null;
+  dataStatus: string;
+}
+
+const { brandName, accentColor, supported, conditional, rawNote, dataStatus } = Astro.props;
+
+const ALL_SERVICES = [
+  { name: 'ChatGPT', group: 'AI 工具' },
+  { name: 'Claude', group: 'AI 工具' },
+  { name: 'Gemini', group: 'AI 工具' },
+  { name: 'Netflix', group: '海外流媒体' },
+  { name: 'Disney+', group: '海外流媒体' },
+  { name: 'YouTube', group: '海外流媒体' },
+  { name: 'HBO Max', group: '海外流媒体' },
+  { name: 'TikTok', group: '海外流媒体' },
+  { name: 'Spotify', group: '海外流媒体' },
+];
+
+function resolveState(svc: string) {
+  if (supported.some((s) => s.toLowerCase().includes(svc.toLowerCase()))) {
+    return { label: 'Supported / 资料标注支持', cls: 'bg-observatory-emerald/15 text-observatory-emerald border-observatory-emerald/40', dot: 'bg-observatory-emerald' };
+  }
+  if (conditional.some((s) => s.toLowerCase().includes(svc.toLowerCase()))) {
+    return { label: 'Partial / 视节点而定', cls: 'bg-observatory-amber/15 text-observatory-amber border-observatory-amber/40', dot: 'bg-observatory-amber' };
+  }
+  return { label: 'Not Tested / 待核实', cls: 'bg-slate-800 text-observatory-muted border-observatory-border', dot: 'bg-slate-500' };
+}
+---
+
+<section
+  class="relative rounded-xl border border-observatory-border bg-observatory-bg text-observatory-text p-5 sm:p-6 overflow-hidden"
+  aria-label={`${brandName} AI 与流媒体可用性矩阵`}
+>
+  <div class="h-1 w-full absolute top-0 left-0" style={`background-color: ${accentColor}`}></div>
+
+  <div class="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-observatory-border">
+    <div>
+      <div class="text-[11px] font-mono uppercase tracking-wider text-observatory-muted">
+        Service Availability Matrix
+      </div>
+      <h2 class="text-base sm:text-lg font-bold text-white mt-0.5">
+        {brandName} AI 工具与流媒体解锁状态矩阵
+      </h2>
+    </div>
+    <span class="px-2.5 py-1 rounded border border-observatory-border bg-observatory-panel text-[11px] font-mono text-observatory-cyan">
+      {dataStatus === 'measured' ? 'Measured + Vendor' : dataStatus === 'unverified' ? 'Not Tested' : 'Vendor Claimed'}
+    </span>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-4">
+    {ALL_SERVICES.map((svc) => {
+      const st = resolveState(svc.name);
+      return (
+        <div class="rounded-lg border border-observatory-border bg-observatory-panel p-3.5 flex items-center justify-between gap-2">
+          <div>
+            <div class="text-[10px] font-mono text-observatory-muted">{svc.group}</div>
+            <div class="text-sm font-semibold text-white">{svc.name}</div>
+          </div>
+          <span class={`inline-flex items-center gap-1.5 px-2 py-0.5 rounded border text-[11px] font-mono ${st.cls}`}>
+            <span class={`w-1.5 h-1.5 rounded-full ${st.dot}`}></span>
+            <span>{st.label.split(' / ')[0]}</span>
+          </span>
+        </div>
+      );
+    })}
+  </div>
+
+  {rawNote && (
+    <div class="mt-4 rounded-lg border border-observatory-border bg-observatory-panel/70 p-3 text-xs text-observatory-muted leading-relaxed">
+      <strong class="text-white">补充边界说明：</strong>{rawNote}
+    </div>
+  )}
+
+  <div class="mt-4 pt-3 border-t border-observatory-border flex flex-wrap items-center justify-between gap-2 text-[11px] font-mono text-observatory-muted">
+    <span>说明：AI 与流媒体策略随上游 IP 风险评分动态变化，不承诺任何平台永久解锁</span>
+    <span class="text-white/30 select-none">订阅指南 · dingyuezhinan.biz</span>
+  </div>
+</section>

@@ -1,0 +1,426 @@
+[
+  {
+    "brandSlug": "guangsuyun",
+    "brandName": "光速云",
+    "supported": [
+      "Claude",
+      "Netflix",
+      "Disney+",
+      "YouTube",
+      "HBO Max",
+      "TikTok",
+      "Spotify"
+    ],
+    "conditional": [
+      "ChatGPT",
+      "Gemini"
+    ],
+    "rawNote": null,
+    "dataStatus": "measured"
+  },
+  {
+    "brandSlug": "muguang",
+    "brandName": "暮光加速",
+    "supported": [
+      "ChatGPT",
+      "Claude",
+      "Netflix",
+      "Disney+",
+      "YouTube",
+      "HBO Max",
+      "TikTok",
+      "Spotify"
+    ],
+    "conditional": [
+      "Gemini"
+    ],
+    "rawNote": null,
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "feimao",
+    "brandName": "飞猫云",
+    "supported": [
+      "ChatGPT",
+      "Claude",
+      "Netflix",
+      "Disney+",
+      "YouTube",
+      "HBO Max",
+      "TikTok",
+      "Spotify"
+    ],
+    "conditional": [
+      "Gemini"
+    ],
+    "rawNote": null,
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "weifeng",
+    "brandName": "微风网络",
+    "supported": [
+      "ChatGPT",
+      "Claude",
+      "Netflix",
+      "Disney+",
+      "YouTube",
+      "HBO Max",
+      "TikTok",
+      "Spotify"
+    ],
+    "conditional": [
+      "Gemini"
+    ],
+    "rawNote": null,
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "dalaoyun",
+    "brandName": "大佬云",
+    "supported": [],
+    "conditional": [],
+    "rawNote": null,
+    "dataStatus": "unverified"
+  },
+  {
+    "brandSlug": "xingdaomeng",
+    "brandName": "星岛梦",
+    "supported": [
+      "ChatGPT",
+      "Claude",
+      "Netflix",
+      "Disney+",
+      "YouTube",
+      "HBO Max",
+      "TikTok",
+      "Spotify"
+    ],
+    "conditional": [
+      "Gemini"
+    ],
+    "rawNote": null,
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "yinxingren",
+    "brandName": "隐形人",
+    "supported": [
+      "ChatGPT",
+      "Netflix",
+      "Disney+",
+      "YouTube",
+      "HBO Max",
+      "Spotify"
+    ],
+    "conditional": [
+      "Claude",
+      "Gemini",
+      "TikTok"
+    ],
+    "rawNote": null,
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "ermao",
+    "brandName": "二猫云",
+    "supported": [
+      "ChatGPT",
+      "Netflix",
+      "Disney+",
+      "YouTube",
+      "HBO Max",
+      "TikTok",
+      "Spotify"
+    ],
+    "conditional": [
+      "Claude",
+      "Gemini"
+    ],
+    "rawNote": null,
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "wuyou",
+    "brandName": "无忧链接",
+    "supported": [
+      "ChatGPT",
+      "Claude",
+      "Netflix",
+      "Disney+",
+      "YouTube",
+      "HBO Max",
+      "TikTok",
+      "Spotify"
+    ],
+    "conditional": [
+      "Gemini"
+    ],
+    "rawNote": null,
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "weitu",
+    "brandName": "唯兔云",
+    "supported": [
+      "ChatGPT",
+      "Claude",
+      "Netflix",
+      "Disney+",
+      "YouTube",
+      "HBO Max",
+      "TikTok",
+      "Spotify"
+    ],
+    "conditional": [
+      "Gemini"
+    ],
+    "rawNote": null,
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "firefly",
+    "brandName": "Firefly",
+    "supported": [
+      "ChatGPT",
+      "Claude",
+      "Netflix",
+      "Disney+",
+      "YouTube",
+      "HBO Max",
+      "TikTok",
+      "Spotify"
+    ],
+    "conditional": [
+      "Gemini"
+    ],
+    "rawNote": null,
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "yuzhou",
+    "brandName": "宇宙云",
+    "supported": [],
+    "conditional": [],
+    "rawNote": null,
+    "dataStatus": "unverified"
+  },
+  {
+    "brandSlug": "u1s1",
+    "brandName": "U1S1",
+    "supported": [
+      "ChatGPT",
+      "Claude",
+      "Netflix",
+      "Disney+",
+      "YouTube",
+      "HBO Max",
+      "TikTok",
+      "Spotify"
+    ],
+    "conditional": [
+      "Gemini"
+    ],
+    "rawNote": null,
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "lingmao",
+    "brandName": "灵猫网络",
+    "supported": [
+      "ChatGPT",
+      "Claude",
+      "Netflix",
+      "Disney+",
+      "YouTube",
+      "HBO Max",
+      "TikTok",
+      "Spotify"
+    ],
+    "conditional": [
+      "Gemini"
+    ],
+    "rawNote": null,
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "jilian",
+    "brandName": "极连云",
+    "supported": [],
+    "conditional": [],
+    "rawNote": null,
+    "dataStatus": "unverified"
+  },
+  {
+    "brandSlug": "guangnian",
+    "brandName": "光年梯",
+    "supported": [],
+    "conditional": [],
+    "rawNote": null,
+    "dataStatus": "unverified"
+  },
+  {
+    "brandSlug": "yifan",
+    "brandName": "一翻云",
+    "supported": [
+      "ChatGPT",
+      "Claude",
+      "Netflix",
+      "Disney+",
+      "YouTube",
+      "HBO Max",
+      "TikTok",
+      "Spotify"
+    ],
+    "conditional": [
+      "Gemini"
+    ],
+    "rawNote": null,
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "sogo",
+    "brandName": "SOGO云",
+    "supported": [
+      "ChatGPT",
+      "Netflix",
+      "Disney+",
+      "YouTube",
+      "TikTok"
+    ],
+    "conditional": [
+      "Claude",
+      "Gemini",
+      "HBO Max",
+      "Spotify"
+    ],
+    "rawNote": null,
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "kexin",
+    "brandName": "可信云",
+    "supported": [],
+    "conditional": [],
+    "rawNote": "品牌资料明确指出“AI 与流媒体目前缺乏统一实测数据，应保持中性描述”。",
+    "dataStatus": "unverified"
+  },
+  {
+    "brandSlug": "sujie",
+    "brandName": "速界",
+    "supported": [],
+    "conditional": [],
+    "rawNote": "品牌资料强调 ChatGPT、Claude、Gemini 使用场景，并注明可用性受 IP 与平台规则影响。",
+    "dataStatus": "unverified"
+  },
+  {
+    "brandSlug": "shanyue",
+    "brandName": "闪跃",
+    "supported": [
+      "ChatGPT",
+      "Claude",
+      "Netflix",
+      "Disney+",
+      "YouTube",
+      "HBO Max",
+      "TikTok",
+      "Spotify"
+    ],
+    "conditional": [
+      "Gemini"
+    ],
+    "rawNote": null,
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "quanqiu",
+    "brandName": "全球云",
+    "supported": [
+      "ChatGPT",
+      "Claude",
+      "Netflix",
+      "Disney+",
+      "YouTube",
+      "HBO Max",
+      "TikTok",
+      "Spotify"
+    ],
+    "conditional": [
+      "Gemini"
+    ],
+    "rawNote": null,
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "shandianshu",
+    "brandName": "闪电鼠",
+    "supported": [],
+    "conditional": [],
+    "rawNote": null,
+    "dataStatus": "unverified"
+  },
+  {
+    "brandSlug": "yunjiexian",
+    "brandName": "云界线",
+    "supported": [],
+    "conditional": [],
+    "rawNote": null,
+    "dataStatus": "unverified"
+  },
+  {
+    "brandSlug": "liulianyun",
+    "brandName": "榴莲云",
+    "supported": [],
+    "conditional": [],
+    "rawNote": null,
+    "dataStatus": "unverified"
+  },
+  {
+    "brandSlug": "shenxing",
+    "brandName": "神行加速",
+    "supported": [],
+    "conditional": [],
+    "rawNote": null,
+    "dataStatus": "unverified"
+  },
+  {
+    "brandSlug": "huanqiuti",
+    "brandName": "环球梯",
+    "supported": [],
+    "conditional": [],
+    "rawNote": null,
+    "dataStatus": "unverified"
+  },
+  {
+    "brandSlug": "tiziyun",
+    "brandName": "梯子云",
+    "supported": [],
+    "conditional": [],
+    "rawNote": null,
+    "dataStatus": "unverified"
+  },
+  {
+    "brandSlug": "lingdong",
+    "brandName": "灵动云",
+    "supported": [],
+    "conditional": [],
+    "rawNote": "历史摘要显示 OpenAI 基本全解锁，TikTok 多失败，新加坡/台湾 YouTube 送中，台湾落地识别偏欧（NF/D+ 识别 ES）。",
+    "dataStatus": "unverified"
+  },
+  {
+    "brandSlug": "langwang",
+    "brandName": "浪网",
+    "supported": [],
+    "conditional": [],
+    "rawNote": null,
+    "dataStatus": "unverified"
+  },
+  {
+    "brandSlug": "edgenova",
+    "brandName": "边缘节点 EdgeNova",
+    "supported": [],
+    "conditional": [],
+    "rawNote": null,
+    "dataStatus": "unverified"
+  }
+]

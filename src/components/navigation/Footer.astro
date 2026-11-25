@@ -1,0 +1,66 @@
+---
+import { PILLAR_NAV, SITE_INFO } from '../../data/navigation';
+---
+
+<footer class="border-t border-slate-200 bg-white mt-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 pb-10 border-b border-slate-200">
+      <div class="lg:col-span-4 space-y-3">
+        <div class="flex items-center gap-2.5">
+          <img
+            src="/images/avatars/brand-avatar.webp"
+            alt="订阅指南头像"
+            width="32"
+            height="32"
+            loading="lazy"
+            class="w-8 h-8 rounded-full object-cover border border-slate-200 shrink-0 bg-slate-50"
+          />
+          <span class="font-bold text-ink">{SITE_INFO.name}</span>
+          <span class="text-xs font-mono text-ink-faint">dingyuezhinan.biz</span>
+        </div>
+        <p class="text-sm text-ink-muted leading-relaxed">
+          {SITE_INFO.slogan}专注网络订阅选择方法、31家机场品牌结构化档案、第三方代理客户端知识库与订阅问题排障指南。
+        </p>
+        <div class="rounded-lg bg-slate-50 border border-slate-200 p-3 text-xs text-ink-muted leading-relaxed">
+          <strong class="text-ink">编辑政策与推广披露：</strong>
+          {SITE_INFO.disclosure} 涉及地区限制、软件使用及网络服务的内容，请用户遵守所在地法律法规与对应平台服务条款，仅在合法合规场景下使用。
+        </div>
+      </div>
+
+      <div class="lg:col-span-8 grid grid-cols-2 sm:grid-cols-5 gap-6">
+        {PILLAR_NAV.map((pillar) => (
+          <div>
+            <a href={pillar.href} class="text-xs font-semibold text-ink hover:text-brand block mb-2.5">
+              {pillar.order} {pillar.title}
+            </a>
+            <ul class="space-y-1.5">
+              {pillar.groups.flatMap((g) => g.items).slice(0, 4).map((item) => (
+                <li>
+                  <a href={item.href} class="text-xs text-ink-muted hover:text-brand transition-colors">
+                    {item.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs text-ink-faint">
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+        <span>© 2026 {SITE_INFO.name} ({SITE_INFO.enName})</span>
+        <a href="/editorial-policy/" class="hover:text-brand">编辑准则与数据状态说明</a>
+        <a href="/brands/" class="hover:text-brand">全量品牌库</a>
+        <a href="/plans/traffic-calculator/" class="hover:text-brand">流量计算器</a>
+        <a href="/search/" class="hover:text-brand">全站检索</a>
+        <a href="/rss.xml" class="hover:text-brand">RSS</a>
+        <a href="/sitemap.xml" class="hover:text-brand">Sitemap</a>
+        <a href="/llms.txt" class="hover:text-brand">llms.txt</a>
+      </div>
+      <div class="font-mono text-[11px]">
+        Static Architecture · Data Audited 2026-11-24
+      </div>
+    </div>
+  </div>
+</footer>

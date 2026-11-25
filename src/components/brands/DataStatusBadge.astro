@@ -1,0 +1,44 @@
+---
+interface Props {
+  status: 'measured' | 'vendor' | 'historical' | 'unverified' | 'conflicting' | string;
+  size?: 'sm' | 'md';
+}
+
+const { status, size = 'sm' } = Astro.props;
+
+const MAP: Record<string, { label: string; dot: string; cls: string }> = {
+  measured: {
+    label: 'Measured · 有测试截图依据',
+    dot: 'bg-emerald-500',
+    cls: 'border-emerald-200 bg-emerald-50 text-emerald-800',
+  },
+  vendor: {
+    label: 'Vendor · 品牌方资料宣称',
+    dot: 'bg-sky-500',
+    cls: 'border-sky-200 bg-sky-50 text-sky-800',
+  },
+  historical: {
+    label: 'Historical · 历史档案记录',
+    dot: 'bg-slate-400',
+    cls: 'border-slate-200 bg-slate-100 text-slate-700',
+  },
+  unverified: {
+    label: 'Unverified · 尚待核实',
+    dot: 'bg-amber-500',
+    cls: 'border-amber-200 bg-amber-50 text-amber-800',
+  },
+  conflicting: {
+    label: 'Conflicting · 多源口径冲突',
+    dot: 'bg-rose-500',
+    cls: 'border-rose-200 bg-rose-50 text-rose-800',
+  },
+};
+
+const cfg = MAP[status] || MAP.unverified;
+const sz = size === 'md' ? 'px-2.5 py-1 text-xs' : 'px-2 py-0.5 text-[11px]';
+---
+
+<span class={`inline-flex items-center gap-1.5 rounded-full border font-medium ${sz} ${cfg.cls}`}>
+  <span class={`w-1.5 h-1.5 rounded-full ${cfg.dot}`}></span>
+  <span>{cfg.label}</span>
+</span>

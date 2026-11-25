@@ -1,0 +1,236 @@
+[
+  {
+    "brandSlug": "guangsuyun",
+    "brandName": "光速云",
+    "targetUrl": "/reviews/guangsuyun/",
+    "dataStatus": "measured",
+    "conflictCount": 3,
+    "actionRequired": "核实冲突优惠码/流量口径",
+    "lastChecked": "2026-11-24"
+  },
+  {
+    "brandSlug": "muguang",
+    "brandName": "暮光加速",
+    "targetUrl": "/reviews/muguang/",
+    "dataStatus": "vendor",
+    "conflictCount": 2,
+    "actionRequired": "核实冲突优惠码/流量口径",
+    "lastChecked": "2026-11-24"
+  },
+  {
+    "brandSlug": "weifeng",
+    "brandName": "微风网络",
+    "targetUrl": "/reviews/weifeng/",
+    "dataStatus": "measured",
+    "conflictCount": 2,
+    "actionRequired": "核实冲突优惠码/流量口径",
+    "lastChecked": "2026-11-24"
+  },
+  {
+    "brandSlug": "dalaoyun",
+    "brandName": "大佬云",
+    "targetUrl": "/reviews/dalaoyun/",
+    "dataStatus": "vendor",
+    "conflictCount": 1,
+    "actionRequired": "核实冲突优惠码/流量口径",
+    "lastChecked": "2026-11-24"
+  },
+  {
+    "brandSlug": "xingdaomeng",
+    "brandName": "星岛梦",
+    "targetUrl": "/reviews/xingdaomeng/",
+    "dataStatus": "measured",
+    "conflictCount": 1,
+    "actionRequired": "核实冲突优惠码/流量口径",
+    "lastChecked": "2026-11-24"
+  },
+  {
+    "brandSlug": "yinxingren",
+    "brandName": "隐形人",
+    "targetUrl": "/reviews/yinxingren/",
+    "dataStatus": "vendor",
+    "conflictCount": 2,
+    "actionRequired": "核实冲突优惠码/流量口径",
+    "lastChecked": "2026-11-24"
+  },
+  {
+    "brandSlug": "ermao",
+    "brandName": "二猫云",
+    "targetUrl": "/reviews/ermao/",
+    "dataStatus": "measured",
+    "conflictCount": 2,
+    "actionRequired": "核实冲突优惠码/流量口径",
+    "lastChecked": "2026-11-24"
+  },
+  {
+    "brandSlug": "wuyou",
+    "brandName": "无忧链接",
+    "targetUrl": "/reviews/wuyou/",
+    "dataStatus": "conflicting",
+    "conflictCount": 1,
+    "actionRequired": "核实冲突优惠码/流量口径",
+    "lastChecked": "2026-11-24"
+  },
+  {
+    "brandSlug": "weitu",
+    "brandName": "唯兔云",
+    "targetUrl": "/reviews/weitu/",
+    "dataStatus": "measured",
+    "conflictCount": 1,
+    "actionRequired": "核实冲突优惠码/流量口径",
+    "lastChecked": "2026-11-24"
+  },
+  {
+    "brandSlug": "firefly",
+    "brandName": "Firefly",
+    "targetUrl": "/reviews/firefly/",
+    "dataStatus": "vendor",
+    "conflictCount": 1,
+    "actionRequired": "核实冲突优惠码/流量口径",
+    "lastChecked": "2026-11-24"
+  },
+  {
+    "brandSlug": "yuzhou",
+    "brandName": "宇宙云",
+    "targetUrl": "/reviews/yuzhou/",
+    "dataStatus": "unverified",
+    "conflictCount": 1,
+    "actionRequired": "核实冲突优惠码/流量口径",
+    "lastChecked": "2026-11-24"
+  },
+  {
+    "brandSlug": "u1s1",
+    "brandName": "U1S1",
+    "targetUrl": "/reviews/u1s1/",
+    "dataStatus": "measured",
+    "conflictCount": 1,
+    "actionRequired": "核实冲突优惠码/流量口径",
+    "lastChecked": "2026-11-24"
+  },
+  {
+    "brandSlug": "lingmao",
+    "brandName": "灵猫网络",
+    "targetUrl": "/reviews/lingmao/",
+    "dataStatus": "measured",
+    "conflictCount": 2,
+    "actionRequired": "核实冲突优惠码/流量口径",
+    "lastChecked": "2026-11-24"
+  },
+  {
+    "brandSlug": "guangnian",
+    "brandName": "光年梯",
+    "targetUrl": "/reviews/guangnian/",
+    "dataStatus": "measured",
+    "conflictCount": 1,
+    "actionRequired": "核实冲突优惠码/流量口径",
+    "lastChecked": "2026-11-24"
+  },
+  {
+    "brandSlug": "yifan",
+    "brandName": "一翻云",
+    "targetUrl": "/reviews/yifan/",
+    "dataStatus": "measured",
+    "conflictCount": 1,
+    "actionRequired": "核实冲突优惠码/流量口径",
+    "lastChecked": "2026-11-24"
+  },
+  {
+    "brandSlug": "sogo",
+    "brandName": "SOGO云",
+    "targetUrl": "/reviews/sogo/",
+    "dataStatus": "measured",
+    "conflictCount": 2,
+    "actionRequired": "核实冲突优惠码/流量口径",
+    "lastChecked": "2026-11-24"
+  },
+  {
+    "brandSlug": "kexin",
+    "brandName": "可信云",
+    "targetUrl": "/reviews/kexin/",
+    "dataStatus": "measured",
+    "conflictCount": 1,
+    "actionRequired": "核实冲突优惠码/流量口径",
+    "lastChecked": "2026-11-24"
+  },
+  {
+    "brandSlug": "sujie",
+    "brandName": "速界",
+    "targetUrl": "/reviews/sujie/",
+    "dataStatus": "measured",
+    "conflictCount": 1,
+    "actionRequired": "核实冲突优惠码/流量口径",
+    "lastChecked": "2026-11-24"
+  },
+  {
+    "brandSlug": "quanqiu",
+    "brandName": "全球云",
+    "targetUrl": "/reviews/quanqiu/",
+    "dataStatus": "measured",
+    "conflictCount": 2,
+    "actionRequired": "核实冲突优惠码/流量口径",
+    "lastChecked": "2026-11-24"
+  },
+  {
+    "brandSlug": "shandianshu",
+    "brandName": "闪电鼠",
+    "targetUrl": "/reviews/shandianshu/",
+    "dataStatus": "vendor",
+    "conflictCount": 1,
+    "actionRequired": "核实冲突优惠码/流量口径",
+    "lastChecked": "2026-11-24"
+  },
+  {
+    "brandSlug": "yunjiexian",
+    "brandName": "云界线",
+    "targetUrl": "/reviews/yunjiexian/",
+    "dataStatus": "conflicting",
+    "conflictCount": 2,
+    "actionRequired": "核实冲突优惠码/流量口径",
+    "lastChecked": "2026-11-24"
+  },
+  {
+    "brandSlug": "liulianyun",
+    "brandName": "榴莲云",
+    "targetUrl": "/reviews/liulianyun/",
+    "dataStatus": "vendor",
+    "conflictCount": 1,
+    "actionRequired": "核实冲突优惠码/流量口径",
+    "lastChecked": "2026-11-24"
+  },
+  {
+    "brandSlug": "huanqiuti",
+    "brandName": "环球梯",
+    "targetUrl": "/reviews/huanqiuti/",
+    "dataStatus": "conflicting",
+    "conflictCount": 1,
+    "actionRequired": "核实冲突优惠码/流量口径",
+    "lastChecked": "2026-11-24"
+  },
+  {
+    "brandSlug": "lingdong",
+    "brandName": "灵动云",
+    "targetUrl": "/reviews/lingdong/",
+    "dataStatus": "historical",
+    "conflictCount": 1,
+    "actionRequired": "核实冲突优惠码/流量口径",
+    "lastChecked": "2026-11-24"
+  },
+  {
+    "brandSlug": "langwang",
+    "brandName": "浪网",
+    "targetUrl": "/reviews/langwang/",
+    "dataStatus": "historical",
+    "conflictCount": 1,
+    "actionRequired": "核实冲突优惠码/流量口径",
+    "lastChecked": "2026-11-24"
+  },
+  {
+    "brandSlug": "edgenova",
+    "brandName": "边缘节点 EdgeNova",
+    "targetUrl": "/reviews/edgenova/",
+    "dataStatus": "historical",
+    "conflictCount": 1,
+    "actionRequired": "核实冲突优惠码/流量口径",
+    "lastChecked": "2026-11-24"
+  }
+]

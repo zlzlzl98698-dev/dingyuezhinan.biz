@@ -1,0 +1,116 @@
+﻿---
+import TopicLayout from '../../layouts/TopicLayout.astro';
+import BrandCatalogFilter from '../../components/brands/BrandCatalogFilter';
+import brands from '../../data/brands.json';
+import { AFFILIATE_LINKS } from '../../data/affiliate-links';
+import { buildItemListSchema } from '../../lib/seo';
+
+const sortedBrands = [...brands].sort((a, b) => a.priorityRank - b.priorityRank);
+const affSummary = Object.fromEntries(
+  Object.entries(AFFILIATE_LINKS).map(([k, v]) => [k, { registerUrl: v.registerUrl, isHistoricalUrl: v.isHistoricalUrl }])
+);
+
+const itemListSchema = buildItemListSchema(
+  '订阅指南 31 家独立机场品牌数据库',
+  '/brands/',
+  sortedBrands.map((b) => ({ name: `${b.name} 深度评测`, url: b.reviewUrl }))
+);
+---
+
+<TopicLayout
+  title="机场品牌大全（31家独立品牌去重数据库）| 订阅指南"
+  description="收录经过去重与冲突核验的 31 家独立机场品牌档案，提供客户端兼容性筛选、月付/年付成本对比、实测截图与风险状态标注。"
+  h1="机场品牌大全与结构化评测数据库（共 31 家独立实体）"
+  eyebrow="03 · Brand Intelligence Database"
+  breadcrumbs={[
+    { name: '首页', url: '/' },
+    { name: '机场品牌库', url: '/brands/' },
+  ]}
+  pubDate={new Date('2026-11-24')}
+  updatedDate={new Date('2026-11-24')}
+  dataStatus="measured"
+  showDisclosure={true}
+  extraSchemas={[itemListSchema]}
+  tags={['机场品牌大全', '机场评测库', '光速云', '不限时机场', 'IEPL专线']}
+  faq={[
+    {
+      question: '为什么清单名称写着 32 家，品牌库里实际只有 31 家？',
+      answer: '源清单中第 8 条 Firefly 与文末追加的 Firefly 萤火虫经交叉审计属于同一品牌实体，已合并去重为 31 家独立品牌并保留历史差异记录，严禁人为补造不存在的品牌。',
+    },
+    {
+      question: '品牌排列顺序代表测速性能排名吗？',
+      answer: '不代表。前 11 位是商业优先精选序列（第一主推为光速云），灵动云、浪网与边缘节点 EdgeNova 为文末追加历史档案；若按价格或实测截图筛选，请使用下方的排序与过滤条件。',
+    },
+  ]}
+  relatedLinks={[
+    { title: '光速云旗舰深度评测', href: '/reviews/guangsuyun/', category: '旗舰品牌', description: '查看 7 档套餐、2026-08-19 实测截图与 59GB/69GB 口径核对' },
+    { title: '机场订阅套餐选择指南', href: '/guides/subscription-selection/', category: '选型方法', description: '先定月流量和客户端兼容性，再决定是否付费' },
+    { title: '全站优惠码与折扣核验汇总', href: '/deals/', category: '优惠数据库', description: '集中查看所有品牌优惠码与多源冲突标注' },
+    { title: '5.6元同质化低价机场真相拆解', href: '/plans/budget/', category: '价格专题', description: '解析 5 家同规格入门品牌如何辨别唯一差异' },
+  ]}
+>
+  <section class="space-y-8">
+    <div class="rounded-xl border border-slate-200 bg-white p-5 sm:p-6 text-sm text-ink-muted leading-relaxed space-y-3">
+      <p>
+        本数据库整合了品牌清单、光速云专题档案及 2026-08-11 / 2026-08-19 实测资料包。针对源文件中出现的重复品牌（Firefly 与 Firefly 萤火虫）、多优惠码冲突（如灵猫网络、一翻云、SOGO云、隐形人等）以及同质化 5.6 元规格组，均在卡片与主评测页中如实标注。
+      </p>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 font-mono text-xs">
+        <div class="rounded-lg bg-slate-50 border border-slate-200 p-3">
+          <div class="text-ink-faint">去重后独立品牌</div>
+          <div class="text-lg font-bold text-ink mt-0.5 tabular-nums">31 家</div>
+        </div>
+        <div class="rounded-lg bg-slate-50 border border-slate-200 p-3">
+          <div class="text-ink-faint">结构化套餐档案</div>
+          <div class="text-lg font-bold text-ink mt-0.5 tabular-nums">214 档</div>
+        </div>
+        <div class="rounded-lg bg-slate-50 border border-slate-200 p-3">
+          <div class="text-ink-faint">含实测截图品牌</div>
+          <div class="text-lg font-bold text-brand mt-0.5 tabular-nums">15 家</div>
+        </div>
+        <div class="rounded-lg bg-slate-50 border border-slate-200 p-3">
+          <div class="text-ink-faint">含不限时一次性包</div>
+          <div class="text-lg font-bold text-emerald-700 mt-0.5 tabular-nums">15 家</div>
+        </div>
+      </div>
+    </div>
+
+    <BrandCatalogFilter client:load brands={sortedBrands} affiliateMap={affSummary} />
+
+    {/* Static HTML Directory Table for zero-JS crawler indexing */}
+    <section class="rounded-xl border border-slate-200 bg-white overflow-hidden">
+      <div class="px-5 py-4 border-b border-slate-200 bg-slate-50/70">
+        <h2 class="text-base font-bold text-ink">31 家独立品牌静态总览表（全量索引视图）</h2>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse text-xs">
+          <thead>
+            <tr class="border-b border-slate-200 bg-slate-50 text-ink-muted font-semibold">
+              <th class="py-2.5 px-4">序列</th>
+              <th class="py-2.5 px-3">品牌名称</th>
+              <th class="py-2.5 px-3">定位与线路</th>
+              <th class="py-2.5 px-3">客户端方式</th>
+              <th class="py-2.5 px-3">入门月付 / 年付折算</th>
+              <th class="py-2.5 px-4">数据状态</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            {sortedBrands.map((b) => (
+              <tr class="hover:bg-slate-50">
+                <td class="py-2.5 px-4 font-mono text-ink-faint">{b.priorityRank}</td>
+                <td class="py-2.5 px-3 font-semibold">
+                  <a href={b.reviewUrl} class="text-brand hover:underline">{b.name}</a>
+                </td>
+                <td class="py-2.5 px-3 text-ink-muted">{b.routeType.split('（')[0]}</td>
+                <td class="py-2.5 px-3 text-ink-muted">{b.clientModeLabel}</td>
+                <td class="py-2.5 px-3 font-mono tabular-nums text-ink">
+                  {b.entryMonthlyPriceCny ? `月¥${b.entryMonthlyPriceCny}` : '月待核'} / {b.entryAnnualEffectiveMonthlyCny ? `年折¥${b.entryAnnualEffectiveMonthlyCny}` : '—'}
+                </td>
+                <td class="py-2.5 px-4 font-mono text-ink-faint">{b.dataStatus}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </section>
+</TopicLayout>

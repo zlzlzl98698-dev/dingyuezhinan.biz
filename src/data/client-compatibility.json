@@ -1,0 +1,464 @@
+[
+  {
+    "brandSlug": "guangsuyun",
+    "brandName": "光速云",
+    "mode": "dual",
+    "modeLabel": "自研客户端 + 第三方订阅（Clash / Shadowrocket）",
+    "supportsProprietaryClient": true,
+    "supportsThirdPartySubscription": true,
+    "recommendedClients": [
+      "Clash Verge Rev",
+      "FlClash",
+      "v2rayN",
+      "v2rayNG",
+      "Shadowrocket",
+      "Hiddify",
+      "Karing"
+    ],
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "muguang",
+    "brandName": "暮光加速",
+    "mode": "unverified",
+    "modeLabel": "覆盖全平台，具体订阅方式待核实",
+    "supportsProprietaryClient": false,
+    "supportsThirdPartySubscription": false,
+    "recommendedClients": [
+      "需在注册前向客服确认是否支持通用订阅链接"
+    ],
+    "dataStatus": "unverified"
+  },
+  {
+    "brandSlug": "feimao",
+    "brandName": "飞猫云",
+    "mode": "proprietary",
+    "modeLabel": "专属客户端下载登录即用（不配第三方订阅）",
+    "supportsProprietaryClient": true,
+    "supportsThirdPartySubscription": false,
+    "recommendedClients": [
+      "仅品牌官方专属客户端（不兼容 Clash / Shadowrocket）"
+    ],
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "weifeng",
+    "brandName": "微风网络",
+    "mode": "unverified",
+    "modeLabel": "待核实（兼容主流桌面与移动平台）",
+    "supportsProprietaryClient": false,
+    "supportsThirdPartySubscription": false,
+    "recommendedClients": [
+      "需在注册前向客服确认是否支持通用订阅链接"
+    ],
+    "dataStatus": "unverified"
+  },
+  {
+    "brandSlug": "dalaoyun",
+    "brandName": "大佬云",
+    "mode": "dual",
+    "modeLabel": "自研客户端 + 第三方订阅导入",
+    "supportsProprietaryClient": true,
+    "supportsThirdPartySubscription": true,
+    "recommendedClients": [
+      "Clash Verge Rev",
+      "FlClash",
+      "v2rayN",
+      "v2rayNG",
+      "Shadowrocket",
+      "Hiddify",
+      "Karing"
+    ],
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "xingdaomeng",
+    "brandName": "星岛梦",
+    "mode": "third_party",
+    "modeLabel": "通用订阅（1倍流量，不限设备）",
+    "supportsProprietaryClient": false,
+    "supportsThirdPartySubscription": true,
+    "recommendedClients": [
+      "Clash Verge Rev",
+      "FlClash",
+      "v2rayN",
+      "v2rayNG",
+      "Shadowrocket",
+      "Hiddify",
+      "Karing"
+    ],
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "yinxingren",
+    "brandName": "隐形人",
+    "mode": "proprietary",
+    "modeLabel": "自带专属客户端（明确不提供第三方订阅链接）",
+    "supportsProprietaryClient": true,
+    "supportsThirdPartySubscription": false,
+    "recommendedClients": [
+      "仅品牌官方专属客户端（不兼容 Clash / Shadowrocket）"
+    ],
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "ermao",
+    "brandName": "二猫云",
+    "mode": "proprietary_plus",
+    "modeLabel": "独家定制客户端（第三方订阅兼容性待核实）",
+    "supportsProprietaryClient": true,
+    "supportsThirdPartySubscription": false,
+    "recommendedClients": [
+      "需在注册前向客服确认是否支持通用订阅链接"
+    ],
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "wuyou",
+    "brandName": "无忧链接",
+    "mode": "conflicting",
+    "modeLabel": "正文称 2026-10 起用专属客户端，总表称“订阅无需转换”",
+    "supportsProprietaryClient": false,
+    "supportsThirdPartySubscription": false,
+    "recommendedClients": [
+      "需在注册前向客服确认是否支持通用订阅链接"
+    ],
+    "dataStatus": "conflicting"
+  },
+  {
+    "brandSlug": "weitu",
+    "brandName": "唯兔云",
+    "mode": "third_party",
+    "modeLabel": "支持通用第三方客户端（1倍流量，不限设备）",
+    "supportsProprietaryClient": false,
+    "supportsThirdPartySubscription": true,
+    "recommendedClients": [
+      "Clash Verge Rev",
+      "FlClash",
+      "v2rayN",
+      "v2rayNG",
+      "Shadowrocket",
+      "Hiddify",
+      "Karing"
+    ],
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "firefly",
+    "brandName": "Firefly",
+    "mode": "proprietary",
+    "modeLabel": "专属客户端下载登录即用（不提供订阅链接）",
+    "supportsProprietaryClient": true,
+    "supportsThirdPartySubscription": false,
+    "recommendedClients": [
+      "仅品牌官方专属客户端（不兼容 Clash / Shadowrocket）"
+    ],
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "yuzhou",
+    "brandName": "宇宙云",
+    "mode": "conflicting",
+    "modeLabel": "正文标注待核实，总表标注自研客户端",
+    "supportsProprietaryClient": false,
+    "supportsThirdPartySubscription": false,
+    "recommendedClients": [
+      "需在注册前向客服确认是否支持通用订阅链接"
+    ],
+    "dataStatus": "conflicting"
+  },
+  {
+    "brandSlug": "u1s1",
+    "brandName": "U1S1",
+    "mode": "unverified",
+    "modeLabel": "待核实",
+    "supportsProprietaryClient": false,
+    "supportsThirdPartySubscription": false,
+    "recommendedClients": [
+      "需在注册前向客服确认是否支持通用订阅链接"
+    ],
+    "dataStatus": "unverified"
+  },
+  {
+    "brandSlug": "lingmao",
+    "brandName": "灵猫网络",
+    "mode": "proprietary",
+    "modeLabel": "专属客户端下载登录即用（不提供订阅链接）",
+    "supportsProprietaryClient": true,
+    "supportsThirdPartySubscription": false,
+    "recommendedClients": [
+      "仅品牌官方专属客户端（不兼容 Clash / Shadowrocket）"
+    ],
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "jilian",
+    "brandName": "极连云",
+    "mode": "dual",
+    "modeLabel": "自研客户端 + 支持第三方客户端",
+    "supportsProprietaryClient": true,
+    "supportsThirdPartySubscription": true,
+    "recommendedClients": [
+      "Clash Verge Rev",
+      "FlClash",
+      "v2rayN",
+      "v2rayNG",
+      "Shadowrocket",
+      "Hiddify",
+      "Karing"
+    ],
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "guangnian",
+    "brandName": "光年梯",
+    "mode": "dual",
+    "modeLabel": "自研客户端 + 第三方订阅导入",
+    "supportsProprietaryClient": true,
+    "supportsThirdPartySubscription": true,
+    "recommendedClients": [
+      "Clash Verge Rev",
+      "FlClash",
+      "v2rayN",
+      "v2rayNG",
+      "Shadowrocket",
+      "Hiddify",
+      "Karing"
+    ],
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "yifan",
+    "brandName": "一翻云",
+    "mode": "third_party",
+    "modeLabel": "宽松兼容第三方客户端（多协议可选）",
+    "supportsProprietaryClient": false,
+    "supportsThirdPartySubscription": true,
+    "recommendedClients": [
+      "Clash Verge Rev",
+      "FlClash",
+      "v2rayN",
+      "v2rayNG",
+      "Shadowrocket",
+      "Hiddify",
+      "Karing"
+    ],
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "sogo",
+    "brandName": "SOGO云",
+    "mode": "proprietary",
+    "modeLabel": "仅自研专属客户端（不提供 Clash/Shadowrocket 订阅链接）",
+    "supportsProprietaryClient": true,
+    "supportsThirdPartySubscription": false,
+    "recommendedClients": [
+      "仅品牌官方专属客户端（不兼容 Clash / Shadowrocket）"
+    ],
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "kexin",
+    "brandName": "可信云",
+    "mode": "third_party",
+    "modeLabel": "支持第三方客户端",
+    "supportsProprietaryClient": false,
+    "supportsThirdPartySubscription": true,
+    "recommendedClients": [
+      "Clash Verge Rev",
+      "FlClash",
+      "v2rayN",
+      "v2rayNG",
+      "Shadowrocket",
+      "Hiddify",
+      "Karing"
+    ],
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "sujie",
+    "brandName": "速界",
+    "mode": "dual",
+    "modeLabel": "自研客户端 + 第三方订阅导入",
+    "supportsProprietaryClient": true,
+    "supportsThirdPartySubscription": true,
+    "recommendedClients": [
+      "Clash Verge Rev",
+      "FlClash",
+      "v2rayN",
+      "v2rayNG",
+      "Shadowrocket",
+      "Hiddify",
+      "Karing"
+    ],
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "shanyue",
+    "brandName": "闪跃",
+    "mode": "proprietary",
+    "modeLabel": "专属客户端下载登录即用（不提供订阅链接）",
+    "supportsProprietaryClient": true,
+    "supportsThirdPartySubscription": false,
+    "recommendedClients": [
+      "仅品牌官方专属客户端（不兼容 Clash / Shadowrocket）"
+    ],
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "quanqiu",
+    "brandName": "全球云",
+    "mode": "proprietary",
+    "modeLabel": "专属客户端下载登录即用（不提供订阅链接）",
+    "supportsProprietaryClient": true,
+    "supportsThirdPartySubscription": false,
+    "recommendedClients": [
+      "仅品牌官方专属客户端（不兼容 Clash / Shadowrocket）"
+    ],
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "shandianshu",
+    "brandName": "闪电鼠",
+    "mode": "dual",
+    "modeLabel": "自研客户端 + 第三方订阅导入",
+    "supportsProprietaryClient": true,
+    "supportsThirdPartySubscription": true,
+    "recommendedClients": [
+      "Clash Verge Rev",
+      "FlClash",
+      "v2rayN",
+      "v2rayNG",
+      "Shadowrocket",
+      "Hiddify",
+      "Karing"
+    ],
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "yunjiexian",
+    "brandName": "云界线",
+    "mode": "dual",
+    "modeLabel": "自研客户端 + 第三方订阅导入",
+    "supportsProprietaryClient": true,
+    "supportsThirdPartySubscription": true,
+    "recommendedClients": [
+      "Clash Verge Rev",
+      "FlClash",
+      "v2rayN",
+      "v2rayNG",
+      "Shadowrocket",
+      "Hiddify",
+      "Karing"
+    ],
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "liulianyun",
+    "brandName": "榴莲云",
+    "mode": "dual",
+    "modeLabel": "自研客户端 + 第三方订阅导入",
+    "supportsProprietaryClient": true,
+    "supportsThirdPartySubscription": true,
+    "recommendedClients": [
+      "Clash Verge Rev",
+      "FlClash",
+      "v2rayN",
+      "v2rayNG",
+      "Shadowrocket",
+      "Hiddify",
+      "Karing"
+    ],
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "shenxing",
+    "brandName": "神行加速",
+    "mode": "dual",
+    "modeLabel": "自研客户端 + 第三方订阅导入",
+    "supportsProprietaryClient": true,
+    "supportsThirdPartySubscription": true,
+    "recommendedClients": [
+      "Clash Verge Rev",
+      "FlClash",
+      "v2rayN",
+      "v2rayNG",
+      "Shadowrocket",
+      "Hiddify",
+      "Karing"
+    ],
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "huanqiuti",
+    "brandName": "环球梯",
+    "mode": "dual",
+    "modeLabel": "自研客户端 + 第三方订阅导入",
+    "supportsProprietaryClient": true,
+    "supportsThirdPartySubscription": true,
+    "recommendedClients": [
+      "Clash Verge Rev",
+      "FlClash",
+      "v2rayN",
+      "v2rayNG",
+      "Shadowrocket",
+      "Hiddify",
+      "Karing"
+    ],
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "tiziyun",
+    "brandName": "梯子云",
+    "mode": "dual",
+    "modeLabel": "自研全平台客户端（一键登录）+ 支持通用订阅",
+    "supportsProprietaryClient": true,
+    "supportsThirdPartySubscription": true,
+    "recommendedClients": [
+      "Clash Verge Rev",
+      "FlClash",
+      "v2rayN",
+      "v2rayNG",
+      "Shadowrocket",
+      "Hiddify",
+      "Karing"
+    ],
+    "dataStatus": "vendor"
+  },
+  {
+    "brandSlug": "lingdong",
+    "brandName": "灵动云",
+    "mode": "unverified",
+    "modeLabel": "不限速不限设备（具体客户端列表待核实）",
+    "supportsProprietaryClient": false,
+    "supportsThirdPartySubscription": false,
+    "recommendedClients": [
+      "需在注册前向客服确认是否支持通用订阅链接"
+    ],
+    "dataStatus": "unverified"
+  },
+  {
+    "brandSlug": "langwang",
+    "brandName": "浪网",
+    "mode": "unverified",
+    "modeLabel": "客户端、协议与设备限制尚缺",
+    "supportsProprietaryClient": false,
+    "supportsThirdPartySubscription": false,
+    "recommendedClients": [
+      "需在注册前向客服确认是否支持通用订阅链接"
+    ],
+    "dataStatus": "unverified"
+  },
+  {
+    "brandSlug": "edgenova",
+    "brandName": "边缘节点 EdgeNova",
+    "mode": "unverified",
+    "modeLabel": "具体客户端兼容性待核实",
+    "supportsProprietaryClient": false,
+    "supportsThirdPartySubscription": false,
+    "recommendedClients": [
+      "需在注册前向客服确认是否支持通用订阅链接"
+    ],
+    "dataStatus": "unverified"
+  }
+]

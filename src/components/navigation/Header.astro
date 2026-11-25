@@ -1,0 +1,47 @@
+---
+import { Search } from 'lucide-react';
+import { PILLAR_NAV, SITE_INFO } from '../../data/navigation';
+import MegaMenu from './MegaMenu.astro';
+import MobileMenu from './MobileMenu';
+---
+
+<header class="sticky top-0 z-40 w-full border-b border-slate-200/90 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/85">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
+    <a href="/" class="flex items-center gap-2.5 shrink-0 group">
+      <img
+        src="/images/avatars/brand-avatar.webp"
+        alt="订阅指南头像"
+        width="36"
+        height="36"
+        class="w-9 h-9 rounded-full object-cover border border-slate-200 shadow-sm shrink-0 bg-slate-50"
+      />
+      <div class="leading-tight">
+        <div class="text-sm font-bold tracking-tight text-ink group-hover:text-brand transition-colors">
+          {SITE_INFO.name}
+        </div>
+        <div class="text-[10px] font-mono text-ink-faint tracking-wide hidden sm:block">
+          {SITE_INFO.enName}
+        </div>
+      </div>
+    </a>
+
+    <MegaMenu />
+
+    <div class="flex items-center gap-2">
+      <a
+        href="/search/"
+        class="hidden xl:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 hover:bg-slate-100 text-xs text-ink-muted transition-colors"
+      >
+        <Search className="w-3.5 h-3.5 text-slate-500" />
+        <span>全站搜索</span>
+      </a>
+      <a
+        href="/reviews/guangsuyun/"
+        class="hidden sm:inline-flex items-center px-3 py-1.5 rounded-lg bg-brand hover:bg-brand-hover text-white text-xs font-medium transition-colors whitespace-nowrap"
+      >
+        光速云旗舰评测
+      </a>
+      <MobileMenu client:load pillars={PILLAR_NAV} />
+    </div>
+  </div>
+</header>

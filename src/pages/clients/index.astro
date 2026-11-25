@@ -1,0 +1,71 @@
+---
+import { getCollection, render } from 'astro:content';
+import TopicLayout from '../../layouts/TopicLayout.astro';
+import ClientCompatFinder from '../../components/tools/ClientCompatFinder';
+import clients from '../../data/clients.json';
+import compatBrands from '../../data/client-compatibility.json';
+import { PILLAR_NAV } from '../../data/navigation';
+
+const clientPillar = PILLAR_NAV.find((p) => p.id === 'clients')!;
+const pillarContent = await getCollection('pillars', ({ id }) => id.startsWith('clients'));
+const rendered = pillarContent[0] ? await render(pillarContent[0]) : null;
+const PillarContent = rendered?.Content;
+---
+
+<TopicLayout
+  title="代理客户端软件下载与兼容性知识库（Windows/macOS/Android/iOS/OpenWrt）| 订阅指南"
+  description="整理 Clash Verge Rev、v2rayN、v2rayNG、Shadowrocket、Mihomo、sing-box、FlClash、Hiddify、Karing 与软路由 OpenWrt 客户端官方入口与安全避坑提醒。"
+  h1="代理客户端软件知识库与兼容查询中心"
+  eyebrow="05 · Proxy Client Knowledge Base"
+  breadcrumbs={[
+    { name: '首页', url: '/' },
+    { name: '客户端软件', url: '/clients/' },
+  ]}
+  pubDate={new Date('2026-11-24')}
+  updatedDate={new Date('2026-11-24')}
+  dataStatus="measured"
+  tags={['机场客户端', 'Clash Verge Rev', 'v2rayN', 'Shadowrocket', 'Mihomo', 'sing-box']}
+  faq={[
+    {
+      question: '所有机场都能用 Clash Verge Rev 或 Shadowrocket 吗？',
+      answer: '不能。根据本站数据库核验，飞猫云、隐形人、Firefly、SOGO云、全球云、灵猫网络、闪跃等品牌采用专属客户端模式，不提供第三方订阅链接，无法直接导入 Clash 或小火箭。',
+    },
+    {
+      question: '在哪里下载代理客户端最安全？',
+      answer: '桌面端与 Android 应优先访问 GitHub 官方开源仓库 Releases 或官方文档入口，iOS 端应通过合规地区 App Store 购买或下载官方应用；切勿使用搜索引擎广告推广的所谓“Clash 中文官网”或第三方修改版。',
+    },
+  ]}
+  relatedLinks={[
+    { title: '专属客户端与第三方客户端对比', href: '/clients/proprietary-vs-third-party/', category: '选型对比', description: '权衡登录即用便捷性与通用订阅自由度' },
+    { title: '订阅更新失败与 YAML 解析排查', href: '/troubleshooting/subscription-update-failed/', category: '故障排查', description: '遇到导入订阅报错时的 5 步检查方法' },
+  ]}
+>
+  <div class="space-y-8">
+    <ClientCompatFinder client:load clients={clients} compatBrands={compatBrands} />
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {clientPillar.groups.map((grp) => (
+        <section class="rounded-xl border border-slate-200 bg-white p-5">
+          <h2 class="text-base font-bold text-ink mb-3">{grp.label}</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+            {grp.items.map((item) => (
+              <a
+                href={item.href}
+                class="rounded-lg border border-slate-100 bg-slate-50/70 p-3 hover:border-brand/40 transition-colors"
+              >
+                <div class="text-xs font-semibold text-ink hover:text-brand">{item.title}</div>
+                <div class="text-[11px] text-ink-faint mt-0.5 line-clamp-1">{item.description}</div>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+
+    {PillarContent && (
+      <div class="prose-editorial bg-white rounded-xl border border-slate-200 p-6 sm:p-8">
+        <PillarContent />
+      </div>
+    )}
+  </div>
+</TopicLayout>

@@ -1,0 +1,88 @@
+---
+import { getCollection } from 'astro:content';
+import TopicLayout from '../../layouts/TopicLayout.astro';
+import BrandCompareTool from '../../components/tools/BrandCompareTool';
+import brands from '../../data/brands.json';
+import unlocks from '../../data/unlock-results.json';
+import { AFFILIATE_LINKS } from '../../data/affiliate-links';
+import { buildCollectionPageSchema, buildFAQSchema } from '../../lib/seo';
+
+const sortedBrands = [...brands].sort((a, b) => a.priorityRank - b.priorityRank);
+const affSummary = Object.fromEntries(
+  Object.entries(AFFILIATE_LINKS).map(([k, v]) => [k, { registerUrl: v.registerUrl, isHistoricalUrl: v.isHistoricalUrl }]),
+);
+
+const entries = (await getCollection('compare', ({ data }) => !data.draft)).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+
+const compareFaqs = [
+  {
+    question: '双边 PK 工具里的单 GB 成本是如何核算的？',
+    answer: '系统直接提取各品牌结构化套餐库中的最低月付或年付折算月均报价除以对应月流量配额，并对“不限时流量包”与存在多源口径冲突的套餐单独标注说明，避免折算失真。',
+  },
+  {
+    question: '如果对比的两个品牌一个偏重专线低延迟、一个偏重大流量低价，怎么取舍？',
+    answer: '对实时开发调试、远程桌面与高频 AI 对话场景，优先查看 IEPL/IPLC 传输标注与晚间截图稳定性；纯大文件拉取或高码率视频需求则更关注峰值带宽与单 GB 价格上限。',
+  },
+  {
+    question: '横向对比发现两个品牌都存在资料缺失或冲突标记怎么办？',
+    answer: '建议先点入对应品牌深度评测页核对源冲突明细，并首选支持月付的小额入门套餐做 7–30 天本地宽带验证，切勿直接对存在口径冲突的新接触品牌购买长周期年付。',
+  },
+];
+
+const collectionSchema = buildCollectionPageSchema(
+  '订阅指南品牌与套餐横向对比专题',
+  '支持 31 家机场品牌双边自由 PK、单 GB 成本核算、线路架构对比及 21 篇深度横评阅读的决策中心。',
+  '/compare/',
+  entries.map((e) => ({ name: e.data.title, url: `/compare/${e.id.replace(/\.mdx?$/, '')}/` })),
+);
+const faqSchema = buildFAQSchema(compareFaqs);
+---
+
+<TopicLayout
+  title="机场品牌与套餐横向对比中心 | 订阅指南"
+  description="提供光速云与飞猫云、暮光加速、星岛梦、二猫云、唯兔云等双边横评，以及月付/年付/不限时、IEPL/IPLC 对比指南。"
+  h1="机场品牌横向对比与套餐决策对照中心"
+  eyebrow="03 · Brand & Plan Comparison"
+  breadcrumbs={[
+    { name: '首页', url: '/' },
+    { name: '机场品牌', url: '/brands/' },
+    { name: '品牌横向对比', url: '/compare/' },
+  ]}
+  pubDate={new Date('2026-11-24')}
+  updatedDate={new Date('2026-11-25')}
+  dataStatus="measured"
+  showDisclosure={true}
+  faq={compareFaqs}
+  extraSchemas={[collectionSchema, ...(faqSchema ? [faqSchema] : [])]}
+  tags={['机场对比', '光速云对比', 'IEPL与IPLC区别', '月付与年付对比']}
+>
+  <div class="space-y-8">
+    <BrandCompareTool client:load brands={sortedBrands} unlocks={unlocks} affiliateMap={affSummary} />
+
+    <section class="space-y-4">
+      <h2 class="text-xl font-bold text-ink">深度双边对比与机制专题文章</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        {entries.map((entry) => {
+          const slug = entry.id.replace(/\.mdx?$/, '');
+          return (
+            <a
+              href={`/compare/${slug}/`}
+              class="rounded-xl border border-slate-200 bg-white p-5 hover:border-brand/50 transition-colors flex flex-col justify-between"
+            >
+              <div>
+                <div class="text-[11px] font-mono text-brand mb-1.5">{entry.data.category}</div>
+                <h3 class="text-base font-bold text-ink">{entry.data.title.replace(/\s*\|\s*订阅指南$/, '')}</h3>
+                <p class="mt-2 text-xs text-ink-muted leading-relaxed line-clamp-3">{entry.data.description}</p>
+              </div>
+              <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-medium text-brand">
+                进入对比结论与参数表 →
+              </div>
+            </a>
+          );
+        })}
+      </div>
+    </section>
+  </div>
+</TopicLayout>

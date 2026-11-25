@@ -1,0 +1,1697 @@
+[
+  {
+    "id": "brand-guangsuyun",
+    "slug": "guangsuyun",
+    "name": "光速云",
+    "enName": "LightSpeed Cloud",
+    "aliases": [
+      "光速云机场",
+      "LightSpeed"
+    ],
+    "tier": "featured",
+    "priorityRank": 1,
+    "accentColor": "#0E7490",
+    "logo": "/images/logos/光速云主图.png",
+    "foundedYear": "2020",
+    "reviewUrl": "/reviews/guangsuyun/",
+    "routeType": "IEPL专线 / IPLC / 隧道中转（不同来源描述并存）",
+    "protocols": [
+      "VLESS",
+      "Shadowsocks",
+      "AnyTLS"
+    ],
+    "clientMode": "dual",
+    "clientModeLabel": "自研客户端 + 第三方订阅（Clash / Shadowrocket）",
+    "deviceLimit": "不限设备（多档套餐标注）",
+    "paymentMethods": [
+      "支付宝",
+      "微信",
+      "USDT"
+    ],
+    "coupons": [
+      {
+        "code": "AMM",
+        "discount": "新人优惠券（具体额度以结算页为准）",
+        "status": "vendor"
+      }
+    ],
+    "entryMonthlyPriceCny": 25,
+    "entryAnnualPriceCny": 99,
+    "entryAnnualEffectiveMonthlyCny": 8.25,
+    "hasNoExpiryPlan": true,
+    "planCount": 7,
+    "fallbackEntryText": "2020年运营、优惠码 `AMM` 最低入门价格约8元一个月、致敬斯诺克147永久套餐247GB | 轻量版99元/年 69GB/月 | 极速版25元/月 168GB/月 | 定制版680元/月 500GB/月 |",
+    "features": [
+      "IEPL专线 + 企业级内网专线（双线路架构）",
+      "VLESS 协议- IEPL专线",
+      "自研客户端 + 支持第三方订阅导入（Clash、Shadowrocket）",
+      "节点覆盖：节点覆盖：香港×20、台湾×5、日本×10、新加坡×10、美国×10、马来西亚×2、英国、法国、德国、土耳其、泰国、巴西等",
+      "4个价格档，从99元/年到680元/月跨度极大"
+    ],
+    "introSummary": "光速云在便宜机场推荐里属于价格有优势的一类，99 元/年左右的最低套餐，换算下来每月成本不高，在高性价比机场推荐里比较有竞争力。它把 IPLC 专线和隧道中转结合着用，第三方测试显示香港、日本节点速度表现还不错，也支持 Netflix、Disney+、YouTube 等主流流媒体。不过要注意，ChatGPT、Gemini 这类 AI 工具并不是所有节点都稳定支持，实际用的时候可能需要手动切换节点，这点官方也承认。套餐里特殊商品不支持退款，所以更建议先买月付或者小额套餐，实测晚高峰速度和稳定性之后，再考虑要不要长期用。",
+    "has20261019Speed": true,
+    "has20260811Screenshot": true,
+    "dataStatus": "measured",
+    "conflicts": [
+      "轻量版月流量在《光速云品牌信息》顶部写 59GB，正文及总表写 69GB/月（¥99/年）",
+      "《光速云品牌信息》列 4 档套餐，总清单列 7 档套餐",
+      "协议在文档标 VLESS，08-11 截图显示 Shadowsocks，08-19 截图同时包含 62 节点 Shadowsocks 与 70 节点 Vless+AnyTLS"
+    ],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/thumbs/logos/guangsuyun.webp"
+  },
+  {
+    "id": "brand-muguang",
+    "slug": "muguang",
+    "name": "暮光加速",
+    "enName": "Twilight",
+    "aliases": [
+      "暮光网络",
+      "muguang"
+    ],
+    "tier": "featured",
+    "priorityRank": 2,
+    "accentColor": "#4338CA",
+    "logo": "/images/logos/brand-muguang.svg",
+    "foundedYear": "2023",
+    "reviewUrl": "/reviews/muguang/",
+    "routeType": "BGP 智能调度 + 专线级出口",
+    "protocols": [
+      "未明确标注（待核实）"
+    ],
+    "clientMode": "unverified",
+    "clientModeLabel": "覆盖全平台，具体订阅方式待核实",
+    "deviceLimit": "多设备同时在线（具体上限待核实）",
+    "paymentMethods": [],
+    "coupons": [
+      {
+        "code": "muguang5555",
+        "discount": "优惠额度未标注（介绍正文同时称未查到公开优惠码）",
+        "status": "conflicting"
+      }
+    ],
+    "entryMonthlyPriceCny": 20,
+    "entryAnnualPriceCny": 109,
+    "entryAnnualEffectiveMonthlyCny": 9.08,
+    "hasNoExpiryPlan": true,
+    "planCount": 9,
+    "fallbackEntryText": "2023年运营 | 20元/月 120GB/月 | 优惠码 `muguang5555`",
+    "features": [
+      "BGP 智能调度，专线级出口，主打稳定低延迟",
+      "覆盖 Windows、macOS、iOS、Android、Linux 全平台",
+      "支持多设备同时在线，套餐 120GB–1500GB 流量可选",
+      "官方宣称提供 7×24 小时真人客服"
+    ],
+    "introSummary": "暮光加速面向的是个人和团队跨平台使用场景，主打 BGP 智能调度和专线级出口，覆盖 Windows、macOS、iOS、Android、Linux 全平台，多设备同时在线是它的核心卖点，比较适合放进多设备机场推荐这个分类。9 元/月起的价格在专线机场推荐里不算高，120GB–1500GB 的流量档位选择也比较多，能满足不同用量需求。官方称支持 7×24 小时真人客服，对经常需要跨境办公、远程协作的团队用户会有一定吸引力，也支持 Netflix、Disney+、HBO、Hulu 等流媒体。目前没有查到公开的优惠码信息，如果预算敏感，建议直接联系客服问问当前是否有活动。",
+    "has20261019Speed": true,
+    "has20260811Screenshot": false,
+    "dataStatus": "vendor",
+    "conflicts": [
+      "基础数据与总表有优惠码 muguang5555，介绍正文称未查到公开优惠码",
+      "月付起步 ¥20/120GB，年付轻量版 ¥109/年（折合约 ¥9.08/月）"
+    ],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/logos/brand-muguang.svg"
+  },
+  {
+    "id": "brand-feimao",
+    "slug": "feimao",
+    "name": "飞猫云",
+    "enName": "FlyCat Cloud",
+    "aliases": [
+      "飞猫",
+      "feimao"
+    ],
+    "tier": "featured",
+    "priorityRank": 3,
+    "accentColor": "#D97706",
+    "logo": "/images/logos/飞猫云主图.png",
+    "foundedYear": "2023",
+    "reviewUrl": "/reviews/feimao/",
+    "routeType": "亚太及欧美优化线路（非主打顶级专线）",
+    "protocols": [
+      "Shadowsocks（08-11 测速截图显示）"
+    ],
+    "clientMode": "proprietary",
+    "clientModeLabel": "专属客户端下载登录即用（不配第三方订阅）",
+    "deviceLimit": "待核实",
+    "paymentMethods": [],
+    "coupons": [
+      {
+        "code": "flycat888",
+        "discount": "8折（总表标注）",
+        "status": "vendor"
+      }
+    ],
+    "entryMonthlyPriceCny": 25,
+    "entryAnnualPriceCny": 84,
+    "entryAnnualEffectiveMonthlyCny": 7,
+    "hasNoExpiryPlan": true,
+    "planCount": 7,
+    "fallbackEntryText": "2023年运营 | 年付约7元/月 50GB/月 | 优惠码 `flycat888`",
+    "features": [
+      "主打轻快连接、简单配置和灵活节点切换",
+      "专属客户端下载登录即用，不用配订阅",
+      "不用自己挑客户端、导订阅，新手容易快速上手",
+      "节点覆盖亚太、欧美等热门地区"
+    ],
+    "introSummary": "飞猫云更适合放进新手机场推荐这个分类——它的重点不是极致速度或专线，而是省事：走的是专属客户端模式，下载 App、登录就能用，不用找订阅链接、不用配 Clash，第一次用机场的人也能快速上手。7 元/月起的价格也不算贵，节点覆盖亚太和欧美常见地区，日常看视频、用 AI 工具都能应付，作为轻量日常使用足够。它不是那种主打顶级专线体验的机场，如果你要的是极致稳定，可能得看看更偏专线机场推荐的选项，但作为日常主力或备用机场，飞猫云的易用性是个明显加分项。",
+    "has20261019Speed": true,
+    "has20260811Screenshot": true,
+    "dataStatus": "measured",
+    "conflicts": [],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/thumbs/logos/feimao.webp"
+  },
+  {
+    "id": "brand-weifeng",
+    "slug": "weifeng",
+    "name": "微风网络",
+    "enName": "Breezenet",
+    "aliases": [
+      "微风",
+      "weifeng"
+    ],
+    "tier": "featured",
+    "priorityRank": 4,
+    "accentColor": "#0D9488",
+    "logo": "/images/logos/brand-weifeng.svg",
+    "foundedYear": "2023",
+    "reviewUrl": "/reviews/weifeng/",
+    "routeType": "IEPL 专线",
+    "protocols": [
+      "VLESS（文案）",
+      "Shadowsocks（08-11 测速图）"
+    ],
+    "clientMode": "unverified",
+    "clientModeLabel": "待核实（兼容主流桌面与移动平台）",
+    "deviceLimit": "待核实",
+    "paymentMethods": [],
+    "coupons": [
+      {
+        "code": "flat888",
+        "discount": "9折（总表标注）",
+        "status": "vendor"
+      }
+    ],
+    "entryMonthlyPriceCny": 27,
+    "entryAnnualPriceCny": 137,
+    "entryAnnualEffectiveMonthlyCny": 11.42,
+    "hasNoExpiryPlan": true,
+    "planCount": 6,
+    "fallbackEntryText": "2023年运营 | 年付约7元/月 50GB/月 | 优惠码 `flat888`",
+    "features": [
+      "IEPL 专线 + VLESS 协议，定位入门级高性价比机场",
+      "覆盖香港、新加坡、日本、美国等多地原生 IP 节点",
+      "可解锁 Netflix、Disney+ 等主流流媒体及 ChatGPT、Claude 等 AI 工具",
+      "客服 7×24 小时在线，夜间由 AI 客服值守，适合新手和轻度用户"
+    ],
+    "introSummary": "微风网络在便宜机场推荐里经常被提到，价格是它最直接的优势——11 元/月起，比不少同类 IEPL 机场推荐都要低，对学生党和轻度用户比较友好。走的是 IEPL 专线而不是纯中转，所以稳定性比一些更便宜的中转机场要好一点，日常刷网页、看视频、用 ChatGPT 基本没问题，节点也覆盖了香港、新加坡、日本、美国这几个热门地区。客服口碑在这个价位段里算是不错的，第一次用机场遇到问题至少有地方问，这对刚接触机场的新手来说挺重要。不过 100GB 的流量对重度用户可能不太够，属于入门够用但称不上顶配的类型，如果每天长时间在线，可能需要额外留意用量。",
+    "has20261019Speed": true,
+    "has20260811Screenshot": false,
+    "dataStatus": "measured",
+    "conflicts": [
+      "基础数据与总表写“年付约7元/月 50GB”，套餐表最低为“清风 ¥137/年 100GB/月”（折合约 ¥11.42/月）",
+      "文案标 VLESS，08-11 测速图显示 Shadowsocks"
+    ],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/logos/brand-weifeng.svg"
+  },
+  {
+    "id": "brand-dalaoyun",
+    "slug": "dalaoyun",
+    "name": "大佬云",
+    "enName": "Dalaoyun",
+    "aliases": [
+      "dalaoyun"
+    ],
+    "tier": "featured",
+    "priorityRank": 5,
+    "accentColor": "#1D4ED8",
+    "logo": "/images/logos/brand-dalaoyun.svg",
+    "foundedYear": "2024",
+    "reviewUrl": "/reviews/dalaoyun/",
+    "routeType": "IEPL 专线",
+    "protocols": [
+      "VLESS"
+    ],
+    "clientMode": "dual",
+    "clientModeLabel": "自研客户端 + 第三方订阅导入",
+    "deviceLimit": "待核实",
+    "paymentMethods": [],
+    "coupons": [
+      {
+        "code": "dly888",
+        "discount": "季付及以上 7 折（品牌资料）",
+        "status": "vendor"
+      }
+    ],
+    "entryMonthlyPriceCny": null,
+    "entryAnnualPriceCny": null,
+    "entryAnnualEffectiveMonthlyCny": 5.6,
+    "hasNoExpiryPlan": false,
+    "planCount": 0,
+    "fallbackEntryText": "2024年运营 | 年付约5.6元/月 60GB/月 | 优惠码 `dly888`",
+    "features": [
+      "IEPL专线",
+      "VLESS 协议",
+      "年付约5.6元/月 60GB",
+      "自研客户端 + 第三方订阅导入",
+      "季付及以上 7 折"
+    ],
+    "introSummary": "大佬云在原始品牌库中记录为 IEPL 专线。",
+    "has20261019Speed": false,
+    "has20260811Screenshot": false,
+    "dataStatus": "vendor",
+    "conflicts": [
+      "与闪电鼠、云界线、榴莲云、环球梯基础规格高度重合，目前资料无独立差异点"
+    ],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/logos/brand-dalaoyun.svg"
+  },
+  {
+    "id": "brand-xingdaomeng",
+    "slug": "xingdaomeng",
+    "name": "星岛梦",
+    "enName": "StarDream",
+    "aliases": [
+      "xingdaomeng"
+    ],
+    "tier": "featured",
+    "priorityRank": 6,
+    "accentColor": "#0284C7",
+    "logo": "/images/logos/xdm_logo.webp",
+    "foundedYear": "2020",
+    "reviewUrl": "/reviews/xingdaomeng/",
+    "routeType": "IEPL 专线",
+    "protocols": [
+      "Trojan（文案）",
+      "Shadowsocks（08-11 测速图）"
+    ],
+    "clientMode": "third_party",
+    "clientModeLabel": "通用订阅（1倍流量，不限设备）",
+    "deviceLimit": "不限设备",
+    "paymentMethods": [],
+    "coupons": [
+      {
+        "code": "nmw888",
+        "discount": "具体折扣未标注",
+        "status": "vendor"
+      }
+    ],
+    "entryMonthlyPriceCny": 25,
+    "entryAnnualPriceCny": 96,
+    "entryAnnualEffectiveMonthlyCny": 8,
+    "hasNoExpiryPlan": true,
+    "planCount": 9,
+    "fallbackEntryText": "2020年运营 | 年付约8元/月 60GB/月 | 优惠码 `nmw888`",
+    "features": [
+      "IEPL 专线，1 倍流量且不限设备使用",
+      "节点覆盖香港、台湾、日本、美国、新加坡及韩国、东南亚等地区",
+      "支持 Netflix、Disney+、YouTube Premium 等主流流媒体",
+      "兼容 ChatGPT、Gemini 等 AI 工具及 TikTok 跨区使用"
+    ],
+    "introSummary": "星岛梦走的是 IEPL 专线，Trojan 协议，1 倍流量不限设备，节点覆盖香港、台湾、日本、美国、新加坡，还延伸到韩国和东南亚等地区，在 IEPL 机场推荐里节点覆盖算是比较广的一个。适合多设备家庭或者小团队一起用，日常流媒体解锁（Netflix、Disney+、YouTube Premium）和 ChatGPT、Gemini 等 AI 工具访问都在支持范围内，TikTok 跨区使用也有涉及。8 元/月起的价格放在稳定机场推荐里不算贵，配合海外技术团队和多人客服，属于综合体验还不错的选项。具体线路表现建议结合自己的地区先测一轮，再决定要不要长期订阅。",
+    "has20261019Speed": true,
+    "has20260811Screenshot": true,
+    "dataStatus": "measured",
+    "conflicts": [
+      "介绍正文标 Trojan，08-11 测速截图协议为 Shadowsocks"
+    ],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/thumbs/logos/xingdaomeng.webp"
+  },
+  {
+    "id": "brand-yinxingren",
+    "slug": "yinxingren",
+    "name": "隐形人",
+    "enName": "Invisible",
+    "aliases": [
+      "yinxingren"
+    ],
+    "tier": "featured",
+    "priorityRank": 7,
+    "accentColor": "#334155",
+    "logo": "/images/logos/隐形人256x256.png",
+    "foundedYear": "2024",
+    "reviewUrl": "/reviews/yinxingren/",
+    "routeType": "企业级 IPLC 专线直连",
+    "protocols": [
+      "未标注"
+    ],
+    "clientMode": "proprietary",
+    "clientModeLabel": "自带专属客户端（明确不提供第三方订阅链接）",
+    "deviceLimit": "以套餐而定",
+    "paymentMethods": [],
+    "coupons": [
+      {
+        "code": "yxr888",
+        "discount": "总表记录（未标折扣）",
+        "status": "conflicting"
+      },
+      {
+        "code": "moon80",
+        "discount": "8折（正文记录）",
+        "status": "conflicting"
+      }
+    ],
+    "entryMonthlyPriceCny": 24,
+    "entryAnnualPriceCny": 109,
+    "entryAnnualEffectiveMonthlyCny": 9.08,
+    "hasNoExpiryPlan": true,
+    "planCount": 9,
+    "fallbackEntryText": "2024年运营 | 24元/月 100GB/月 | 优惠码 `yxr888`",
+    "features": [
+      "企业级 IPLC 专线直连，官方称晚高峰零卡顿",
+      "官方标注可解锁 Netflix、HBO Max 等流媒体及 ChatGPT",
+      "全平台一键配置，多设备同时在线",
+      "自带客户端，不提供订阅链接"
+    ],
+    "introSummary": "隐形人走企业级 IPLC 专线直连，官方称晚高峰零卡顿、秒开 4K/8K 流媒体。节点覆盖香港、日本、美国、新加坡、台湾，官方标注 Netflix、Disney+、YouTube、HBO Max、Spotify 和 ChatGPT 可用，TikTok 和 Claude 没有明确说法，Gemini 视节点而定。不限速，设备数量以套餐而定。它不提供订阅链接，只能用自带客户端，Clash、Shadowrocket 等第三方客户端用不了。年付小包 109 元一年、每月 80GB，折合每月约 9 元；月付档从 24 元 144GB 起，在本站收录里属于偏高的一档。优惠码 moon80 可打 8 折。官方没有提供试用。",
+    "has20261019Speed": false,
+    "has20260811Screenshot": false,
+    "dataStatus": "vendor",
+    "conflicts": [
+      "优惠码同时存在 yxr888 与 moon80 两条记录",
+      "基础数据写 24元/月 100GB，套餐表白银纪元为 ¥24/月 144GB"
+    ],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/thumbs/logos/yinxingren.webp"
+  },
+  {
+    "id": "brand-ermao",
+    "slug": "ermao",
+    "name": "二猫云",
+    "enName": "2mao Cloud",
+    "aliases": [
+      "2mao",
+      "ermao"
+    ],
+    "tier": "featured",
+    "priorityRank": 8,
+    "accentColor": "#EA580C",
+    "logo": "/images/logos/2mao_logo.webp",
+    "foundedYear": "2023",
+    "reviewUrl": "/reviews/ermao/",
+    "routeType": "全线 IEPL 专线",
+    "protocols": [
+      "VLESS（文案）",
+      "Shadowsocks（08-11 测速图）"
+    ],
+    "clientMode": "proprietary_plus",
+    "clientModeLabel": "独家定制客户端（第三方订阅兼容性待核实）",
+    "deviceLimit": "不限设备连接数",
+    "paymentMethods": [],
+    "coupons": [
+      {
+        "code": "ermao5555",
+        "discount": "具体折扣未标注",
+        "status": "vendor"
+      }
+    ],
+    "entryMonthlyPriceCny": 20,
+    "entryAnnualPriceCny": 89,
+    "entryAnnualEffectiveMonthlyCny": 7.42,
+    "hasNoExpiryPlan": true,
+    "planCount": 6,
+    "fallbackEntryText": "2023年运营 | 20元/月 130GB/月 | 优惠码 `ermao5555`",
+    "features": [
+      "全线 IEPL 专线，主打长期稳定而非低价走量",
+      "账号不限设备连接数，多端同时在线无压力",
+      "海外技术团队主理，配备独家定制客户端",
+      "解锁 Netflix、YouTube 等流媒体及 ChatGPT 等 AI 工具"
+    ],
+    "introSummary": "二猫云走 IEPL 专线，VLESS 协议，20 元/月起，130GB 流量。官方强调自己不做低价跑路盘那一套，主打长期稳定，还配了一套独家定制客户端。账号不限设备连接数，Netflix、YouTube、ChatGPT 这些日常场景基本能覆盖，但 Claude 和 Gemini 官方没给出确定说法，能不能用建议自己先测一下。节点覆盖香港、日本、美国，比不少同类机场少了新加坡这一站。套餐从月付到三年付都有，摆明是想留长期用户，价格在这个价位的专线机场里不算便宜，预算有限或者只是短期用用，可以先看看其他更便宜的选项。",
+    "has20261019Speed": true,
+    "has20260811Screenshot": true,
+    "dataStatus": "measured",
+    "conflicts": [
+      "2026-10-19 测速表含新加坡节点，但介绍正文称“少了新加坡这一站”",
+      "文案标 VLESS，08-11 测速截图显示 Shadowsocks"
+    ],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/thumbs/logos/ermao.webp"
+  },
+  {
+    "id": "brand-wuyou",
+    "slug": "wuyou",
+    "name": "无忧链接",
+    "enName": "WorryFree",
+    "aliases": [
+      "无忧",
+      "wuyou"
+    ],
+    "tier": "featured",
+    "priorityRank": 9,
+    "accentColor": "#059669",
+    "logo": "/images/logos/brand-wuyou.svg",
+    "foundedYear": "2025",
+    "reviewUrl": "/reviews/wuyou/",
+    "routeType": "跨境电商/轻度优化线路",
+    "protocols": [
+      "未标注"
+    ],
+    "clientMode": "conflicting",
+    "clientModeLabel": "正文称 2026-10 起用专属客户端，总表称“订阅无需转换”",
+    "deviceLimit": "不限设备数量",
+    "paymentMethods": [],
+    "coupons": [
+      {
+        "code": "wuyou666",
+        "discount": "具体折扣未标注",
+        "status": "vendor"
+      }
+    ],
+    "entryMonthlyPriceCny": 19,
+    "entryAnnualPriceCny": 79,
+    "entryAnnualEffectiveMonthlyCny": 6.58,
+    "hasNoExpiryPlan": true,
+    "planCount": 7,
+    "fallbackEntryText": "2025年运营 | 19元/月 100GB/月 | 优惠码 `wuyou666`",
+    "features": [
+      "面向轻度用户和跨境电商的超高性价比套餐",
+      "全线节点无倍率、不限速、不限设备数量",
+      "专属客户端下载登录即用，新手不用折腾订阅配置",
+      "香港、新加坡、日本、美国均有节点，支持 TikTok 跨区直连",
+      "客服 7×24 小时在线，夜间由 AI 客服值守"
+    ],
+    "introSummary": "如果你要找便宜机场推荐里价格最低的那一档，无忧链接大概率会出现——6.5 元/月起，是这份榜单里门槛最低的机场之一，主打的是跨境电商和轻度用户场景，TikTok 跨区直连和直播支持是它比较突出的点。2026 年 10 月起直接用官方专属客户端，下载登录就能用，不用折腾订阅和复杂配置，对新手比较友好。同时也能解锁 Netflix、Disney+ 和 YouTube 等主流流媒体，日常刷视频基本够用。不过流量只有 40GB，节点覆盖也偏基础，如果你的使用场景是重度办公或者多设备同时在线，这个价位的套餐大概率撑不了太久，更适合当作低成本的备用机场或者电商运营的辅助工具。",
+    "has20261019Speed": true,
+    "has20260811Screenshot": false,
+    "dataStatus": "conflicting",
+    "conflicts": [
+      "订阅方式存在“专属客户端登录即用”与总表“订阅无需转换”口径冲突"
+    ],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/logos/brand-wuyou.svg"
+  },
+  {
+    "id": "brand-weitu",
+    "slug": "weitu",
+    "name": "唯兔云",
+    "enName": "V2Yun",
+    "aliases": [
+      "V2云",
+      "weitu"
+    ],
+    "tier": "featured",
+    "priorityRank": 10,
+    "accentColor": "#0369A1",
+    "logo": "/images/logos/v2云主图.png",
+    "foundedYear": "2023",
+    "reviewUrl": "/reviews/weitu/",
+    "routeType": "IPLC 专线（总表另注三网优化+智能负载均衡）",
+    "protocols": [
+      "Trojan（文案）",
+      "Shadowsocks（08-11 测速图）"
+    ],
+    "clientMode": "third_party",
+    "clientModeLabel": "支持通用第三方客户端（1倍流量，不限设备）",
+    "deviceLimit": "不限设备连接",
+    "paymentMethods": [],
+    "coupons": [
+      {
+        "code": "weitu666",
+        "discount": "具体折扣未标注",
+        "status": "vendor"
+      }
+    ],
+    "entryMonthlyPriceCny": 14.9,
+    "entryAnnualPriceCny": 79.9,
+    "entryAnnualEffectiveMonthlyCny": 6.66,
+    "hasNoExpiryPlan": true,
+    "planCount": 10,
+    "fallbackEntryText": "2023年运营 | 14.9元/月 100GB/月 | 优惠码 `weitu666`",
+    "features": [
+      "IPLC 专线，1 倍流量、不限速及不限设备连接",
+      "支持 ChatGPT、Gemini、Claude 等主流 AI 工具",
+      "支持 Netflix、Disney+、YouTube Premium 及 TikTok 等解锁",
+      "提供海外技术团队与多人客服支持"
+    ],
+    "introSummary": "唯兔云走 IPLC 专线，Trojan 协议，主打 1 倍流量、不限速、不限设备连接，比较适合个人、家庭甚至小团队一起用，属于 IPLC 机场推荐里综合能力不错的选项。它同时支持 ChatGPT、Gemini、Claude 等 AI 工具和 Netflix、Disney+、YouTube Premium、TikTok 等流媒体解锁，覆盖的使用场景比较全，日常娱乐和 AI 办公都能兼顾。价格在 15 元/月左右，比一些入门中转机场贵，但比顶级专线机场便宜，算是中间档位的选择。海外技术团队加多人客服是它宣传的增值服务，具体套餐细节和优惠力度建议下单前以官网当前显示为准，价格可能随时调整。",
+    "has20261019Speed": true,
+    "has20260811Screenshot": true,
+    "dataStatus": "measured",
+    "conflicts": [
+      "介绍写 Trojan，08-11 测速截图显示 Shadowsocks"
+    ],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/thumbs/logos/weitu.webp"
+  },
+  {
+    "id": "brand-firefly",
+    "slug": "firefly",
+    "name": "Firefly",
+    "enName": "Firefly",
+    "aliases": [
+      "Firefly 萤火虫",
+      "萤火虫",
+      "飞为",
+      "firefly"
+    ],
+    "tier": "featured",
+    "priorityRank": 11,
+    "accentColor": "#CA8A04",
+    "logo": "/images/logos/brand-firefly.svg",
+    "foundedYear": null,
+    "reviewUrl": "/reviews/firefly/",
+    "routeType": "IPLC 专线（原生 IP）",
+    "protocols": [
+      "VLESS"
+    ],
+    "clientMode": "proprietary",
+    "clientModeLabel": "专属客户端下载登录即用（不提供订阅链接）",
+    "deviceLimit": "不限客户端及设备数量",
+    "paymentMethods": [
+      "支付宝",
+      "USDT（历史资料标注无微信）"
+    ],
+    "coupons": [
+      {
+        "code": "firefly",
+        "discount": "新用户 8 折（年付版不适用）",
+        "status": "vendor"
+      }
+    ],
+    "entryMonthlyPriceCny": 25,
+    "entryAnnualPriceCny": 96,
+    "entryAnnualEffectiveMonthlyCny": 8,
+    "hasNoExpiryPlan": true,
+    "planCount": 26,
+    "fallbackEntryText": null,
+    "features": [
+      "IPLC 专线接入，主打低延迟与高稳定性",
+      "全节点不限速，不限客户端及设备数量",
+      "原生 IP 节点，覆盖香港、新加坡、日本、美国",
+      "海外技术团队维护线路，客服 7×24 小时在线，夜间由 AI 客服值守"
+    ],
+    "introSummary": "如果你在找 2026 年靠谱的 IPLC 机场推荐，Firefly 算是专线机场推荐里性价比不错的一个选择。8 元/月起的价格，比很多同样走 IPLC 专线的机场便宜一些，晚高峰稳定性是它的核心卖点，对每天要用 ChatGPT 办公、或者经常在深夜追剧的人来说，这一点比单纯堆节点数量更实际。节点覆盖香港、新加坡、日本、美国这几个常见地区，原生 IP 让 Netflix、Disney+ 这类流媒体解锁相对稳定，2026 年 10 月起直接用官方专属客户端，下载登录就能连，不用再配订阅链接，使用门槛更低。不限设备数量也算是个加分项，家里几台设备一起用不会受限制。当然，专线机场的价格门槛终归比中转线路高，如果只是偶尔上网、预算有限，没必要非选它不可。",
+    "has20261019Speed": true,
+    "has20260811Screenshot": false,
+    "dataStatus": "vendor",
+    "conflicts": [
+      "清单第 8 条与文末《Firefly 萤火虫》存在两套推广码（2n7VURre 与 jTp9wSgZ）及不同周期展开，已合并为同一品牌实体"
+    ],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/logos/brand-firefly.svg"
+  },
+  {
+    "id": "brand-yuzhou",
+    "slug": "yuzhou",
+    "name": "宇宙云",
+    "enName": "YuZhou Cloud",
+    "aliases": [
+      "yuzhou"
+    ],
+    "tier": "regular",
+    "priorityRank": 12,
+    "accentColor": "#1E40AF",
+    "logo": "/images/logos/yuzhou_logo.webp",
+    "foundedYear": null,
+    "reviewUrl": "/reviews/yuzhou/",
+    "routeType": "IEPL + 三网优化（早期及总表资料）",
+    "protocols": [
+      "VLESS"
+    ],
+    "clientMode": "conflicting",
+    "clientModeLabel": "正文标注待核实，总表标注自研客户端",
+    "deviceLimit": "待核实",
+    "paymentMethods": [],
+    "coupons": [
+      {
+        "code": "YUZHOU553",
+        "discount": "历史资料称新用户 8 折",
+        "status": "historical"
+      }
+    ],
+    "entryMonthlyPriceCny": null,
+    "entryAnnualPriceCny": null,
+    "entryAnnualEffectiveMonthlyCny": null,
+    "hasNoExpiryPlan": false,
+    "planCount": 0,
+    "fallbackEntryText": null,
+    "features": [
+      "60+ 节点；三网优化；智能负载均衡（历史品牌资料）",
+      "完整资料、节点覆盖、支持设备与客服信息有待补充"
+    ],
+    "introSummary": "宇宙云在原始品牌库中记录为 IEPL + 三网优化（早期及总表资料）。",
+    "has20261019Speed": false,
+    "has20260811Screenshot": true,
+    "dataStatus": "unverified",
+    "conflicts": [
+      "正文称套餐、节点与测速均待核实，但总表标明 IEPL+VLESS+自研客户端，且 08-11 压缩包内含 VLESS 测速截图"
+    ],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/thumbs/logos/yuzhou.webp"
+  },
+  {
+    "id": "brand-u1s1",
+    "slug": "u1s1",
+    "name": "U1S1",
+    "enName": "U1S1",
+    "aliases": [
+      "有一说一",
+      "u1s1"
+    ],
+    "tier": "regular",
+    "priorityRank": 13,
+    "accentColor": "#0F766E",
+    "logo": "/images/logos/u1s1主图.png",
+    "foundedYear": "2025",
+    "reviewUrl": "/reviews/u1s1/",
+    "routeType": "IPLC 专线",
+    "protocols": [
+      "Shadowsocks（08-11 测速图）"
+    ],
+    "clientMode": "unverified",
+    "clientModeLabel": "待核实",
+    "deviceLimit": "不限设备同时连接",
+    "paymentMethods": [],
+    "coupons": [
+      {
+        "code": "akaka",
+        "discount": "具体折扣未标注",
+        "status": "vendor"
+      }
+    ],
+    "entryMonthlyPriceCny": 20,
+    "entryAnnualPriceCny": 96,
+    "entryAnnualEffectiveMonthlyCny": 8,
+    "hasNoExpiryPlan": false,
+    "planCount": 5,
+    "fallbackEntryText": "2025年运营 | 20元/月 120GB/月 | 优惠码 `akaka`",
+    "features": [
+      "2025 年起运营的 IPLC 专线机场",
+      "官方宣称 2000Mbps 高速带宽，晚高峰不限速",
+      "不限设备同时连接",
+      "支持 Netflix、TikTok 等流媒体及 ChatGPT 等 AI 工具"
+    ],
+    "introSummary": "U1S1 是 2025 年才上线的新机场，走 IPLC 专线，官方宣传 2000Mbps 高速带宽和晚高峰不限速，在高速机场推荐里算是敢喊出具体带宽数字的一个，实测反馈显示流媒体解锁和 ChatGPT 访问表现还可以。20 元 120GB 的套餐之外还有 1000GB 的一次性大流量包，适合短期内用量大、需要弹性补充流量的场景。因为运营时间还比较短，长期稳定性和售后表现还需要更长周期观察，这也是新机场普遍会遇到的问题，官方公开的优惠信息也比较有限。如果你愿意尝鲜，建议先用小额套餐测试，别一上来就冲大额年付。",
+    "has20261019Speed": true,
+    "has20260811Screenshot": true,
+    "dataStatus": "measured",
+    "conflicts": [
+      "介绍正文提及 1000GB 一次性大流量包，但套餐价格表中未列出该档位"
+    ],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/thumbs/logos/u1s1.webp"
+  },
+  {
+    "id": "brand-lingmao",
+    "slug": "lingmao",
+    "name": "灵猫网络",
+    "enName": "CivetNet",
+    "aliases": [
+      "灵猫",
+      "lingmao"
+    ],
+    "tier": "regular",
+    "priorityRank": 14,
+    "accentColor": "#B45309",
+    "logo": "/images/logos/brand-lingmao.svg",
+    "foundedYear": "2025",
+    "reviewUrl": "/reviews/lingmao/",
+    "routeType": "中转优化线路",
+    "protocols": [
+      "Shadowsocks（08-11 测速图，正文未标注）"
+    ],
+    "clientMode": "proprietary",
+    "clientModeLabel": "专属客户端下载登录即用（不提供订阅链接）",
+    "deviceLimit": "不限设备使用",
+    "paymentMethods": [],
+    "coupons": [
+      {
+        "code": "lmao888",
+        "discount": "基础数据与总表记录",
+        "status": "conflicting"
+      },
+      {
+        "code": "lingmao",
+        "discount": "8折（年付小包不适用）",
+        "status": "conflicting"
+      }
+    ],
+    "entryMonthlyPriceCny": 25,
+    "entryAnnualPriceCny": 85,
+    "entryAnnualEffectiveMonthlyCny": 7.08,
+    "hasNoExpiryPlan": false,
+    "planCount": 6,
+    "fallbackEntryText": "2025年运营 | 19元/月 150GB/月 | 优惠码 `lmao888`",
+    "features": [
+      "1 倍流量，不限速及不限设备使用",
+      "覆盖香港、台湾、日本、美国、新加坡等亚洲及欧美节点",
+      "支持 Netflix、Disney+、YouTube 等流媒体及 ChatGPT、TikTok 等平台",
+      "专属客户端下载登录即用，不用导入订阅"
+    ],
+    "introSummary": "灵猫走的是中转优化线路，7.1 元/月起，主打 1 倍流量、不限速、不限设备，这一点对家里多台设备同时用的人比较实用。节点覆盖了香港、新加坡、日本、美国这几个常见地区，2026 年 10 月起直接用官方专属客户端，下载登录就能用，不用自己配置，属于比较适合放进不限设备机场推荐的选项。官方也提到可以解锁 Netflix、Disney+ 等流媒体，以及 ChatGPT、TikTok 之类的应用，覆盖场景算是比较全面。不过具体解锁效果和线路参数会因账号和时段有差异，建议先用月付套餐测一测晚高峰体验，而不是直接冲年付套餐。",
+    "has20261019Speed": true,
+    "has20260811Screenshot": true,
+    "dataStatus": "measured",
+    "conflicts": [
+      "优惠码同时存在 lmao888 与 lingmao",
+      "基础数据写 19元/月 150GB，套餐表月付 Small 为 ¥25 150GB"
+    ],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/logos/brand-lingmao.svg"
+  },
+  {
+    "id": "brand-jilian",
+    "slug": "jilian",
+    "name": "极连云",
+    "enName": "Jilian Cloud",
+    "aliases": [
+      "jilian"
+    ],
+    "tier": "regular",
+    "priorityRank": 15,
+    "accentColor": "#047857",
+    "logo": "/images/logos/极连云主图.png",
+    "foundedYear": "2024",
+    "reviewUrl": "/reviews/jilian/",
+    "routeType": "IEPL 专线",
+    "protocols": [
+      "未标注（08-11 测速图显示 Shadowsocks）"
+    ],
+    "clientMode": "dual",
+    "clientModeLabel": "自研客户端 + 支持第三方客户端",
+    "deviceLimit": "待核实",
+    "paymentMethods": [],
+    "coupons": [
+      {
+        "code": "ji8888",
+        "discount": "具体折扣未标注",
+        "status": "vendor"
+      }
+    ],
+    "entryMonthlyPriceCny": null,
+    "entryAnnualPriceCny": null,
+    "entryAnnualEffectiveMonthlyCny": 18,
+    "hasNoExpiryPlan": false,
+    "planCount": 0,
+    "fallbackEntryText": "2024年运营 | 18元/月 100GB/月 | 优惠码 `ji8888`",
+    "features": [
+      "IEPL专线",
+      "18元/月 100GB",
+      "自研客户端 + 支持第三方客户端",
+      "品牌资料明确说\"覆盖常见 AI 工具使用场景\""
+    ],
+    "introSummary": "极连云在原始品牌库中记录为 IEPL 专线。",
+    "has20261019Speed": false,
+    "has20260811Screenshot": true,
+    "dataStatus": "measured",
+    "conflicts": [],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/thumbs/logos/jilian.webp"
+  },
+  {
+    "id": "brand-guangnian",
+    "slug": "guangnian",
+    "name": "光年梯",
+    "enName": "LightYear",
+    "aliases": [
+      "guangnian"
+    ],
+    "tier": "regular",
+    "priorityRank": 16,
+    "accentColor": "#0369A1",
+    "logo": "/images/logos/光年梯主图.png",
+    "foundedYear": "2025",
+    "reviewUrl": "/reviews/guangnian/",
+    "routeType": "IEPL 专线",
+    "protocols": [
+      "VLESS（文案）",
+      "Shadowsocks（08-11 测速图）"
+    ],
+    "clientMode": "dual",
+    "clientModeLabel": "自研客户端 + 第三方订阅导入",
+    "deviceLimit": "待核实",
+    "paymentMethods": [],
+    "coupons": [
+      {
+        "code": "gnt6666",
+        "discount": "具体折扣未标注",
+        "status": "vendor"
+      }
+    ],
+    "entryMonthlyPriceCny": null,
+    "entryAnnualPriceCny": null,
+    "entryAnnualEffectiveMonthlyCny": 18,
+    "hasNoExpiryPlan": false,
+    "planCount": 0,
+    "fallbackEntryText": "2025年运营 | 18元/月 110GB/月 | 优惠码 `gnt6666`",
+    "features": [
+      "IEPL专线",
+      "VLESS 协议",
+      "18元/月 110GB",
+      "自研客户端 + 第三方订阅导入",
+      "品牌资料明确说\"支持常见 AI 工具使用场景\"和\"支持主流流媒体使用场景\""
+    ],
+    "introSummary": "光年梯在原始品牌库中记录为 IEPL 专线。",
+    "has20261019Speed": false,
+    "has20260811Screenshot": true,
+    "dataStatus": "measured",
+    "conflicts": [
+      "文案标 VLESS，08-11 测速截图显示 Shadowsocks"
+    ],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/thumbs/logos/guangnian.webp"
+  },
+  {
+    "id": "brand-yifan",
+    "slug": "yifan",
+    "name": "一翻云",
+    "enName": "1Fly Cloud",
+    "aliases": [
+      "yifan",
+      "1fly"
+    ],
+    "tier": "regular",
+    "priorityRank": 17,
+    "accentColor": "#2563EB",
+    "logo": "/images/logos/1fly_logo.webp",
+    "foundedYear": "2025",
+    "reviewUrl": "/reviews/yifan/",
+    "routeType": "全节点 IEPL 物理专线 + 原生住宅 IP（品牌资料）",
+    "protocols": [
+      "Hysteria 2",
+      "VLESS-Reality",
+      "Shadowsocks"
+    ],
+    "clientMode": "third_party",
+    "clientModeLabel": "宽松兼容第三方客户端（多协议可选）",
+    "deviceLimit": "不限设备数量",
+    "paymentMethods": [],
+    "coupons": [
+      {
+        "code": "yfy6666",
+        "discount": "基础数据与总表记录",
+        "status": "conflicting"
+      },
+      {
+        "code": "1FLYYUN",
+        "discount": "9折（介绍正文记录）",
+        "status": "conflicting"
+      }
+    ],
+    "entryMonthlyPriceCny": 20,
+    "entryAnnualPriceCny": 98,
+    "entryAnnualEffectiveMonthlyCny": 8.17,
+    "hasNoExpiryPlan": true,
+    "planCount": 8,
+    "fallbackEntryText": "2025年运营 | 20元/月 150GB/月 | 优惠码 `yfy6666`",
+    "features": [
+      "全节点 IEPL 物理专线，搭配原生住宅 IP",
+      "官方称晚高峰 0 丢包，单节点 2Gbps 大带宽",
+      "提供永久不过期的不限时流量包，用量不固定也不会浪费",
+      "不限速、不限设备数量，Hysteria 2 / VLESS-Reality / Shadowsocks 三协议可选"
+    ],
+    "introSummary": "一翻云全节点走 IEPL 物理专线，搭配原生住宅 IP，官方称晚高峰 0 丢包、单节点 2Gbps 带宽。协议给了 Hysteria 2、VLESS-Reality 和 Shadowsocks 三种，客户端选择比较宽松。节点覆盖香港、日本、美国、新加坡、台湾五地，比不少同价位机场多了台湾这一站。不限速也不限设备数量，另外提供永久不过期的一次性流量包，适合用量不固定、不想按月续费的人。年付小包 98 元一年、每月 60GB，折合每月约 8.2 元；想要更多流量可以看月付档，轻享版 20 元给到 150GB。优惠码 1FLYYUN 可以再打 9 折。官方没有提供试用，想先验证线路没有零成本的办法。",
+    "has20261019Speed": true,
+    "has20260811Screenshot": true,
+    "dataStatus": "measured",
+    "conflicts": [
+      "优惠码存在 yfy6666 与 1FLYYUN（9折）两套记录"
+    ],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/thumbs/logos/yifan.webp"
+  },
+  {
+    "id": "brand-sogo",
+    "slug": "sogo",
+    "name": "SOGO云",
+    "enName": "SOGO Cloud",
+    "aliases": [
+      "Sogo云",
+      "sogo"
+    ],
+    "tier": "regular",
+    "priorityRank": 18,
+    "accentColor": "#0E7490",
+    "logo": "/images/logos/sogo.webp",
+    "foundedYear": "2026",
+    "reviewUrl": "/reviews/sogo/",
+    "routeType": "全线 IEPL 专线 + 三网 BGP 优化",
+    "protocols": [
+      "VLESS（文案）",
+      "Shadowsocks（08-11 测速图）"
+    ],
+    "clientMode": "proprietary",
+    "clientModeLabel": "仅自研专属客户端（不提供 Clash/Shadowrocket 订阅链接）",
+    "deviceLimit": "不限设备数量",
+    "paymentMethods": [],
+    "coupons": [
+      {
+        "code": "SOGO10000",
+        "discount": "9折（正文记录）",
+        "status": "conflicting"
+      },
+      {
+        "code": "sss777",
+        "discount": "总表记录",
+        "status": "conflicting"
+      }
+    ],
+    "entryMonthlyPriceCny": 25,
+    "entryAnnualPriceCny": 98,
+    "entryAnnualEffectiveMonthlyCny": 8.17,
+    "hasNoExpiryPlan": true,
+    "planCount": 9,
+    "fallbackEntryText": null,
+    "features": [
+      "全线 IEPL 专线接入，三网 BGP 优化",
+      "节点覆盖 15 个国家和地区，本站收录里覆盖面最广",
+      "不限速、不限设备数量，VLESS 协议",
+      "自研客户端，支持 Windows、macOS、iOS、Android 与主流软路由"
+    ],
+    "introSummary": "Sogo 云由海外团队运营，全线 IEPL 专线接入并做了三网 BGP 优化，协议用 VLESS，不限速也不限设备数量。节点覆盖香港、台湾、日本、新加坡、美国、韩国等 15 个国家和地区，是本站收录里覆盖面最广的一家。需要留意的是它不提供订阅链接，只能通过自研客户端使用，Clash、Shadowrocket 这类第三方客户端用不了。年付小包 98 元一年、每月 60GB，折合每月约 8.2 元；月付从 25 元 150GB 起。优惠码 SOGO10000 可打 9 折。官方没有提供试用。",
+    "has20261019Speed": true,
+    "has20260811Screenshot": true,
+    "dataStatus": "measured",
+    "conflicts": [
+      "优惠码存在 SOGO10000（9折）与 sss777 两套记录",
+      "文案标 VLESS，08-11 测速截图显示 Shadowsocks"
+    ],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/thumbs/logos/sogo.webp"
+  },
+  {
+    "id": "brand-kexin",
+    "slug": "kexin",
+    "name": "可信云",
+    "enName": "Kosing Cloud",
+    "aliases": [
+      "kexin"
+    ],
+    "tier": "regular",
+    "priorityRank": 19,
+    "accentColor": "#0D9488",
+    "logo": "/images/logos/brand-kexin.svg",
+    "foundedYear": "2024",
+    "reviewUrl": "/reviews/kexin/",
+    "routeType": "IEPL 专线",
+    "protocols": [
+      "VLESS（文案）",
+      "Shadowsocks（08-11 测速图）"
+    ],
+    "clientMode": "third_party",
+    "clientModeLabel": "支持第三方客户端",
+    "deviceLimit": "待核实",
+    "paymentMethods": [],
+    "coupons": [
+      {
+        "code": "kkk333",
+        "discount": "具体折扣未标注",
+        "status": "vendor"
+      }
+    ],
+    "entryMonthlyPriceCny": null,
+    "entryAnnualPriceCny": null,
+    "entryAnnualEffectiveMonthlyCny": 25,
+    "hasNoExpiryPlan": false,
+    "planCount": 0,
+    "fallbackEntryText": "2024年运营 | 25元/月 150GB/月 | 优惠码 `kkk333`",
+    "features": [
+      "IEPL专线",
+      "VLESS 协议",
+      "25元/月 150GB",
+      "支持第三方客户端",
+      "品牌资料明确说\"AI 与流媒体目前缺乏统一实测数据\""
+    ],
+    "introSummary": "可信云在原始品牌库中记录为 IEPL 专线。",
+    "has20261019Speed": false,
+    "has20260811Screenshot": true,
+    "dataStatus": "measured",
+    "conflicts": [
+      "文案标 VLESS，08-11 测速截图显示 Shadowsocks；品牌资料主动声明 AI 与流媒体缺乏统一实测数据"
+    ],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/logos/brand-kexin.svg"
+  },
+  {
+    "id": "brand-sujie",
+    "slug": "sujie",
+    "name": "速界",
+    "enName": "SpeedWorld",
+    "aliases": [
+      "sujie"
+    ],
+    "tier": "regular",
+    "priorityRank": 20,
+    "accentColor": "#0284C7",
+    "logo": "/images/logos/sujie_logo.webp",
+    "foundedYear": "2024",
+    "reviewUrl": "/reviews/sujie/",
+    "routeType": "IEPL 专线",
+    "protocols": [
+      "VLESS（文案）",
+      "Shadowsocks（08-11 测速图）"
+    ],
+    "clientMode": "dual",
+    "clientModeLabel": "自研客户端 + 第三方订阅导入",
+    "deviceLimit": "待核实",
+    "paymentMethods": [],
+    "coupons": [
+      {
+        "code": "sss1111",
+        "discount": "具体折扣未标注",
+        "status": "vendor"
+      }
+    ],
+    "entryMonthlyPriceCny": null,
+    "entryAnnualPriceCny": null,
+    "entryAnnualEffectiveMonthlyCny": 25,
+    "hasNoExpiryPlan": false,
+    "planCount": 0,
+    "fallbackEntryText": "2024年运营 | 25元/月 150GB/月 | 优惠码 `sss1111`",
+    "features": [
+      "IEPL专线",
+      "VLESS 协议",
+      "自研客户端 + 第三方订阅导入",
+      "25元/月 150GB",
+      "**品牌资料明确强调 ChatGPT、Claude、Gemini 等 AI 使用场景**",
+      "品牌资料明确说\"AI 可用性受 IP、地区和平台规则影响，不应承诺永久稳定支持所有 AI 平台\""
+    ],
+    "introSummary": "速界在原始品牌库中记录为 IEPL 专线。",
+    "has20261019Speed": false,
+    "has20260811Screenshot": true,
+    "dataStatus": "measured",
+    "conflicts": [
+      "文案标 VLESS，08-11 测速截图显示 Shadowsocks"
+    ],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/thumbs/logos/sujie.webp"
+  },
+  {
+    "id": "brand-shanyue",
+    "slug": "shanyue",
+    "name": "闪跃",
+    "enName": "FlashLeap",
+    "aliases": [
+      "shanyue"
+    ],
+    "tier": "regular",
+    "priorityRank": 21,
+    "accentColor": "#D97706",
+    "logo": "/images/logos/brand-shanyue.svg",
+    "foundedYear": null,
+    "reviewUrl": "/reviews/shanyue/",
+    "routeType": "IPLC 纯专线（骨干网接入）",
+    "protocols": [
+      "未标注"
+    ],
+    "clientMode": "proprietary",
+    "clientModeLabel": "专属客户端下载登录即用（不提供订阅链接）",
+    "deviceLimit": "待核实",
+    "paymentMethods": [],
+    "coupons": [
+      {
+        "code": "shanyue",
+        "discount": "8折（仅限闪动/飞跃/瞬移/跃迁，年付不适用）",
+        "status": "vendor"
+      }
+    ],
+    "entryMonthlyPriceCny": 24,
+    "entryAnnualPriceCny": 96,
+    "entryAnnualEffectiveMonthlyCny": 8,
+    "hasNoExpiryPlan": false,
+    "planCount": 5,
+    "fallbackEntryText": null,
+    "features": [
+      "顶级 IPLC 纯专线，主打极致低延迟",
+      "骨干网接入，晚高峰仍能保持连接稳定",
+      "原生 IP 全解锁 Netflix、Disney+、HBO 等流媒体",
+      "支持 ChatGPT、Claude、Gemini 等 AI 工具访问"
+    ],
+    "introSummary": "闪跃在专线机场推荐里定位偏高端，走的是纯 IPLC 专线，晚高峰不掉速是它反复强调的卖点，官方说法是依托强大骨干网接入实现的。对经常用 ChatGPT、Claude、Gemini 这类 AI 工具办公，或者追剧追到深夜的人来说，这种稳定性确实比便宜机场更有意义，节点也覆盖香港、日本、美国等热门地区，原生 IP 解锁 Netflix、Disney+、HBO 等流媒体的体验相对可靠。8 元/月的起步价放在 IPLC 机场推荐里不算贵，但比中转线路的机场肯定要高一些。如果你只是想偶尔上网查资料，这个价位没必要，适合的是长期高频、对稳定性有明确要求的用户。",
+    "has20261019Speed": true,
+    "has20260811Screenshot": false,
+    "dataStatus": "vendor",
+    "conflicts": [],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/logos/brand-shanyue.svg"
+  },
+  {
+    "id": "brand-quanqiu",
+    "slug": "quanqiu",
+    "name": "全球云",
+    "enName": "GlobalCloud",
+    "aliases": [
+      "quanqiu"
+    ],
+    "tier": "regular",
+    "priorityRank": 22,
+    "accentColor": "#1D4ED8",
+    "logo": "/images/logos/全球云主图.png",
+    "foundedYear": "2026",
+    "reviewUrl": "/reviews/quanqiu/",
+    "routeType": "IPLC / IEPL 专线中转 + BGP 智能优化",
+    "protocols": [
+      "Trojan",
+      "Shadowsocks"
+    ],
+    "clientMode": "proprietary",
+    "clientModeLabel": "专属客户端下载登录即用（不提供订阅链接）",
+    "deviceLimit": "待核实",
+    "paymentMethods": [],
+    "coupons": [
+      {
+        "code": "qq88",
+        "discount": "8折（基础信息记录）",
+        "status": "conflicting"
+      },
+      {
+        "code": "qqy7777",
+        "discount": "总表记录",
+        "status": "conflicting"
+      }
+    ],
+    "entryMonthlyPriceCny": 20,
+    "entryAnnualPriceCny": 99,
+    "entryAnnualEffectiveMonthlyCny": 8.25,
+    "hasNoExpiryPlan": true,
+    "planCount": 9,
+    "fallbackEntryText": null,
+    "features": [
+      "IPLC/IEPL 专线中转，覆盖全球 60+ 节点",
+      "采用 Trojan 和 Shadowsocks 协议，提供 2Gbps+ 带宽资源",
+      "支持 Netflix、Disney+、TikTok 等主流流媒体及 ChatGPT",
+      "专属客户端下载登录即用，不用配订阅"
+    ],
+    "introSummary": "全球云号称覆盖全球 60 多个节点，采用 Trojan 和 Shadowsocks 双协议，专线中转搭配 2Gbps+ 带宽资源，是这份榜单里节点规模比较大的一个，走的是专属客户端模式，下载 App 登录就能用，具体覆盖哪些平台以官网说明为准。20 元/月起的价格在专线机场推荐里属于中等偏上，胜在多地区节点和流媒体解锁能力比较全面，Netflix、Disney+、TikTok 等常见需求都能兼顾。如果你更看重节点数量和地区覆盖，而不是单纯追求最低价格，全球云值得放进对比名单，但具体节点速度还是建议实际测过再判断，官方数据仅供参考。",
+    "has20261019Speed": true,
+    "has20260811Screenshot": true,
+    "dataStatus": "measured",
+    "conflicts": [
+      "优惠码存在 qq88（8折）与 qqy7777 两套记录",
+      "基础信息写起步 ¥20/月，套餐表含年付轻量版 ¥99/年 59GB/月"
+    ],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/thumbs/logos/quanqiu.webp"
+  },
+  {
+    "id": "brand-shandianshu",
+    "slug": "shandianshu",
+    "name": "闪电鼠",
+    "enName": "FlashMouse",
+    "aliases": [
+      "shandianshu"
+    ],
+    "tier": "regular",
+    "priorityRank": 23,
+    "accentColor": "#CA8A04",
+    "logo": "/images/logos/brand-shandianshu.svg",
+    "foundedYear": "2024",
+    "reviewUrl": "/reviews/shandianshu/",
+    "routeType": "IEPL 专线",
+    "protocols": [
+      "VLESS"
+    ],
+    "clientMode": "dual",
+    "clientModeLabel": "自研客户端 + 第三方订阅导入",
+    "deviceLimit": "待核实",
+    "paymentMethods": [],
+    "coupons": [
+      {
+        "code": "sd88",
+        "discount": "季付及以上 7 折",
+        "status": "vendor"
+      }
+    ],
+    "entryMonthlyPriceCny": null,
+    "entryAnnualPriceCny": null,
+    "entryAnnualEffectiveMonthlyCny": 5.6,
+    "hasNoExpiryPlan": false,
+    "planCount": 0,
+    "fallbackEntryText": "2024年运营 | 年付约5.6元/月 60GB/月 | 优惠码 `sd88`",
+    "features": [
+      "IEPL专线",
+      "VLESS 协议",
+      "年付约5.6元/月 60GB",
+      "自研客户端 + 第三方订阅导入",
+      "**季付及以上 7 折**"
+    ],
+    "introSummary": "闪电鼠在原始品牌库中记录为 IEPL 专线。",
+    "has20261019Speed": false,
+    "has20260811Screenshot": false,
+    "dataStatus": "vendor",
+    "conflicts": [
+      "与大佬云、云界线、榴莲云、环球梯基础规格几乎完全一致"
+    ],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/logos/brand-shandianshu.svg"
+  },
+  {
+    "id": "brand-yunjiexian",
+    "slug": "yunjiexian",
+    "name": "云界线",
+    "enName": "CloudLine",
+    "aliases": [
+      "yunjiexian"
+    ],
+    "tier": "regular",
+    "priorityRank": 24,
+    "accentColor": "#475569",
+    "logo": "/images/logos/brand-yunjiexian.svg",
+    "foundedYear": "2024",
+    "reviewUrl": "/reviews/yunjiexian/",
+    "routeType": "IEPL 专线",
+    "protocols": [
+      "VLESS"
+    ],
+    "clientMode": "dual",
+    "clientModeLabel": "自研客户端 + 第三方订阅导入",
+    "deviceLimit": "待核实",
+    "paymentMethods": [],
+    "coupons": [
+      {
+        "code": "yjx888",
+        "discount": "季付及以上 7 折",
+        "status": "vendor"
+      }
+    ],
+    "entryMonthlyPriceCny": null,
+    "entryAnnualPriceCny": null,
+    "entryAnnualEffectiveMonthlyCny": 5.6,
+    "hasNoExpiryPlan": false,
+    "planCount": 0,
+    "fallbackEntryText": "2024年运营 | 年付约5.6元/月 60GB/月 | 优惠码 `yjx888`",
+    "features": [
+      "IEPL专线",
+      "VLESS 协议",
+      "年付约5.6元/月 60GB",
+      "自研客户端 + 第三方订阅导入",
+      "季付及以上 7 折"
+    ],
+    "introSummary": "云界线在原始品牌库中记录为 IEPL 专线。",
+    "has20261019Speed": false,
+    "has20260811Screenshot": false,
+    "dataStatus": "conflicting",
+    "conflicts": [
+      "注册链接存在 code=aycnwNUi 与总表 code=HBaZ91c6 两个版本",
+      "推广链接缺少 SPA hash 符号 #，打开前需核验"
+    ],
+    "urlFormatWarning": true,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/logos/brand-yunjiexian.svg"
+  },
+  {
+    "id": "brand-liulianyun",
+    "slug": "liulianyun",
+    "name": "榴莲云",
+    "enName": "DurianCloud",
+    "aliases": [
+      "liulianyun"
+    ],
+    "tier": "regular",
+    "priorityRank": 25,
+    "accentColor": "#65A30D",
+    "logo": "/images/logos/brand-liulianyun.svg",
+    "foundedYear": "2024",
+    "reviewUrl": "/reviews/liulianyun/",
+    "routeType": "IEPL 专线",
+    "protocols": [
+      "未统一提供"
+    ],
+    "clientMode": "dual",
+    "clientModeLabel": "自研客户端 + 第三方订阅导入",
+    "deviceLimit": "待核实",
+    "paymentMethods": [],
+    "coupons": [
+      {
+        "code": "ll88",
+        "discount": "季付及以上 7 折",
+        "status": "vendor"
+      }
+    ],
+    "entryMonthlyPriceCny": null,
+    "entryAnnualPriceCny": null,
+    "entryAnnualEffectiveMonthlyCny": 5.6,
+    "hasNoExpiryPlan": false,
+    "planCount": 0,
+    "fallbackEntryText": "2024年运营 | 年付约5.6元/月 60GB/月 | 优惠码 `ll88`",
+    "features": [
+      "IEPL专线",
+      "年付约5.6元/月 60GB",
+      "自研客户端 + 第三方订阅导入",
+      "季付及以上 7 折",
+      "**协议类型品牌资料未统一提供**"
+    ],
+    "introSummary": "榴莲云在原始品牌库中记录为 IEPL 专线。",
+    "has20261019Speed": false,
+    "has20260811Screenshot": false,
+    "dataStatus": "vendor",
+    "conflicts": [
+      "协议类型未明确；其余基础规格与大佬云、闪电鼠等 5.6 元档一致"
+    ],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/logos/brand-liulianyun.svg"
+  },
+  {
+    "id": "brand-shenxing",
+    "slug": "shenxing",
+    "name": "神行加速",
+    "enName": "Shenxing",
+    "aliases": [
+      "shenxing"
+    ],
+    "tier": "regular",
+    "priorityRank": 26,
+    "accentColor": "#0F766E",
+    "logo": "/images/logos/brand-shenxing.svg",
+    "foundedYear": "2024",
+    "reviewUrl": "/reviews/shenxing/",
+    "routeType": "IEPL 专线",
+    "protocols": [
+      "VLESS"
+    ],
+    "clientMode": "dual",
+    "clientModeLabel": "自研客户端 + 第三方订阅导入",
+    "deviceLimit": "待核实",
+    "paymentMethods": [],
+    "coupons": [
+      {
+        "code": "xs0077",
+        "discount": "新用户 7 折",
+        "status": "vendor"
+      }
+    ],
+    "entryMonthlyPriceCny": null,
+    "entryAnnualPriceCny": null,
+    "entryAnnualEffectiveMonthlyCny": 14,
+    "hasNoExpiryPlan": false,
+    "planCount": 0,
+    "fallbackEntryText": "2024年运营 | 年付约14元/月 120GB/月 | 优惠码 `xs0077`",
+    "features": [
+      "IEPL专线",
+      "VLESS 协议",
+      "年付约14元/月 120GB",
+      "自研客户端 + 第三方订阅导入",
+      "**新用户 7 折**"
+    ],
+    "introSummary": "神行加速在原始品牌库中记录为 IEPL 专线。",
+    "has20261019Speed": false,
+    "has20260811Screenshot": false,
+    "dataStatus": "vendor",
+    "conflicts": [],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/logos/brand-shenxing.svg"
+  },
+  {
+    "id": "brand-huanqiuti",
+    "slug": "huanqiuti",
+    "name": "环球梯",
+    "enName": "GlobalLadder",
+    "aliases": [
+      "huanqiuti"
+    ],
+    "tier": "regular",
+    "priorityRank": 27,
+    "accentColor": "#1E3A8A",
+    "logo": "/images/logos/brand-huanqiuti.svg",
+    "foundedYear": "2024",
+    "reviewUrl": "/reviews/huanqiuti/",
+    "routeType": "IEPL 专线",
+    "protocols": [
+      "VLESS"
+    ],
+    "clientMode": "dual",
+    "clientModeLabel": "自研客户端 + 第三方订阅导入",
+    "deviceLimit": "待核实",
+    "paymentMethods": [],
+    "coupons": [
+      {
+        "code": "HQ66",
+        "discount": "季付及以上 7 折",
+        "status": "vendor"
+      }
+    ],
+    "entryMonthlyPriceCny": null,
+    "entryAnnualPriceCny": null,
+    "entryAnnualEffectiveMonthlyCny": 5.6,
+    "hasNoExpiryPlan": false,
+    "planCount": 0,
+    "fallbackEntryText": "2024年运营 | 年付约5.6元/月 60GB/月 | 优惠码 `HQ66`",
+    "features": [
+      "IEPL专线",
+      "VLESS 协议",
+      "年付约5.6元/月 60GB",
+      "自研客户端 + 第三方订阅导入",
+      "季付及以上 7 折",
+      "**联盟链接格式与其他品牌不同**（缺少 `#`）"
+    ],
+    "introSummary": "环球梯在原始品牌库中记录为 IEPL 专线。",
+    "has20261019Speed": false,
+    "has20260811Screenshot": false,
+    "dataStatus": "conflicting",
+    "conflicts": [
+      "推广链接缺少 SPA hash 符号 #，与标准链接结构不同"
+    ],
+    "urlFormatWarning": true,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/logos/brand-huanqiuti.svg"
+  },
+  {
+    "id": "brand-tiziyun",
+    "slug": "tiziyun",
+    "name": "梯子云",
+    "enName": "LadderCloud",
+    "aliases": [
+      "tiziyun"
+    ],
+    "tier": "regular",
+    "priorityRank": 28,
+    "accentColor": "#0891B2",
+    "logo": "/images/logos/梯子云256x256.png",
+    "foundedYear": "2025",
+    "reviewUrl": "/reviews/tiziyun/",
+    "routeType": "IEPL 专线（2Gbps+ 独立带宽含 500Mbps 高峰冗余，品牌资料）",
+    "protocols": [
+      "VLESS"
+    ],
+    "clientMode": "dual",
+    "clientModeLabel": "自研全平台客户端（一键登录）+ 支持通用订阅",
+    "deviceLimit": "待核实",
+    "paymentMethods": [],
+    "coupons": [
+      {
+        "code": "tiziyun",
+        "discount": "具体折扣未标注",
+        "status": "vendor"
+      }
+    ],
+    "entryMonthlyPriceCny": null,
+    "entryAnnualPriceCny": null,
+    "entryAnnualEffectiveMonthlyCny": 7.4,
+    "hasNoExpiryPlan": false,
+    "planCount": 0,
+    "fallbackEntryText": "2025年运营 | 年付约7.4元/月 60GB/月 | 优惠码 `tiziyun`",
+    "features": [
+      "IEPL专线",
+      "VLESS 协议",
+      "**自研全平台客户端**（品牌资料强调\"小白用户一键登录即可连接，零门槛上手\"）",
+      "**支持通用订阅**",
+      "**60+ 节点**",
+      "**2Gbps+ 独立带宽**（含 500Mbps 级高峰冗余）",
+      "**覆盖香港、日本、新加坡、美国、台湾等核心枢纽**",
+      "**海外专业技术团队常驻维护**",
+      "**提供快速响应的在线客服与工单支持**",
+      "品牌资料说\"完美解锁 Netflix、Disney+、TikTok 及 ChatGPT / Claude 等高频 AI 生产力工具\""
+    ],
+    "introSummary": "梯子云在原始品牌库中记录为 IEPL 专线（2Gbps+ 独立带宽含 500Mbps 高峰冗余，品牌资料）。",
+    "has20261019Speed": false,
+    "has20260811Screenshot": false,
+    "dataStatus": "vendor",
+    "conflicts": [],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/thumbs/logos/tiziyun.webp"
+  },
+  {
+    "id": "brand-lingdong",
+    "slug": "lingdong",
+    "name": "灵动云",
+    "enName": "Lingdong Cloud",
+    "aliases": [
+      "lingdong"
+    ],
+    "tier": "appended_historical",
+    "priorityRank": 29,
+    "accentColor": "#0284C7",
+    "logo": "/images/logos/灵动云256x256.png",
+    "foundedYear": "2025",
+    "reviewUrl": "/reviews/lingdong/",
+    "routeType": "IEPL 专线（历史资料）",
+    "protocols": [
+      "VLESS（实测）",
+      "Trojan（页面混提）"
+    ],
+    "clientMode": "unverified",
+    "clientModeLabel": "不限速不限设备（具体客户端列表待核实）",
+    "deviceLimit": "不限设备",
+    "paymentMethods": [
+      "支付宝",
+      "USDT（微信需客服，历史资料）"
+    ],
+    "coupons": [
+      {
+        "code": "待核实",
+        "discount": "优惠码尚未核实",
+        "status": "unverified"
+      }
+    ],
+    "entryMonthlyPriceCny": 20,
+    "entryAnnualPriceCny": 99,
+    "entryAnnualEffectiveMonthlyCny": 8.25,
+    "hasNoExpiryPlan": true,
+    "planCount": 29,
+    "fallbackEntryText": null,
+    "features": [
+      "IEPL/VLESS 与大流量套餐",
+      "单次流量包和私人定制齐全",
+      "现有实测中主流 AI 解锁表现较好。"
+    ],
+    "introSummary": "灵动云在原始品牌库中记录为 IEPL 专线（历史资料）。",
+    "has20261019Speed": false,
+    "has20260811Screenshot": false,
+    "dataStatus": "historical",
+    "conflicts": [
+      "页面文案混提 VLESS/trojan；至尊私人定制版月流量被截图遮挡"
+    ],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/thumbs/logos/lingdong.webp"
+  },
+  {
+    "id": "brand-langwang",
+    "slug": "langwang",
+    "name": "浪网",
+    "enName": "WaveNet",
+    "aliases": [
+      "langwang"
+    ],
+    "tier": "appended_historical",
+    "priorityRank": 30,
+    "accentColor": "#334155",
+    "logo": "/images/logos/brand-langwang.svg",
+    "foundedYear": null,
+    "reviewUrl": "/reviews/langwang/",
+    "routeType": "IEPL 专线（截图标注）",
+    "protocols": [
+      "待核实"
+    ],
+    "clientMode": "unverified",
+    "clientModeLabel": "客户端、协议与设备限制尚缺",
+    "deviceLimit": "待核实（截图遮挡）",
+    "paymentMethods": [],
+    "coupons": [
+      {
+        "code": "待核实",
+        "discount": "优惠码尚未核实",
+        "status": "unverified"
+      }
+    ],
+    "entryMonthlyPriceCny": 30,
+    "entryAnnualPriceCny": 119,
+    "entryAnnualEffectiveMonthlyCny": 9.92,
+    "hasNoExpiryPlan": true,
+    "planCount": 29,
+    "fallbackEntryText": null,
+    "features": [
+      "IEPL 专线定位",
+      "入门到商业多价格层级",
+      "流量包和定制线路补充非标准需求。"
+    ],
+    "introSummary": "浪网在原始品牌库中记录为 IEPL 专线（截图标注）。",
+    "has20261019Speed": false,
+    "has20260811Screenshot": false,
+    "dataStatus": "historical",
+    "conflicts": [
+      "入门套餐流量显示“截150G”（截图遮挡），协议/设备/测速/解锁全缺"
+    ],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/logos/brand-langwang.svg"
+  },
+  {
+    "id": "brand-edgenova",
+    "slug": "edgenova",
+    "name": "边缘节点 EdgeNova",
+    "enName": "EdgeNova",
+    "aliases": [
+      "边缘节点",
+      "EdgeNova",
+      "edgenova"
+    ],
+    "tier": "appended_historical",
+    "priorityRank": 31,
+    "accentColor": "#0E7490",
+    "logo": "/images/logos/edgenova_logo.webp",
+    "foundedYear": null,
+    "reviewUrl": "/reviews/edgenova/",
+    "routeType": "高速直连 / IPLC（多线路自动分配）",
+    "protocols": [
+      "待核实"
+    ],
+    "clientMode": "unverified",
+    "clientModeLabel": "具体客户端兼容性待核实",
+    "deviceLimit": "待核实",
+    "paymentMethods": [
+      "支付宝",
+      "微信",
+      "USDT（历史资料）"
+    ],
+    "coupons": [
+      {
+        "code": "TH888",
+        "discount": "8 折（历史资料）",
+        "status": "historical"
+      }
+    ],
+    "entryMonthlyPriceCny": 15,
+    "entryAnnualPriceCny": 108,
+    "entryAnnualEffectiveMonthlyCny": 9,
+    "hasNoExpiryPlan": false,
+    "planCount": 18,
+    "fallbackEntryText": null,
+    "features": [
+      "多线路自动分配定位",
+      "年付小包和多档流量可选",
+      "提供新用户优惠码。"
+    ],
+    "introSummary": "边缘节点 EdgeNova在原始品牌库中记录为 高速直连 / IPLC（多线路自动分配）。",
+    "has20261019Speed": false,
+    "has20260811Screenshot": false,
+    "dataStatus": "historical",
+    "conflicts": [
+      "缺乏可比逐地区测速与逐项流媒体/AI 实测数据"
+    ],
+    "urlFormatWarning": false,
+    "updatedAt": "2026-11-24",
+    "thumbLogo": "/images/thumbs/logos/edgenova.webp"
+  }
+]

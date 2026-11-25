@@ -1,0 +1,95 @@
+---
+interface PlanItem {
+  planName: string;
+  billingCycleLabel: string;
+  priceRaw: string;
+  trafficRaw: string;
+  trafficPeriod: string;
+  effectiveMonthlyCny: number | null;
+  costPerGbCny: number | null;
+  dataStatus: string;
+  note?: string;
+}
+
+interface Props {
+  brandName: string;
+  plans: PlanItem[];
+  fallbackText?: string | null;
+}
+
+const { brandName, plans, fallbackText } = Astro.props;
+---
+
+<section class="rounded-xl border border-slate-200 bg-white overflow-hidden">
+  <div class="px-5 py-4 border-b border-slate-200 bg-slate-50/70 flex flex-wrap items-center justify-between gap-2">
+    <div>
+      <h2 class="text-base font-bold text-ink">{brandName} 套餐价格与单 GB 成本核算</h2>
+      <p class="text-xs text-ink-faint mt-0.5">以下价格源自收集到的历史与品牌资料记录，并非保证实时官网售价，下单前请以结算页显示为准。</p>
+    </div>
+    <span class="text-xs font-mono text-brand bg-white border border-slate-200 px-2.5 py-1 rounded-md">
+      共 {plans.length} 档记录
+    </span>
+  </div>
+
+  {plans.length > 0 ? (
+    <div class="overflow-x-auto">
+      <table class="w-full text-left border-collapse text-xs sm:text-sm">
+        <thead>
+          <tr class="border-b border-slate-200 bg-slate-50 text-ink-muted font-semibold">
+            <th class="py-3 px-4">套餐名称</th>
+            <th class="py-3 px-3">计费周期</th>
+            <th class="py-3 px-3">记录价格</th>
+            <th class="py-3 px-3">流量配额</th>
+            <th class="py-3 px-3">折算月均</th>
+            <th class="py-3 px-3">每 GB 成本</th>
+            <th class="py-3 px-4">状态标记</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-100 tabular-nums font-mono">
+          {plans.map((p) => (
+            <tr class="hover:bg-slate-50/70">
+              <td class="py-3 px-4 font-sans font-medium text-ink">
+                {p.planName}
+                {p.note && <div class="text-[11px] font-normal text-rose-700 mt-0.5">{p.note}</div>}
+              </td>
+              <td class="py-3 px-3 font-sans text-ink-muted">{p.billingCycleLabel}</td>
+              <td class="py-3 px-3 font-semibold text-ink">{p.priceRaw}</td>
+              <td class="py-3 px-3 text-ink">{p.trafficRaw} / {p.trafficPeriod}</td>
+              <td class="py-3 px-3 text-brand">
+                {p.effectiveMonthlyCny ? `¥${p.effectiveMonthlyCny}/月` : '一次性'}
+              </td>
+              <td class="py-3 px-3 text-ink-muted">
+                {p.costPerGbCny !== null ? `¥${p.costPerGbCny}/GB` : '待核实'}
+              </td>
+              <td class="py-3 px-4 font-sans">
+                <span
+                  class={`inline-block px-2 py-0.5 rounded text-[11px] font-medium ${
+                    p.dataStatus === 'conflicting'
+                      ? 'bg-rose-50 text-rose-700'
+                      : p.dataStatus === 'unverified'
+                        ? 'bg-amber-50 text-amber-700'
+                        : p.dataStatus === 'historical'
+                          ? 'bg-slate-100 text-slate-700'
+                          : 'bg-sky-50 text-sky-700'
+                  }`}
+                >
+                  {p.dataStatus}
+                </span>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  ) : (
+    <div class="p-6 text-sm text-ink-muted space-y-2">
+      <p>当前源资料未提供 {brandName} 的完整多档套餐明细表，仅存在以下基础条目记录：</p>
+      {fallbackText && (
+        <div class="rounded-lg bg-slate-50 border border-slate-200 px-4 py-3 font-mono text-xs text-ink">
+          {fallbackText}
+        </div>
+      )}
+      <p class="text-xs text-amber-700">提示：完整套餐周期与流量上限待补充核实，请勿将摘要起价视为全系套餐。</p>
+    </div>
+  )}
+</section>

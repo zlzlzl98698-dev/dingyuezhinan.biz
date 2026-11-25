@@ -1,0 +1,44 @@
+{
+  "name": "dingyuezhinan.biz",
+  "version": "1.0.0",
+  "description": "订阅指南（Subscription Guide）— 网络订阅服务知识库、机场评测数据库与商业决策平台",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build && node scripts/sync-sitemap.mjs && npx pagefind --site dist --output-subdir pagefind",
+    "preview": "astro preview",
+    "check": "astro check",
+    "audit:sources": "node scripts/audit-sources.mjs",
+    "keywords:import": "node scripts/import-keywords.mjs",
+    "keywords:cluster": "node scripts/cluster-keywords.mjs",
+    "keywords:cannibalization": "node scripts/detect-cannibalization.mjs",
+    "briefs:generate": "node scripts/generate-content-briefs.mjs",
+    "check:brands": "node scripts/check-brand-data.mjs",
+    "check:links": "node scripts/check-affiliate-links.mjs",
+    "audit:links": "node scripts/audit-internal-links.mjs",
+    "validate:schema": "node scripts/validate-schema.mjs",
+    "report:content": "node scripts/generate-content-report.mjs",
+    "qa:all": "npm run check:brands && npm run check:links && npm run audit:links && npm run keywords:cannibalization && npm run validate:schema && npm run report:content"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^4.2.0",
+    "@astrojs/react": "^4.2.0",
+    "@astrojs/sitemap": "^3.3.0",
+    "@astrojs/tailwind": "^6.0.2",
+    "@tailwindcss/typography": "^0.5.16",
+    "astro": "^5.7.0",
+    "lucide-react": "^0.511.0",
+    "pagefind": "^1.3.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tailwindcss": "^3.4.17"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "typescript": "^5.8.3"
+  }
+}

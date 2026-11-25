@@ -1,0 +1,178 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumb from '../components/navigation/Breadcrumb.astro';
+import DataStatusBadge from '../components/brands/DataStatusBadge.astro';
+import AffiliateDisclosure from '../components/brands/AffiliateDisclosure.astro';
+import FAQ from '../components/FAQ.astro';
+import RelatedArticles from '../components/RelatedArticles.astro';
+import { buildArticleSchema, buildBreadcrumbSchema, buildFAQSchema, type BreadcrumbItem } from '../lib/seo';
+import type { RelatedLink } from '../lib/internal-links';
+
+interface HeadingItem {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  h1: string;
+  category: string;
+  breadcrumbs: BreadcrumbItem[];
+  pubDate: Date;
+  updatedDate: Date;
+  author?: string;
+  reviewer?: string;
+  dataStatus?: string;
+  tags?: string[];
+  faq?: { question: string; answer: string }[];
+  relatedLinks?: RelatedLink[];
+  extraSchemas?: object[];
+  showDisclosure?: boolean;
+  aboutId?: string;
+  ogImage?: string;
+  headings?: HeadingItem[];
+  readingMinutes?: number;
+}
+
+const {
+  title,
+  description,
+  h1,
+  category,
+  breadcrumbs,
+  pubDate,
+  updatedDate,
+  author = '订阅指南编辑部',
+  reviewer = '网络架构资料校验组',
+  dataStatus = 'vendor',
+  tags = [],
+  faq = [],
+  relatedLinks = [],
+  extraSchemas = [],
+  showDisclosure = false,
+  aboutId,
+  ogImage = '/og-default.png',
+  headings = [],
+  readingMinutes,
+} = Astro.props;
+
+const tocHeadings = headings.filter((h) => h.depth === 2);
+
+const pagefindCategory = category.includes('评测')
+  ? '品牌深度评测'
+  : category.includes('对比')
+    ? '横向对比'
+    : category.includes('客户端')
+      ? '客户端指南'
+      : category.includes('排查')
+        ? '故障排查'
+        : category.includes('风险')
+          ? '风险与替代'
+          : category.includes('教程') || category.includes('成本')
+            ? '使用教程'
+            : category.includes('AI')
+              ? 'AI 与流媒体'
+              : category.includes('线路')
+                ? '线路与节点'
+                : '专题指南';
+
+const faqSchema = buildFAQSchema(faq);
+const articleSchema = buildArticleSchema({
+  title,
+  description,
+  url: Astro.url.pathname,
+  pubDate,
+  updatedDate,
+  author,
+  reviewedBy: reviewer,
+  image: ogImage,
+  aboutId,
+});
+
+const schemas = [
+  articleSchema,
+  buildBreadcrumbSchema(breadcrumbs),
+  ...(faqSchema ? [faqSchema] : []),
+  ...extraSchemas,
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  ogType="article"
+  ogImage={ogImage}
+  author={author}
+  publishDate={pubDate.toISOString()}
+  modifiedDate={updatedDate.toISOString()}
+  tags={tags}
+  structuredData={schemas}
+>
+  <article class="max-w-5xl mx-auto px-4 sm:px-6 py-8 md:py-12" data-pagefind-body>
+    <Breadcrumb items={breadcrumbs} />
+
+    <header class="border-b border-slate-200 pb-6 mb-8">
+      <div class="flex flex-wrap items-center gap-2.5 mb-3">
+        <span class="text-xs font-mono text-brand bg-brand-soft border border-brand-border/70 px-2.5 py-0.5 rounded-md">
+          {category}
+        </span>
+        <span data-pagefind-filter="分类" class="sr-only">{pagefindCategory}</span>
+        <DataStatusBadge status={dataStatus} />
+      </div>
+      <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-ink leading-tight">
+        {h1}
+      </h1>
+      <p class="mt-3 text-base text-ink-muted leading-relaxed">
+        {description}
+      </p>
+      <div class="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-ink-faint font-mono">
+        <span class="inline-flex items-center gap-2 text-ink font-medium">
+          <img
+            src="/images/avatars/brand-avatar.webp"
+            alt={`${author}头像`}
+            width="24"
+            height="24"
+            class="w-6 h-6 rounded-full object-cover border border-slate-200 shrink-0"
+          />
+          <span>作者：<a href="/editorial-policy/#editorial-team" class="hover:text-brand underline decoration-slate-300">{author}</a></span>
+        </span>
+        <span>复核：<a href="/editorial-policy/#editorial-team" class="hover:text-brand underline decoration-slate-300">{reviewer}</a></span>
+        <span>发布：{pubDate.toISOString().slice(0, 10)}</span>
+        <span>更新：{updatedDate.toISOString().slice(0, 10)}</span>
+        {readingMinutes && <span>预计阅读：约 {readingMinutes} 分钟</span>}
+      </div>
+    </header>
+
+    {showDisclosure && (
+      <div class="mb-8">
+        <AffiliateDisclosure />
+      </div>
+    )}
+
+    {tocHeadings.length >= 2 && (
+      <details open class="mb-8 rounded-xl border border-slate-200 bg-slate-50/80 p-4 sm:p-5">
+        <summary class="cursor-pointer list-none flex items-center justify-between text-xs font-mono uppercase tracking-wider text-brand font-semibold">
+          <span>本文内容导航目录（共 {tocHeadings.length} 节）</span>
+          <span class="text-ink-faint">点击展开/收起</span>
+        </summary>
+        <nav aria-label="文章目录" class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 text-xs">
+          {tocHeadings.map((h, idx) => (
+            <a href={`#${h.slug}`} class="text-ink-muted hover:text-brand py-0.5 truncate transition-colors">
+              <span class="font-mono text-ink-faint mr-1.5">{String(idx + 1).padStart(2, '0')}</span>
+              <span>{h.text}</span>
+            </a>
+          ))}
+        </nav>
+      </details>
+    )}
+
+    <div class="space-y-8">
+      <slot />
+    </div>
+
+    <FAQ items={faq} />
+    <RelatedArticles links={relatedLinks} />
+  </article>
+</BaseLayout>

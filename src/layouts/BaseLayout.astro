@@ -1,0 +1,44 @@
+---
+import SEOHead from '../components/seo/SEOHead.astro';
+import Header from '../components/navigation/Header.astro';
+import Footer from '../components/navigation/Footer.astro';
+import { buildOrganizationSchema, buildWebSiteSchema } from '../lib/seo';
+import '../styles/globals.css';
+
+interface Props {
+  title: string;
+  description: string;
+  ogImage?: string;
+  ogType?: 'website' | 'article';
+  canonicalUrl?: string | null;
+  author?: string;
+  publishDate?: string;
+  modifiedDate?: string;
+  tags?: string[];
+  structuredData?: object | object[];
+  noindex?: boolean;
+}
+
+const props = Astro.props;
+const extraSchemas = props.structuredData
+  ? Array.isArray(props.structuredData)
+    ? props.structuredData
+    : [props.structuredData]
+  : [];
+
+const combinedSchemas = [buildOrganizationSchema(), buildWebSiteSchema(), ...extraSchemas];
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <SEOHead {...props} structuredData={combinedSchemas} />
+  </head>
+  <body class="min-h-[100dvh] flex flex-col bg-page text-ink">
+    <Header />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

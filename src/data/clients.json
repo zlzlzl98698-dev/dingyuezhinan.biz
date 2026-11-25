@@ -1,0 +1,260 @@
+[
+  {
+    "id": "client-clash-verge-rev",
+    "slug": "clash-verge-rev",
+    "name": "Clash Verge Rev",
+    "category": "图形化代理管理客户端",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cores": [
+      "Mihomo"
+    ],
+    "pricing": "免费开源",
+    "officialType": "GitHub 开源项目",
+    "officialUrl": "https://github.com/clash-verge-rev/clash-verge-rev",
+    "maintenanceStatus": "活跃维护（以官方仓库最新发布为准）",
+    "verifiedAt": "2026-11-24",
+    "summary": "基于 Mihomo 内核的跨平台桌面代理管理软件，支持订阅管理、规则分流与 TUN 虚拟网卡模式，兼顾新手与进阶用户。",
+    "notes": "macOS 安装需区分 Intel 与 Apple Silicon 架构安装包；Linux 提供 DEB/RPM/AppImage 格式。"
+  },
+  {
+    "id": "client-v2rayn",
+    "slug": "v2rayn",
+    "name": "v2rayN",
+    "category": "图形化多核心代理客户端",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cores": [
+      "Xray",
+      "sing-box",
+      "Mihomo"
+    ],
+    "pricing": "免费开源",
+    "officialType": "GitHub 开源项目",
+    "officialUrl": "https://github.com/2dust/v2rayN",
+    "maintenanceStatus": "活跃维护",
+    "verifiedAt": "2026-11-24",
+    "summary": "老牌多协议多核心桌面客户端，支持 Xray 与 sing-box 核心切换，适合多协议订阅与节点精细管理。",
+    "notes": "从 GitHub Releases 下载官方发布包时建议核对签名与压缩包校验值。"
+  },
+  {
+    "id": "client-flclash",
+    "slug": "flclash",
+    "name": "FlClash",
+    "category": "图形化代理管理客户端",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android"
+    ],
+    "cores": [
+      "Mihomo"
+    ],
+    "pricing": "免费开源",
+    "officialType": "GitHub 开源项目",
+    "officialUrl": "https://github.com/chen08209/FlClash",
+    "maintenanceStatus": "活跃维护",
+    "verifiedAt": "2026-11-24",
+    "summary": "基于 Mihomo 内核开发的跨平台极简界面客户端，桌面与移动端交互一致，支持订阅与规则分流。",
+    "notes": "macOS 版本同样需注意选择 arm64 或 x64 对应构建。"
+  },
+  {
+    "id": "client-hiddify",
+    "slug": "hiddify",
+    "name": "Hiddify",
+    "category": "图形化多协议客户端",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "cores": [
+      "sing-box"
+    ],
+    "pricing": "免费开源",
+    "officialType": "GitHub 开源项目",
+    "officialUrl": "https://github.com/hiddify/hiddify-app",
+    "maintenanceStatus": "活跃维护",
+    "verifiedAt": "2026-11-24",
+    "summary": "支持多种订阅格式、自动节点测速选择与远程配置的多平台客户端，对初次配置代理的新手友好。",
+    "notes": "支持导入 Clash、sing-box 与通用分享链接，需注意部分区域路由模式差异。"
+  },
+  {
+    "id": "client-karing",
+    "slug": "karing",
+    "name": "Karing",
+    "category": "图形化代理管理客户端",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "cores": [
+      "sing-box"
+    ],
+    "pricing": "免费（iOS 商店上架）",
+    "officialType": "GitHub / App Store",
+    "officialUrl": "https://github.com/KaringX/karing",
+    "maintenanceStatus": "活跃维护",
+    "verifiedAt": "2026-11-24",
+    "summary": "基于 sing-box 体系的跨平台订阅工具，针对新手简化了规则分流与多订阅合并流程。",
+    "notes": "iOS 端通常需使用海外地区 Apple ID 在 App Store 获取。"
+  },
+  {
+    "id": "client-v2rayng",
+    "slug": "v2rayng",
+    "name": "v2rayNG",
+    "category": "移动端图形代理客户端",
+    "platforms": [
+      "Android"
+    ],
+    "cores": [
+      "Xray"
+    ],
+    "pricing": "免费开源",
+    "officialType": "GitHub 开源项目",
+    "officialUrl": "https://github.com/2dust/v2rayNG",
+    "maintenanceStatus": "活跃维护",
+    "verifiedAt": "2026-11-24",
+    "summary": "Android 端最常见的 Xray 协议客户端，支持单节点链接、二维码与 Base64 订阅导入，内存占用低。",
+    "notes": "不原生直接解析复杂 Clash YAML 策略组，导入 Clash 专属订阅时需配合机场提供的通用/V2Ray 链接。"
+  },
+  {
+    "id": "client-shadowrocket",
+    "slug": "shadowrocket",
+    "name": "Shadowrocket（小火箭）",
+    "category": "iOS 规则代理客户端",
+    "platforms": [
+      "iOS"
+    ],
+    "cores": [
+      "专有规则引擎"
+    ],
+    "pricing": "美区 App Store 付费（一次性购买，具体以商店地区为准）",
+    "officialType": "App Store 官方应用",
+    "officialUrl": "https://apps.apple.com/app/shadowrocket/id932747118",
+    "maintenanceStatus": "持续更新",
+    "verifiedAt": "2026-11-24",
+    "summary": "iPhone 与 iPad 上普及度最高的规则代理应用，支持 VLESS、Trojan、VMess、Hysteria 2 等主流协议及订阅托管。",
+    "notes": "中国区 App Store 未上架，切勿购买或使用来源不明的共享破解包，避免 Apple ID 锁机风险。"
+  },
+  {
+    "id": "client-mihomo",
+    "slug": "mihomo",
+    "name": "Mihomo（原 Clash.Meta 内核）",
+    "category": "网络代理核心",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "OpenWrt"
+    ],
+    "cores": [
+      "Mihomo"
+    ],
+    "pricing": "免费开源",
+    "officialType": "GitHub 开源内核项目",
+    "officialUrl": "https://github.com/MetaCubeX/mihomo",
+    "maintenanceStatus": "活跃维护",
+    "verifiedAt": "2026-11-24",
+    "summary": "目前 Clash 生态的事实标准底层代理核心，支持 VLESS Reality、Hysteria 2、AnyTLS、TUN 与增强 DNS 分流。",
+    "notes": "本身为命令行核心，日常使用一般搭配 Clash Verge Rev、FlClash、OpenClash 等前端界面。"
+  },
+  {
+    "id": "client-sing-box",
+    "slug": "sing-box",
+    "name": "sing-box",
+    "category": "统一通用网络代理核心",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS",
+      "OpenWrt"
+    ],
+    "cores": [
+      "sing-box"
+    ],
+    "pricing": "免费开源",
+    "officialType": "官方文档与开源项目",
+    "officialUrl": "https://sing-box.sagernet.org/",
+    "maintenanceStatus": "活跃维护",
+    "verifiedAt": "2026-11-24",
+    "summary": "统一通用代理平台内核，提供官方 SFA（Android）、SFI（iOS）、SFM（macOS）与桌面/路由组件。",
+    "notes": "原生 JSON 配置格式与 Clash YAML 不同，使用前需确认机场是否下发 sing-box 订阅或进行合规转换。"
+  },
+  {
+    "id": "client-clash-meta",
+    "slug": "clash-meta",
+    "name": "Clash Meta for Android",
+    "category": "移动端规则代理客户端",
+    "platforms": [
+      "Android"
+    ],
+    "cores": [
+      "Mihomo"
+    ],
+    "pricing": "免费开源",
+    "officialType": "GitHub 开源项目",
+    "officialUrl": "https://github.com/MetaCubeX/ClashMetaForAndroid",
+    "maintenanceStatus": "按上游社区分支维护",
+    "verifiedAt": "2026-11-24",
+    "summary": "基于 Mihomo 内核的 Android Clash 规则客户端，兼容标准 Clash YAML 配置与分流策略组。",
+    "notes": "部分旧版 Clash for Android 已停止维护，安卓端应选用基于 Mihomo 的合法构建或 FlClash。"
+  },
+  {
+    "id": "client-clash-verge",
+    "slug": "clash-verge",
+    "name": "Clash Verge（原版演进说明）",
+    "category": "历史与迁移参考客户端",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cores": [
+      "Clash / Mihomo"
+    ],
+    "pricing": "免费开源",
+    "officialType": "历史参考项目",
+    "officialUrl": "https://github.com/clash-verge-rev/clash-verge-rev",
+    "maintenanceStatus": "原仓库已归档，当前生态由 Clash Verge Rev 接续维护",
+    "verifiedAt": "2026-11-24",
+    "summary": "早期替代 Clash for Windows 的跨平台前端，目前新装机与教程均建议迁移至 Clash Verge Rev。",
+    "notes": "切勿从搜索引擎广告下载伪造“Clash 官网中文版”安装包。"
+  },
+  {
+    "id": "client-openwrt-suite",
+    "slug": "openwrt-clients",
+    "name": "OpenWrt 软路由代理组件（OpenClash / PassWall2 / Nikki / HomeProxy）",
+    "category": "路由器网络管理组件",
+    "platforms": [
+      "OpenWrt"
+    ],
+    "cores": [
+      "Mihomo",
+      "Xray",
+      "sing-box"
+    ],
+    "pricing": "免费开源",
+    "officialType": "GitHub 开源路由器插件",
+    "officialUrl": "https://github.com/vernesong/OpenClash",
+    "maintenanceStatus": "活跃维护（各项目固件依赖不同）",
+    "verifiedAt": "2026-11-24",
+    "summary": "路由器透明代理核心组件，部署前必须核对 OpenWrt 版本、CPU 架构、防火墙（fw3/fw4）与包管理器（opkg/apk）。",
+    "notes": "例如 Nikki 项目明确要求 OpenWrt 24.10 及以上版本，不可盲目跨版本安装 ipk/apk。"
+  }
+]

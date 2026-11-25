@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PagefindSearch from '../components/tools/PagefindSearch.astro';
+import Breadcrumb from '../components/navigation/Breadcrumb.astro';
+---
+
+<BaseLayout
+  title="全站搜索 | 订阅指南"
+  description="搜索订阅指南全站机场品牌档案、评测报告、套餐价格、客户端软件教程与故障排查方案。"
+  noindex={true}
+>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-10">
+    <Breadcrumb items={[{ name: '首页', url: '/' }, { name: '全站搜索', url: '/search/' }]} />
+    <h1 class="text-2xl sm:text-3xl font-bold text-ink mb-2">全站内容检索</h1>
+    <p class="text-sm text-ink-muted mb-6">
+      直接检索 31 家机场品牌评测、214 档套餐记录、12 个客户端指南及常见连接排障文档。
+    </p>
+    <PagefindSearch />
+  </div>
+</BaseLayout>

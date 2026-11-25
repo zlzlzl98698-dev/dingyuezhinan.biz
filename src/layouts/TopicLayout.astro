@@ -1,0 +1,107 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumb from '../components/navigation/Breadcrumb.astro';
+import DataStatusBadge from '../components/brands/DataStatusBadge.astro';
+import AffiliateDisclosure from '../components/brands/AffiliateDisclosure.astro';
+import FAQ from '../components/FAQ.astro';
+import RelatedArticles from '../components/RelatedArticles.astro';
+import { buildBreadcrumbSchema, buildFAQSchema, type BreadcrumbItem } from '../lib/seo';
+import type { RelatedLink } from '../lib/internal-links';
+
+interface Props {
+  title: string;
+  description: string;
+  h1: string;
+  eyebrow: string;
+  breadcrumbs: BreadcrumbItem[];
+  pubDate: Date;
+  updatedDate: Date;
+  author?: string;
+  dataStatus?: string;
+  tags?: string[];
+  faq?: { question: string; answer: string }[];
+  relatedLinks?: RelatedLink[];
+  extraSchemas?: object[];
+  showDisclosure?: boolean;
+}
+
+const {
+  title,
+  description,
+  h1,
+  eyebrow,
+  breadcrumbs,
+  pubDate,
+  updatedDate,
+  author = '订阅指南编辑部',
+  dataStatus = 'vendor',
+  tags = [],
+  faq = [],
+  relatedLinks = [],
+  extraSchemas = [],
+  showDisclosure = false,
+} = Astro.props;
+
+const faqSchema = buildFAQSchema(faq);
+const schemas = [
+  buildBreadcrumbSchema(breadcrumbs),
+  ...(faqSchema ? [faqSchema] : []),
+  ...extraSchemas,
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  ogType="website"
+  author={author}
+  publishDate={pubDate.toISOString()}
+  modifiedDate={updatedDate.toISOString()}
+  tags={tags}
+  structuredData={schemas}
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8 md:py-12" data-pagefind-body>
+    <Breadcrumb items={breadcrumbs} />
+
+    <header class="border-b border-slate-200 pb-6 mb-8">
+      <div class="flex flex-wrap items-center gap-2.5 mb-3">
+        <span class="text-xs font-mono uppercase tracking-wider text-brand bg-brand-soft border border-brand-border/70 px-2.5 py-0.5 rounded-md">
+          {eyebrow}
+        </span>
+        <span data-pagefind-filter="分类" class="sr-only">专题指南</span>
+        <DataStatusBadge status={dataStatus} />
+      </div>
+      <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-ink leading-tight">
+        {h1}
+      </h1>
+      <p class="mt-3 text-base text-ink-muted max-w-3xl leading-relaxed">
+        {description}
+      </p>
+      <div class="mt-4 flex flex-wrap items-center gap-4 text-xs text-ink-faint font-mono">
+        <span class="inline-flex items-center gap-2 text-ink font-medium">
+          <img
+            src="/images/avatars/brand-avatar.webp"
+            alt={`${author}头像`}
+            width="24"
+            height="24"
+            class="w-6 h-6 rounded-full object-cover border border-slate-200 shrink-0"
+          />
+          <span>作者：<a href="/editorial-policy/#editorial-team" class="hover:text-brand underline decoration-slate-300">{author}</a></span>
+        </span>
+        <span>发布：{pubDate.toISOString().slice(0, 10)}</span>
+        <span>最近核实更新：{updatedDate.toISOString().slice(0, 10)}</span>
+      </div>
+    </header>
+
+    {showDisclosure && (
+      <div class="mb-8">
+        <AffiliateDisclosure />
+      </div>
+    )}
+
+    <slot />
+
+    <FAQ items={faq} />
+    <RelatedArticles links={relatedLinks} />
+  </div>
+</BaseLayout>

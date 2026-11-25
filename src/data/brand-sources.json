@@ -1,0 +1,521 @@
+[
+  {
+    "brandSlug": "guangsuyun",
+    "brandName": "光速云",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      },
+      {
+        "source": "机场品牌信息/光速云品牌信息.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      },
+      {
+        "source": "光速云测试图解锁图/photo_2026-08-19_*.jpg",
+        "type": "measured",
+        "retrievedAt": "2026-08-19"
+      },
+      {
+        "source": "机场测速实测资料包/光速云-节点测速实测.png",
+        "type": "measured",
+        "retrievedAt": "2026-08-11T14:32:56+08:00"
+      }
+    ],
+    "conflicts": [
+      "轻量版月流量在《光速云品牌信息》顶部写 59GB，正文及总表写 69GB/月（¥99/年）",
+      "《光速云品牌信息》列 4 档套餐，总清单列 7 档套餐",
+      "协议在文档标 VLESS，08-11 截图显示 Shadowsocks，08-19 截图同时包含 62 节点 Shadowsocks 与 70 节点 Vless+AnyTLS"
+    ]
+  },
+  {
+    "brandSlug": "muguang",
+    "brandName": "暮光加速",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      }
+    ],
+    "conflicts": [
+      "基础数据与总表有优惠码 muguang5555，介绍正文称未查到公开优惠码",
+      "月付起步 ¥20/120GB，年付轻量版 ¥109/年（折合约 ¥9.08/月）"
+    ]
+  },
+  {
+    "brandSlug": "feimao",
+    "brandName": "飞猫云",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      },
+      {
+        "source": "机场测速实测资料包/飞猫云-节点测速实测.png",
+        "type": "measured",
+        "retrievedAt": "2026-08-11T08:52:30+08:00"
+      }
+    ],
+    "conflicts": []
+  },
+  {
+    "brandSlug": "weifeng",
+    "brandName": "微风网络",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      }
+    ],
+    "conflicts": [
+      "基础数据与总表写“年付约7元/月 50GB”，套餐表最低为“清风 ¥137/年 100GB/月”（折合约 ¥11.42/月）",
+      "文案标 VLESS，08-11 测速图显示 Shadowsocks"
+    ]
+  },
+  {
+    "brandSlug": "dalaoyun",
+    "brandName": "大佬云",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      }
+    ],
+    "conflicts": [
+      "与闪电鼠、云界线、榴莲云、环球梯基础规格高度重合，目前资料无独立差异点"
+    ]
+  },
+  {
+    "brandSlug": "xingdaomeng",
+    "brandName": "星岛梦",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      },
+      {
+        "source": "机场测速实测资料包/星岛梦-节点测速实测.png",
+        "type": "measured",
+        "retrievedAt": "2026-08-11T01:48:13+08:00"
+      }
+    ],
+    "conflicts": [
+      "介绍正文标 Trojan，08-11 测速截图协议为 Shadowsocks"
+    ]
+  },
+  {
+    "brandSlug": "yinxingren",
+    "brandName": "隐形人",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      }
+    ],
+    "conflicts": [
+      "优惠码同时存在 yxr888 与 moon80 两条记录",
+      "基础数据写 24元/月 100GB，套餐表白银纪元为 ¥24/月 144GB"
+    ]
+  },
+  {
+    "brandSlug": "ermao",
+    "brandName": "二猫云",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      },
+      {
+        "source": "机场测速实测资料包/二猫云-节点测速实测.png",
+        "type": "measured",
+        "retrievedAt": "2026-08-11T10:45:27+08:00"
+      }
+    ],
+    "conflicts": [
+      "2026-10-19 测速表含新加坡节点，但介绍正文称“少了新加坡这一站”",
+      "文案标 VLESS，08-11 测速截图显示 Shadowsocks"
+    ]
+  },
+  {
+    "brandSlug": "wuyou",
+    "brandName": "无忧链接",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      }
+    ],
+    "conflicts": [
+      "订阅方式存在“专属客户端登录即用”与总表“订阅无需转换”口径冲突"
+    ]
+  },
+  {
+    "brandSlug": "weitu",
+    "brandName": "唯兔云",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      },
+      {
+        "source": "机场测速实测资料包/唯兔云-节点测速实测.png",
+        "type": "measured",
+        "retrievedAt": "2026-08-11T13:55:08+08:00"
+      }
+    ],
+    "conflicts": [
+      "介绍写 Trojan，08-11 测速截图显示 Shadowsocks"
+    ]
+  },
+  {
+    "brandSlug": "firefly",
+    "brandName": "Firefly",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      }
+    ],
+    "conflicts": [
+      "清单第 8 条与文末《Firefly 萤火虫》存在两套推广码（2n7VURre 与 jTp9wSgZ）及不同周期展开，已合并为同一品牌实体"
+    ]
+  },
+  {
+    "brandSlug": "yuzhou",
+    "brandName": "宇宙云",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      },
+      {
+        "source": "机场测速实测资料包/宇宙云-节点测速实测.png",
+        "type": "measured",
+        "retrievedAt": "2026-08-11T21:04:24+08:00"
+      }
+    ],
+    "conflicts": [
+      "正文称套餐、节点与测速均待核实，但总表标明 IEPL+VLESS+自研客户端，且 08-11 压缩包内含 VLESS 测速截图"
+    ]
+  },
+  {
+    "brandSlug": "u1s1",
+    "brandName": "U1S1",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      },
+      {
+        "source": "机场测速实测资料包/U1S1-节点测速实测.png",
+        "type": "measured",
+        "retrievedAt": "2026-08-11T22:33:29+08:00"
+      }
+    ],
+    "conflicts": [
+      "介绍正文提及 1000GB 一次性大流量包，但套餐价格表中未列出该档位"
+    ]
+  },
+  {
+    "brandSlug": "lingmao",
+    "brandName": "灵猫网络",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      },
+      {
+        "source": "机场测速实测资料包/灵猫网络-节点测速实测.png",
+        "type": "measured",
+        "retrievedAt": "2026-08-11T18:45:40+08:00"
+      }
+    ],
+    "conflicts": [
+      "优惠码同时存在 lmao888 与 lingmao",
+      "基础数据写 19元/月 150GB，套餐表月付 Small 为 ¥25 150GB"
+    ]
+  },
+  {
+    "brandSlug": "jilian",
+    "brandName": "极连云",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      },
+      {
+        "source": "机场测速实测资料包/极连云-节点测速实测.png",
+        "type": "measured",
+        "retrievedAt": "2026-08-11T22:46:50+08:00"
+      }
+    ],
+    "conflicts": []
+  },
+  {
+    "brandSlug": "guangnian",
+    "brandName": "光年梯",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      },
+      {
+        "source": "机场测速实测资料包/光年梯-节点测速实测.png",
+        "type": "measured",
+        "retrievedAt": "2026-08-11T14:38:04+08:00"
+      }
+    ],
+    "conflicts": [
+      "文案标 VLESS，08-11 测速截图显示 Shadowsocks"
+    ]
+  },
+  {
+    "brandSlug": "yifan",
+    "brandName": "一翻云",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      },
+      {
+        "source": "机场测速实测资料包/一翻云-节点测速实测.png",
+        "type": "measured",
+        "retrievedAt": "2026-08-11T00:21:30+08:00"
+      }
+    ],
+    "conflicts": [
+      "优惠码存在 yfy6666 与 1FLYYUN（9折）两套记录"
+    ]
+  },
+  {
+    "brandSlug": "sogo",
+    "brandName": "SOGO云",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      },
+      {
+        "source": "机场测速实测资料包/SOGO云-节点测速实测.png",
+        "type": "measured",
+        "retrievedAt": "2026-08-11T18:57:59+08:00"
+      }
+    ],
+    "conflicts": [
+      "优惠码存在 SOGO10000（9折）与 sss777 两套记录",
+      "文案标 VLESS，08-11 测速截图显示 Shadowsocks"
+    ]
+  },
+  {
+    "brandSlug": "kexin",
+    "brandName": "可信云",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      },
+      {
+        "source": "机场测速实测资料包/可信云-节点测速实测.png",
+        "type": "measured",
+        "retrievedAt": "2026-08-11T15:32:35+08:00"
+      }
+    ],
+    "conflicts": [
+      "文案标 VLESS，08-11 测速截图显示 Shadowsocks；品牌资料主动声明 AI 与流媒体缺乏统一实测数据"
+    ]
+  },
+  {
+    "brandSlug": "sujie",
+    "brandName": "速界",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      },
+      {
+        "source": "机场测速实测资料包/速界-节点测速实测.png",
+        "type": "measured",
+        "retrievedAt": "2026-08-11T15:39:36+08:00"
+      }
+    ],
+    "conflicts": [
+      "文案标 VLESS，08-11 测速截图显示 Shadowsocks"
+    ]
+  },
+  {
+    "brandSlug": "shanyue",
+    "brandName": "闪跃",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      }
+    ],
+    "conflicts": []
+  },
+  {
+    "brandSlug": "quanqiu",
+    "brandName": "全球云",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      },
+      {
+        "source": "机场测速实测资料包/全球云-节点测速实测.png",
+        "type": "measured",
+        "retrievedAt": "2026-08-11T15:50:43+08:00"
+      }
+    ],
+    "conflicts": [
+      "优惠码存在 qq88（8折）与 qqy7777 两套记录",
+      "基础信息写起步 ¥20/月，套餐表含年付轻量版 ¥99/年 59GB/月"
+    ]
+  },
+  {
+    "brandSlug": "shandianshu",
+    "brandName": "闪电鼠",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      }
+    ],
+    "conflicts": [
+      "与大佬云、云界线、榴莲云、环球梯基础规格几乎完全一致"
+    ]
+  },
+  {
+    "brandSlug": "yunjiexian",
+    "brandName": "云界线",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      }
+    ],
+    "conflicts": [
+      "注册链接存在 code=aycnwNUi 与总表 code=HBaZ91c6 两个版本",
+      "推广链接缺少 SPA hash 符号 #，打开前需核验"
+    ]
+  },
+  {
+    "brandSlug": "liulianyun",
+    "brandName": "榴莲云",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      }
+    ],
+    "conflicts": [
+      "协议类型未明确；其余基础规格与大佬云、闪电鼠等 5.6 元档一致"
+    ]
+  },
+  {
+    "brandSlug": "shenxing",
+    "brandName": "神行加速",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      }
+    ],
+    "conflicts": []
+  },
+  {
+    "brandSlug": "huanqiuti",
+    "brandName": "环球梯",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      }
+    ],
+    "conflicts": [
+      "推广链接缺少 SPA hash 符号 #，与标准链接结构不同"
+    ]
+  },
+  {
+    "brandSlug": "tiziyun",
+    "brandName": "梯子云",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "vendor",
+        "retrievedAt": "2026-11-24"
+      }
+    ],
+    "conflicts": []
+  },
+  {
+    "brandSlug": "lingdong",
+    "brandName": "灵动云",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "historical",
+        "retrievedAt": "2026-11-24"
+      }
+    ],
+    "conflicts": [
+      "页面文案混提 VLESS/trojan；至尊私人定制版月流量被截图遮挡"
+    ]
+  },
+  {
+    "brandSlug": "langwang",
+    "brandName": "浪网",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "historical",
+        "retrievedAt": "2026-11-24"
+      }
+    ],
+    "conflicts": [
+      "入门套餐流量显示“截150G”（截图遮挡），协议/设备/测速/解锁全缺"
+    ]
+  },
+  {
+    "brandSlug": "edgenova",
+    "brandName": "边缘节点 EdgeNova",
+    "sources": [
+      {
+        "source": "机场品牌信息/32家机场品牌清单.txt",
+        "type": "historical",
+        "retrievedAt": "2026-11-24"
+      }
+    ],
+    "conflicts": [
+      "缺乏可比逐地区测速与逐项流媒体/AI 实测数据"
+    ]
+  }
+]

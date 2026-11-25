@@ -1,0 +1,76 @@
+---
+interface Props {
+  brandName: string;
+  accentColor: string;
+  routeType: string;
+  protocols: string[];
+}
+
+const { brandName, accentColor, routeType, protocols } = Astro.props;
+const isDirectDedicated = routeType.includes('IEPL') || routeType.includes('IPLC');
+---
+
+<section
+  class="relative rounded-xl border border-observatory-border bg-observatory-bg text-observatory-text p-5 sm:p-6 overflow-hidden"
+  aria-label={`${brandName} 网络路径架构示意图`}
+>
+  <div class="h-1 w-full absolute top-0 left-0" style={`background-color: ${accentColor}`}></div>
+
+  <div class="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-observatory-border">
+    <div>
+      <div class="text-[11px] font-mono uppercase tracking-wider text-observatory-muted">
+        Network Path Observatory · 传输架构示意
+      </div>
+      <h2 class="text-base sm:text-lg font-bold text-white mt-0.5">
+        {brandName} 数据传输链路与协议路径图
+      </h2>
+    </div>
+    <span class="px-2.5 py-1 rounded border border-observatory-border bg-observatory-panel text-[11px] font-mono text-observatory-muted">
+      Architecture Diagram
+    </span>
+  </div>
+
+  <div class="mt-5 grid grid-cols-1 md:grid-cols-4 gap-3 items-stretch text-xs">
+    <div class="rounded-lg border border-observatory-border bg-observatory-panel p-3.5 flex flex-col justify-between">
+      <div class="text-[10px] font-mono text-observatory-cyan">STAGE 01 · 本地客户端</div>
+      <div class="font-bold text-white text-sm mt-1">用户设备 / 分流代理端</div>
+      <div class="text-observatory-muted mt-2 font-mono text-[11px]">
+        协议：{protocols.slice(0, 2).join(' / ')}
+      </div>
+    </div>
+
+    <div class="rounded-lg border border-observatory-border bg-observatory-panel p-3.5 flex flex-col justify-between">
+      <div class="text-[10px] font-mono text-observatory-cyan">STAGE 02 · 国内接入入口</div>
+      <div class="font-bold text-white text-sm mt-1">三网入口 / BGP 边缘调度</div>
+      <div class="text-observatory-muted mt-2 text-[11px]">
+        承担用户侧加密连接接入，降低跨网互联抖动
+      </div>
+    </div>
+
+    <div
+      class="rounded-lg border p-3.5 flex flex-col justify-between"
+      style={`border-color: ${accentColor}; background-color: rgba(17, 28, 51, 0.95);`}
+    >
+      <div class="text-[10px] font-mono text-observatory-emerald">
+        STAGE 03 · {isDirectDedicated ? '专线跨境通道' : '优化传输段'}
+      </div>
+      <div class="font-bold text-white text-sm mt-1">{routeType.split('（')[0]}</div>
+      <div class="text-observatory-muted mt-2 text-[11px]">
+        {isDirectDedicated ? '品牌资料宣称内网跨境转发（具体实时拓扑以服务端实际调度为准）' : '按资料记录采用优化中转传输'}
+      </div>
+    </div>
+
+    <div class="rounded-lg border border-observatory-border bg-observatory-panel p-3.5 flex flex-col justify-between">
+      <div class="text-[10px] font-mono text-observatory-cyan">STAGE 04 · 海外落地节点</div>
+      <div class="font-bold text-white text-sm mt-1">香港 / 日本 / 新加坡 / 美国等</div>
+      <div class="text-observatory-muted mt-2 text-[11px]">
+        出口 IP 属性与流媒体、AI 风控表现直接挂钩
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-4 pt-3 border-t border-observatory-border flex flex-wrap items-center justify-between gap-2 text-[11px] font-mono text-observatory-muted">
+    <span>注：示意图用于解释订阅资料中的线路概念，不作为底层物理路由审计证明</span>
+    <span class="text-white/30 select-none">订阅指南 · dingyuezhinan.biz</span>
+  </div>
+</section>

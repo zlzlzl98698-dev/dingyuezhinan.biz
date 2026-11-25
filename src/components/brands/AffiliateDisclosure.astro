@@ -1,0 +1,16 @@
+---
+interface Props {
+  compact?: boolean;
+}
+const { compact = false } = Astro.props;
+---
+
+<aside
+  class={`rounded-lg border border-slate-200 bg-slate-50/90 text-xs text-ink-muted leading-relaxed ${
+    compact ? 'px-3 py-2' : 'px-4 py-3'
+  }`}
+  aria-label="推广与编辑独立性披露"
+>
+  <strong class="font-semibold text-ink">推广与评测独立性披露：</strong>
+  本站部分品牌注册入口含推广链接，通过链接注册可能为本站带来佣金，不影响用户实际支付价格。商业合作优先级仅用于精选位排序，不替代、不修改独立测试证据或历史资料状态标注。
+</aside>

@@ -1,0 +1,322 @@
+[
+  {
+    "rank": 1,
+    "keyword": "光速云适合什么人买",
+    "targetUrl": "/articles/guangsuyun-who-should-buy/",
+    "clusterId": "cluster-brand-guangsuyun",
+    "priority": "P0",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 2,
+    "keyword": "光速云支持哪些客户端",
+    "targetUrl": "/articles/guangsuyun-supported-clients/",
+    "clusterId": "cluster-brand-guangsuyun",
+    "priority": "P0",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 3,
+    "keyword": "光速云套餐流量和单价计算",
+    "targetUrl": "/articles/guangsuyun-cost-per-gb/",
+    "clusterId": "cluster-brand-guangsuyun",
+    "priority": "P0",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 4,
+    "keyword": "光速云历史测速与节点表现边界",
+    "targetUrl": "/articles/guangsuyun-speedtest-notes/",
+    "clusterId": "cluster-brand-guangsuyun",
+    "priority": "P0",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 5,
+    "keyword": "光速云替代品牌有哪些",
+    "targetUrl": "/articles/guangsuyun-alternatives/",
+    "clusterId": "cluster-brand-guangsuyun",
+    "priority": "P0",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 6,
+    "keyword": "暮光加速适合什么人买",
+    "targetUrl": "/articles/muguang-who-should-buy/",
+    "clusterId": "cluster-brand-muguang",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 7,
+    "keyword": "暮光加速支持哪些客户端",
+    "targetUrl": "/articles/muguang-supported-clients/",
+    "clusterId": "cluster-brand-muguang",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 8,
+    "keyword": "暮光加速套餐流量和单价计算",
+    "targetUrl": "/articles/muguang-cost-per-gb/",
+    "clusterId": "cluster-brand-muguang",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 9,
+    "keyword": "暮光加速历史测速与节点表现边界",
+    "targetUrl": "/articles/muguang-speedtest-notes/",
+    "clusterId": "cluster-brand-muguang",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 10,
+    "keyword": "暮光加速替代品牌有哪些",
+    "targetUrl": "/articles/muguang-alternatives/",
+    "clusterId": "cluster-brand-muguang",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 11,
+    "keyword": "飞猫云适合什么人买",
+    "targetUrl": "/articles/feimao-who-should-buy/",
+    "clusterId": "cluster-brand-feimao",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 12,
+    "keyword": "飞猫云支持哪些客户端",
+    "targetUrl": "/articles/feimao-supported-clients/",
+    "clusterId": "cluster-brand-feimao",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 13,
+    "keyword": "飞猫云套餐流量和单价计算",
+    "targetUrl": "/articles/feimao-cost-per-gb/",
+    "clusterId": "cluster-brand-feimao",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 14,
+    "keyword": "飞猫云历史测速与节点表现边界",
+    "targetUrl": "/articles/feimao-speedtest-notes/",
+    "clusterId": "cluster-brand-feimao",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 15,
+    "keyword": "飞猫云替代品牌有哪些",
+    "targetUrl": "/articles/feimao-alternatives/",
+    "clusterId": "cluster-brand-feimao",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 16,
+    "keyword": "微风网络适合什么人买",
+    "targetUrl": "/articles/weifeng-who-should-buy/",
+    "clusterId": "cluster-brand-weifeng",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 17,
+    "keyword": "微风网络支持哪些客户端",
+    "targetUrl": "/articles/weifeng-supported-clients/",
+    "clusterId": "cluster-brand-weifeng",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 18,
+    "keyword": "微风网络套餐流量和单价计算",
+    "targetUrl": "/articles/weifeng-cost-per-gb/",
+    "clusterId": "cluster-brand-weifeng",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 19,
+    "keyword": "微风网络历史测速与节点表现边界",
+    "targetUrl": "/articles/weifeng-speedtest-notes/",
+    "clusterId": "cluster-brand-weifeng",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 20,
+    "keyword": "微风网络替代品牌有哪些",
+    "targetUrl": "/articles/weifeng-alternatives/",
+    "clusterId": "cluster-brand-weifeng",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 21,
+    "keyword": "大佬云适合什么人买",
+    "targetUrl": "/articles/dalaoyun-who-should-buy/",
+    "clusterId": "cluster-brand-dalaoyun",
+    "priority": "P1",
+    "reason": "需先补充完整套餐或实测数据再成稿"
+  },
+  {
+    "rank": 22,
+    "keyword": "大佬云支持哪些客户端",
+    "targetUrl": "/articles/dalaoyun-supported-clients/",
+    "clusterId": "cluster-brand-dalaoyun",
+    "priority": "P1",
+    "reason": "需先补充完整套餐或实测数据再成稿"
+  },
+  {
+    "rank": 23,
+    "keyword": "大佬云套餐流量和单价计算",
+    "targetUrl": "/articles/dalaoyun-cost-per-gb/",
+    "clusterId": "cluster-brand-dalaoyun",
+    "priority": "P1",
+    "reason": "需先补充完整套餐或实测数据再成稿"
+  },
+  {
+    "rank": 24,
+    "keyword": "大佬云历史测速与节点表现边界",
+    "targetUrl": "/articles/dalaoyun-speedtest-notes/",
+    "clusterId": "cluster-brand-dalaoyun",
+    "priority": "P1",
+    "reason": "需先补充完整套餐或实测数据再成稿"
+  },
+  {
+    "rank": 25,
+    "keyword": "大佬云替代品牌有哪些",
+    "targetUrl": "/articles/dalaoyun-alternatives/",
+    "clusterId": "cluster-brand-dalaoyun",
+    "priority": "P1",
+    "reason": "需先补充完整套餐或实测数据再成稿"
+  },
+  {
+    "rank": 26,
+    "keyword": "星岛梦适合什么人买",
+    "targetUrl": "/articles/xingdaomeng-who-should-buy/",
+    "clusterId": "cluster-brand-xingdaomeng",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 27,
+    "keyword": "星岛梦支持哪些客户端",
+    "targetUrl": "/articles/xingdaomeng-supported-clients/",
+    "clusterId": "cluster-brand-xingdaomeng",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 28,
+    "keyword": "星岛梦套餐流量和单价计算",
+    "targetUrl": "/articles/xingdaomeng-cost-per-gb/",
+    "clusterId": "cluster-brand-xingdaomeng",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 29,
+    "keyword": "星岛梦历史测速与节点表现边界",
+    "targetUrl": "/articles/xingdaomeng-speedtest-notes/",
+    "clusterId": "cluster-brand-xingdaomeng",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 30,
+    "keyword": "星岛梦替代品牌有哪些",
+    "targetUrl": "/articles/xingdaomeng-alternatives/",
+    "clusterId": "cluster-brand-xingdaomeng",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 31,
+    "keyword": "隐形人适合什么人买",
+    "targetUrl": "/articles/yinxingren-who-should-buy/",
+    "clusterId": "cluster-brand-yinxingren",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 32,
+    "keyword": "隐形人支持哪些客户端",
+    "targetUrl": "/articles/yinxingren-supported-clients/",
+    "clusterId": "cluster-brand-yinxingren",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 33,
+    "keyword": "隐形人套餐流量和单价计算",
+    "targetUrl": "/articles/yinxingren-cost-per-gb/",
+    "clusterId": "cluster-brand-yinxingren",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 34,
+    "keyword": "隐形人历史测速与节点表现边界",
+    "targetUrl": "/articles/yinxingren-speedtest-notes/",
+    "clusterId": "cluster-brand-yinxingren",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 35,
+    "keyword": "隐形人替代品牌有哪些",
+    "targetUrl": "/articles/yinxingren-alternatives/",
+    "clusterId": "cluster-brand-yinxingren",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 36,
+    "keyword": "二猫云适合什么人买",
+    "targetUrl": "/articles/ermao-who-should-buy/",
+    "clusterId": "cluster-brand-ermao",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 37,
+    "keyword": "二猫云支持哪些客户端",
+    "targetUrl": "/articles/ermao-supported-clients/",
+    "clusterId": "cluster-brand-ermao",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 38,
+    "keyword": "二猫云套餐流量和单价计算",
+    "targetUrl": "/articles/ermao-cost-per-gb/",
+    "clusterId": "cluster-brand-ermao",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 39,
+    "keyword": "二猫云历史测速与节点表现边界",
+    "targetUrl": "/articles/ermao-speedtest-notes/",
+    "clusterId": "cluster-brand-ermao",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  },
+  {
+    "rank": 40,
+    "keyword": "二猫云替代品牌有哪些",
+    "targetUrl": "/articles/ermao-alternatives/",
+    "clusterId": "cluster-brand-ermao",
+    "priority": "P1",
+    "reason": "资料完备，可直接进入 Stage 2 多智能体成稿"
+  }
+]

@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --surface-page: #fafbfd;
+    --surface-card: #ffffff;
+    --ink-primary: #0f172a;
+    --ink-muted: #475569;
+    --brand-accent: #0e7490;
+    --border-hairline: #e2e8f0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--surface-page);
+    color: var(--ink-primary);
+  }
+
+  body {
+    @apply font-sans antialiased bg-page text-ink selection:bg-brand/15 selection:text-brand;
+    overflow-x: hidden;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Editorial prose refinement */
+.prose-editorial {
+  @apply prose prose-slate max-w-none prose-headings:font-semibold prose-headings:tracking-tight prose-headings:text-ink prose-a:text-brand prose-a:no-underline hover:prose-a:underline prose-code:font-mono prose-code:text-[13px] prose-code:bg-slate-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:before:content-none prose-code:after:content-none prose-pre:bg-observatory-bg prose-pre:text-observatory-text prose-img:rounded-lg prose-table:text-sm;
+}
+
+.prose-editorial pre code {
+  @apply bg-transparent p-0 rounded-none text-[13px] leading-relaxed text-inherit;
+}
+
+.prose-editorial h2 {
+  @apply mt-10 mb-4 pb-2 border-b border-slate-200 text-xl md:text-2xl;
+}
+
+.prose-editorial h3 {
+  @apply mt-7 mb-3 text-lg md:text-xl;
+}
+
+.prose-editorial table {
+  @apply w-full border-collapse border border-slate-200 rounded-lg overflow-hidden;
+}
+
+.prose-editorial th {
+  @apply bg-slate-50 px-3 py-2 text-left font-semibold text-slate-700 border-b border-slate-200;
+}
+
+.prose-editorial td {
+  @apply px-3 py-2 border-b border-slate-100;
+}
+
+/* Pagefind theme override */
+.pagefind-ui__search-input {
+  @apply !rounded-lg !border-slate-300 !bg-white !text-ink !font-sans !text-sm;
+}

@@ -1,0 +1,104 @@
+---
+import { getCollection, render } from 'astro:content';
+import TopicLayout from '../../layouts/TopicLayout.astro';
+import BrandCard from '../../components/brands/BrandCard.astro';
+import SubscriptionMatcher from '../../components/tools/SubscriptionMatcher';
+import { PILLAR_NAV } from '../../data/navigation';
+import brands from '../../data/brands.json';
+import { buildItemListSchema } from '../../lib/seo';
+
+export async function getStaticPaths() {
+  const dynamicPillars = ['recommend', 'plans', 'vpn', 'ai-streaming', 'network', 'guides', 'troubleshooting', 'risks'];
+  return dynamicPillars.map((pillar) => ({
+    params: { pillar },
+    props: { pillar },
+  }));
+}
+
+const { pillar } = Astro.props;
+const navItem = PILLAR_NAV.find((p) => p.id === pillar)!;
+const allPillarDocs = await getCollection('pillars', ({ data }) => !data.draft);
+const entry = allPillarDocs.find((e) => e.id.replace(/\.mdx?$/, '') === pillar);
+const rendered = entry ? await render(entry) : null;
+const PillarContent = rendered?.Content;
+
+const subtopicList = navItem.groups.flatMap((g) => g.items);
+const itemListSchema = buildItemListSchema(
+  `${navItem.title}子专题索引`,
+  navItem.href,
+  subtopicList.map((s) => ({ name: s.title, url: s.href }))
+);
+
+const topBrands = [...brands].sort((a, b) => a.priorityRank - b.priorityRank).slice(0, 6);
+const showBrands = pillar === 'recommend' || pillar === 'plans' || pillar === 'ai-streaming';
+---
+
+<TopicLayout
+  title={entry?.data.title || `${navItem.title}专题指南 | 订阅指南`}
+  description={entry?.data.description || `${navItem.tagline}。提供系统化的订阅选型依据、数据表格与实操指南。`}
+  h1={entry ? entry.data.title.replace(/\s*\|\s*订阅指南$/, '') : `${navItem.title}：核心指南与细分专题矩阵`}
+  eyebrow={`${navItem.order} · ${navItem.title}`}
+  breadcrumbs={[
+    { name: '首页', url: '/' },
+    { name: navItem.title, url: navItem.href },
+  ]}
+  pubDate={entry?.data.pubDate || new Date('2026-11-24')}
+  updatedDate={entry?.data.updatedDate || new Date('2026-11-24')}
+  dataStatus={entry?.data.dataStatus || 'measured'}
+  showDisclosure={navItem.system !== 'guides'}
+  tags={entry?.data.tags || [navItem.title]}
+  faq={entry?.data.faq || []}
+  extraSchemas={[itemListSchema]}
+  relatedLinks={[
+    { title: '机场品牌大全（31家去重库）', href: '/brands/', category: '品牌数据库', description: '按协议、客户端模式与价格区间横向检索' },
+    { title: '光速云旗舰深度评测', href: '/reviews/guangsuyun/', category: '主推品牌', description: '查看 7 档套餐、2026-08-19 实测截图与冲突说明' },
+    { title: '机场流量需求计算器', href: '/plans/traffic-calculator/', category: '决策工具', description: '依据视频画质、AI 工具与设备数量估算月度 GB' },
+    { title: '代理客户端兼容性查询', href: '/clients/', category: '客户端库', description: '核查 Clash Verge Rev、v2rayN 与小火箭支持情况' },
+  ]}
+>
+  <div class="space-y-8">
+    {/* Subtopic Directory Grid */}
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+      {navItem.groups.map((grp) => (
+        <section class="rounded-xl border border-slate-200 bg-white p-5">
+          <h2 class="text-base font-bold text-ink mb-3">{grp.label}</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+            {grp.items.map((item) => (
+              <a
+                href={item.href}
+                class="rounded-lg border border-slate-100 bg-slate-50/70 p-3 hover:border-brand/50 transition-colors"
+              >
+                <div class="text-xs font-semibold text-ink hover:text-brand">{item.title}</div>
+                <div class="text-[11px] text-ink-faint mt-0.5 line-clamp-2">{item.description}</div>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+
+    {pillar === 'recommend' && (
+      <SubscriptionMatcher client:load brands={brands} />
+    )}
+
+    {PillarContent && (
+      <div class="prose-editorial bg-white rounded-xl border border-slate-200 p-6 sm:p-8">
+        <PillarContent />
+      </div>
+    )}
+
+    {showBrands && (
+      <section class="space-y-4">
+        <div class="flex items-center justify-between">
+          <h2 class="text-xl font-bold text-ink">商业精选与资料代表品牌参考</h2>
+          <a href="/brands/" class="text-xs font-medium text-brand hover:underline">查看全部 31 家品牌 →</a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {topBrands.map((b) => (
+            <BrandCard brand={b} />
+          ))}
+        </div>
+      </section>
+    )}
+  </div>
+</TopicLayout>

@@ -1,0 +1,132 @@
+---
+import DataStatusBadge from './DataStatusBadge.astro';
+import { getAffiliateLink } from '../../data/affiliate-links';
+
+interface BrandItem {
+  slug: string;
+  name: string;
+  enName: string;
+  logo: string;
+  thumbLogo?: string;
+  tier: string;
+  priorityRank: number;
+  foundedYear: string | null;
+  reviewUrl: string;
+  routeType: string;
+  protocols: string[];
+  clientModeLabel: string;
+  entryMonthlyPriceCny: number | null;
+  entryAnnualPriceCny: number | null;
+  entryAnnualEffectiveMonthlyCny: number | null;
+  hasNoExpiryPlan: boolean;
+  has20260811Screenshot: boolean;
+  has20261019Speed: boolean;
+  dataStatus: string;
+  conflicts: string[];
+  introSummary: string;
+}
+
+interface Props {
+  brand: BrandItem;
+  showAffiliateButton?: boolean;
+}
+
+const { brand, showAffiliateButton = true } = Astro.props;
+const aff = getAffiliateLink(brand.slug);
+---
+
+<div class="rounded-xl border border-slate-200 bg-white p-5 flex flex-col justify-between hover:border-brand/50 transition-colors">
+  <div>
+    <div class="flex items-start justify-between gap-3">
+      <div class="flex items-center gap-3 min-w-0">
+        <img
+          src={brand.thumbLogo || brand.logo}
+          alt={`${brand.name} 品牌图标`}
+          width="44"
+          height="44"
+          loading="lazy"
+          class="w-11 h-11 rounded-lg object-cover border border-slate-200 shrink-0 bg-slate-50"
+        />
+        <div class="min-w-0">
+          <div class="flex items-center gap-2">
+            <h3 class="text-base font-bold text-ink truncate">
+              <a href={brand.reviewUrl} class="hover:text-brand transition-colors">
+                {brand.name}
+              </a>
+            </h3>
+            {brand.slug === 'guangsuyun' && (
+              <span class="text-[10px] font-mono bg-brand text-white px-1.5 py-0.5 rounded">主推旗舰</span>
+            )}
+          </div>
+          <div class="text-xs text-ink-faint font-mono truncate">
+            {brand.enName}{brand.foundedYear ? ` · ${brand.foundedYear}年记录` : ' · 开业年份待核实'}
+          </div>
+        </div>
+      </div>
+      <DataStatusBadge status={brand.dataStatus} />
+    </div>
+
+    <div class="mt-4 grid grid-cols-3 gap-2 rounded-lg bg-slate-50 border border-slate-100 p-2.5 text-center">
+      <div>
+        <div class="text-[10px] text-ink-faint">月付起步</div>
+        <div class="text-xs font-mono font-semibold text-ink tabular-nums mt-0.5">
+          {brand.entryMonthlyPriceCny ? `¥${brand.entryMonthlyPriceCny}/月` : '待核实'}
+        </div>
+      </div>
+      <div>
+        <div class="text-[10px] text-ink-faint">年付折算</div>
+        <div class="text-xs font-mono font-semibold text-brand tabular-nums mt-0.5">
+          {brand.entryAnnualEffectiveMonthlyCny ? `约¥${brand.entryAnnualEffectiveMonthlyCny}/月` : '无/待核实'}
+        </div>
+      </div>
+      <div>
+        <div class="text-[10px] text-ink-faint">测速证据</div>
+        <div class="text-xs font-mono font-semibold text-ink mt-0.5">
+          {brand.has20260811Screenshot ? '截图+数据' : brand.has20261019Speed ? '文字记录' : '待实测'}
+        </div>
+      </div>
+    </div>
+
+    <p class="mt-3 text-xs text-ink-muted leading-relaxed line-clamp-2">
+      {brand.introSummary}
+    </p>
+
+    <div class="mt-3 flex flex-wrap gap-1.5">
+      <span class="text-[11px] px-2 py-0.5 rounded bg-slate-100 text-slate-700">{brand.routeType.split('（')[0]}</span>
+      {brand.hasNoExpiryPlan && (
+        <span class="text-[11px] px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">含不限时包</span>
+      )}
+      {brand.conflicts.length > 0 && (
+        <span class="text-[11px] px-2 py-0.5 rounded bg-rose-50 text-rose-700 border border-rose-200">
+          {brand.conflicts.length}项待核实冲突
+        </span>
+      )}
+    </div>
+  </div>
+
+  <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between gap-2">
+    <a
+      href={brand.reviewUrl}
+      class="inline-flex items-center justify-center px-3 py-1.5 rounded-lg border border-slate-300 bg-white hover:bg-slate-50 text-xs font-medium text-ink transition-colors"
+    >
+      查看详细评测
+    </a>
+    {showAffiliateButton && aff?.registerUrl && !aff.isHistoricalUrl ? (
+      <a
+        href={aff.registerUrl}
+        target="_blank"
+        rel="nofollow sponsored noopener"
+        class="inline-flex items-center justify-center px-3 py-1.5 rounded-lg bg-brand hover:bg-brand-hover text-white text-xs font-medium transition-colors"
+      >
+        访问品牌注册入口
+      </a>
+    ) : (
+      <a
+        href={brand.reviewUrl}
+        class="text-xs font-mono text-ink-faint hover:text-brand"
+      >
+        仅作档案参考 →
+      </a>
+    )}
+  </div>
+</div>

@@ -1,0 +1,497 @@
+[
+  {
+    "from": "brand-guangsuyun",
+    "relation": "usesRoute",
+    "to": "route-iepl"
+  },
+  {
+    "from": "brand-guangsuyun",
+    "relation": "usesRoute",
+    "to": "route-iplc"
+  },
+  {
+    "from": "brand-guangsuyun",
+    "relation": "supportsProtocol",
+    "to": "proto-vless"
+  },
+  {
+    "from": "brand-guangsuyun",
+    "relation": "supportsProtocol",
+    "to": "proto-shadowsocks"
+  },
+  {
+    "from": "brand-guangsuyun",
+    "relation": "compatibleWith",
+    "to": "client-clash-verge-rev"
+  },
+  {
+    "from": "brand-guangsuyun",
+    "relation": "compatibleWith",
+    "to": "client-shadowrocket"
+  },
+  {
+    "from": "brand-muguang",
+    "relation": "usesRoute",
+    "to": "route-bgp"
+  },
+  {
+    "from": "brand-feimao",
+    "relation": "supportsProtocol",
+    "to": "proto-shadowsocks"
+  },
+  {
+    "from": "brand-weifeng",
+    "relation": "usesRoute",
+    "to": "route-iepl"
+  },
+  {
+    "from": "brand-weifeng",
+    "relation": "supportsProtocol",
+    "to": "proto-vless"
+  },
+  {
+    "from": "brand-weifeng",
+    "relation": "supportsProtocol",
+    "to": "proto-shadowsocks"
+  },
+  {
+    "from": "brand-dalaoyun",
+    "relation": "usesRoute",
+    "to": "route-iepl"
+  },
+  {
+    "from": "brand-dalaoyun",
+    "relation": "supportsProtocol",
+    "to": "proto-vless"
+  },
+  {
+    "from": "brand-dalaoyun",
+    "relation": "compatibleWith",
+    "to": "client-clash-verge-rev"
+  },
+  {
+    "from": "brand-dalaoyun",
+    "relation": "compatibleWith",
+    "to": "client-shadowrocket"
+  },
+  {
+    "from": "brand-xingdaomeng",
+    "relation": "usesRoute",
+    "to": "route-iepl"
+  },
+  {
+    "from": "brand-xingdaomeng",
+    "relation": "supportsProtocol",
+    "to": "proto-trojan"
+  },
+  {
+    "from": "brand-xingdaomeng",
+    "relation": "supportsProtocol",
+    "to": "proto-shadowsocks"
+  },
+  {
+    "from": "brand-xingdaomeng",
+    "relation": "compatibleWith",
+    "to": "client-clash-verge-rev"
+  },
+  {
+    "from": "brand-xingdaomeng",
+    "relation": "compatibleWith",
+    "to": "client-shadowrocket"
+  },
+  {
+    "from": "brand-yinxingren",
+    "relation": "usesRoute",
+    "to": "route-iplc"
+  },
+  {
+    "from": "brand-ermao",
+    "relation": "usesRoute",
+    "to": "route-iepl"
+  },
+  {
+    "from": "brand-ermao",
+    "relation": "supportsProtocol",
+    "to": "proto-vless"
+  },
+  {
+    "from": "brand-ermao",
+    "relation": "supportsProtocol",
+    "to": "proto-shadowsocks"
+  },
+  {
+    "from": "brand-weitu",
+    "relation": "usesRoute",
+    "to": "route-iplc"
+  },
+  {
+    "from": "brand-weitu",
+    "relation": "supportsProtocol",
+    "to": "proto-trojan"
+  },
+  {
+    "from": "brand-weitu",
+    "relation": "supportsProtocol",
+    "to": "proto-shadowsocks"
+  },
+  {
+    "from": "brand-weitu",
+    "relation": "compatibleWith",
+    "to": "client-clash-verge-rev"
+  },
+  {
+    "from": "brand-weitu",
+    "relation": "compatibleWith",
+    "to": "client-shadowrocket"
+  },
+  {
+    "from": "brand-firefly",
+    "relation": "usesRoute",
+    "to": "route-iplc"
+  },
+  {
+    "from": "brand-firefly",
+    "relation": "supportsProtocol",
+    "to": "proto-vless"
+  },
+  {
+    "from": "brand-yuzhou",
+    "relation": "usesRoute",
+    "to": "route-iepl"
+  },
+  {
+    "from": "brand-yuzhou",
+    "relation": "supportsProtocol",
+    "to": "proto-vless"
+  },
+  {
+    "from": "brand-u1s1",
+    "relation": "usesRoute",
+    "to": "route-iplc"
+  },
+  {
+    "from": "brand-u1s1",
+    "relation": "supportsProtocol",
+    "to": "proto-shadowsocks"
+  },
+  {
+    "from": "brand-lingmao",
+    "relation": "supportsProtocol",
+    "to": "proto-shadowsocks"
+  },
+  {
+    "from": "brand-jilian",
+    "relation": "usesRoute",
+    "to": "route-iepl"
+  },
+  {
+    "from": "brand-jilian",
+    "relation": "supportsProtocol",
+    "to": "proto-shadowsocks"
+  },
+  {
+    "from": "brand-jilian",
+    "relation": "compatibleWith",
+    "to": "client-clash-verge-rev"
+  },
+  {
+    "from": "brand-jilian",
+    "relation": "compatibleWith",
+    "to": "client-shadowrocket"
+  },
+  {
+    "from": "brand-guangnian",
+    "relation": "usesRoute",
+    "to": "route-iepl"
+  },
+  {
+    "from": "brand-guangnian",
+    "relation": "supportsProtocol",
+    "to": "proto-vless"
+  },
+  {
+    "from": "brand-guangnian",
+    "relation": "supportsProtocol",
+    "to": "proto-shadowsocks"
+  },
+  {
+    "from": "brand-guangnian",
+    "relation": "compatibleWith",
+    "to": "client-clash-verge-rev"
+  },
+  {
+    "from": "brand-guangnian",
+    "relation": "compatibleWith",
+    "to": "client-shadowrocket"
+  },
+  {
+    "from": "brand-yifan",
+    "relation": "usesRoute",
+    "to": "route-iepl"
+  },
+  {
+    "from": "brand-yifan",
+    "relation": "supportsProtocol",
+    "to": "proto-hysteria2"
+  },
+  {
+    "from": "brand-yifan",
+    "relation": "supportsProtocol",
+    "to": "proto-vless"
+  },
+  {
+    "from": "brand-yifan",
+    "relation": "supportsProtocol",
+    "to": "proto-shadowsocks"
+  },
+  {
+    "from": "brand-yifan",
+    "relation": "compatibleWith",
+    "to": "client-clash-verge-rev"
+  },
+  {
+    "from": "brand-yifan",
+    "relation": "compatibleWith",
+    "to": "client-shadowrocket"
+  },
+  {
+    "from": "brand-sogo",
+    "relation": "usesRoute",
+    "to": "route-iepl"
+  },
+  {
+    "from": "brand-sogo",
+    "relation": "usesRoute",
+    "to": "route-bgp"
+  },
+  {
+    "from": "brand-sogo",
+    "relation": "supportsProtocol",
+    "to": "proto-vless"
+  },
+  {
+    "from": "brand-sogo",
+    "relation": "supportsProtocol",
+    "to": "proto-shadowsocks"
+  },
+  {
+    "from": "brand-kexin",
+    "relation": "usesRoute",
+    "to": "route-iepl"
+  },
+  {
+    "from": "brand-kexin",
+    "relation": "supportsProtocol",
+    "to": "proto-vless"
+  },
+  {
+    "from": "brand-kexin",
+    "relation": "supportsProtocol",
+    "to": "proto-shadowsocks"
+  },
+  {
+    "from": "brand-kexin",
+    "relation": "compatibleWith",
+    "to": "client-clash-verge-rev"
+  },
+  {
+    "from": "brand-kexin",
+    "relation": "compatibleWith",
+    "to": "client-shadowrocket"
+  },
+  {
+    "from": "brand-sujie",
+    "relation": "usesRoute",
+    "to": "route-iepl"
+  },
+  {
+    "from": "brand-sujie",
+    "relation": "supportsProtocol",
+    "to": "proto-vless"
+  },
+  {
+    "from": "brand-sujie",
+    "relation": "supportsProtocol",
+    "to": "proto-shadowsocks"
+  },
+  {
+    "from": "brand-sujie",
+    "relation": "compatibleWith",
+    "to": "client-clash-verge-rev"
+  },
+  {
+    "from": "brand-sujie",
+    "relation": "compatibleWith",
+    "to": "client-shadowrocket"
+  },
+  {
+    "from": "brand-shanyue",
+    "relation": "usesRoute",
+    "to": "route-iplc"
+  },
+  {
+    "from": "brand-quanqiu",
+    "relation": "usesRoute",
+    "to": "route-iepl"
+  },
+  {
+    "from": "brand-quanqiu",
+    "relation": "usesRoute",
+    "to": "route-iplc"
+  },
+  {
+    "from": "brand-quanqiu",
+    "relation": "usesRoute",
+    "to": "route-bgp"
+  },
+  {
+    "from": "brand-quanqiu",
+    "relation": "supportsProtocol",
+    "to": "proto-trojan"
+  },
+  {
+    "from": "brand-quanqiu",
+    "relation": "supportsProtocol",
+    "to": "proto-shadowsocks"
+  },
+  {
+    "from": "brand-shandianshu",
+    "relation": "usesRoute",
+    "to": "route-iepl"
+  },
+  {
+    "from": "brand-shandianshu",
+    "relation": "supportsProtocol",
+    "to": "proto-vless"
+  },
+  {
+    "from": "brand-shandianshu",
+    "relation": "compatibleWith",
+    "to": "client-clash-verge-rev"
+  },
+  {
+    "from": "brand-shandianshu",
+    "relation": "compatibleWith",
+    "to": "client-shadowrocket"
+  },
+  {
+    "from": "brand-yunjiexian",
+    "relation": "usesRoute",
+    "to": "route-iepl"
+  },
+  {
+    "from": "brand-yunjiexian",
+    "relation": "supportsProtocol",
+    "to": "proto-vless"
+  },
+  {
+    "from": "brand-yunjiexian",
+    "relation": "compatibleWith",
+    "to": "client-clash-verge-rev"
+  },
+  {
+    "from": "brand-yunjiexian",
+    "relation": "compatibleWith",
+    "to": "client-shadowrocket"
+  },
+  {
+    "from": "brand-liulianyun",
+    "relation": "usesRoute",
+    "to": "route-iepl"
+  },
+  {
+    "from": "brand-liulianyun",
+    "relation": "compatibleWith",
+    "to": "client-clash-verge-rev"
+  },
+  {
+    "from": "brand-liulianyun",
+    "relation": "compatibleWith",
+    "to": "client-shadowrocket"
+  },
+  {
+    "from": "brand-shenxing",
+    "relation": "usesRoute",
+    "to": "route-iepl"
+  },
+  {
+    "from": "brand-shenxing",
+    "relation": "supportsProtocol",
+    "to": "proto-vless"
+  },
+  {
+    "from": "brand-shenxing",
+    "relation": "compatibleWith",
+    "to": "client-clash-verge-rev"
+  },
+  {
+    "from": "brand-shenxing",
+    "relation": "compatibleWith",
+    "to": "client-shadowrocket"
+  },
+  {
+    "from": "brand-huanqiuti",
+    "relation": "usesRoute",
+    "to": "route-iepl"
+  },
+  {
+    "from": "brand-huanqiuti",
+    "relation": "supportsProtocol",
+    "to": "proto-vless"
+  },
+  {
+    "from": "brand-huanqiuti",
+    "relation": "compatibleWith",
+    "to": "client-clash-verge-rev"
+  },
+  {
+    "from": "brand-huanqiuti",
+    "relation": "compatibleWith",
+    "to": "client-shadowrocket"
+  },
+  {
+    "from": "brand-tiziyun",
+    "relation": "usesRoute",
+    "to": "route-iepl"
+  },
+  {
+    "from": "brand-tiziyun",
+    "relation": "supportsProtocol",
+    "to": "proto-vless"
+  },
+  {
+    "from": "brand-tiziyun",
+    "relation": "compatibleWith",
+    "to": "client-clash-verge-rev"
+  },
+  {
+    "from": "brand-tiziyun",
+    "relation": "compatibleWith",
+    "to": "client-shadowrocket"
+  },
+  {
+    "from": "brand-lingdong",
+    "relation": "usesRoute",
+    "to": "route-iepl"
+  },
+  {
+    "from": "brand-lingdong",
+    "relation": "supportsProtocol",
+    "to": "proto-vless"
+  },
+  {
+    "from": "brand-lingdong",
+    "relation": "supportsProtocol",
+    "to": "proto-trojan"
+  },
+  {
+    "from": "brand-langwang",
+    "relation": "usesRoute",
+    "to": "route-iepl"
+  },
+  {
+    "from": "brand-edgenova",
+    "relation": "usesRoute",
+    "to": "route-iplc"
+  }
+]

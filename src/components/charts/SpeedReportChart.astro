@@ -1,0 +1,232 @@
+---
+interface TextNodeSpeed {
+  region: string;
+  latencyRaw: string;
+  latencyMs: number | null;
+  downloadRaw: string;
+  downloadMbps: number | null;
+}
+
+interface Props {
+  brandName: string;
+  accentColor: string;
+  textRecord20261019: {
+    testedAt: string;
+    condition: string;
+    dataStatus: string;
+    nodes: TextNodeSpeed[];
+  } | null;
+  screenshot20260811: {
+    file: string;
+    thumbFile?: string;
+    thumbWidth?: number;
+    thumbHeight?: number;
+    testedAt: string;
+    protocolDisplayed: string;
+    toolFamily: string;
+    dateConfidence: string;
+    reviewNote: string | null;
+    dataStatus: string;
+    limitations: string[];
+  } | null;
+  additionalScreenshots?: {
+    file: string;
+    thumbFile?: string;
+    thumbWidth?: number;
+    thumbHeight?: number;
+    title: string;
+    testedAt: string;
+    protocol: string;
+    backend: string;
+    summary: string;
+  }[];
+  specialSummaryNote?: string | null;
+}
+
+const {
+  brandName,
+  accentColor,
+  textRecord20261019,
+  screenshot20260811,
+  additionalScreenshots = [],
+  specialSummaryNote,
+} = Astro.props;
+
+const maxSpeed = textRecord20261019
+  ? Math.max(...textRecord20261019.nodes.map((n) => n.downloadMbps || 0), 550)
+  : 550;
+
+const nodeRows = (textRecord20261019?.nodes ?? []).map((n) => {
+  const lat = n.latencyMs ?? 999;
+  return {
+    ...n,
+    pct: n.downloadMbps ? Math.min(100, Math.max(4, Math.round((n.downloadMbps / maxSpeed) * 100))) : 0,
+    dotColor: lat < 61 ? 'bg-observatory-emerald' : lat < 131 ? 'bg-observatory-amber' : 'bg-observatory-rose',
+  };
+});
+---
+
+<section class="space-y-5" aria-label={`${brandName} 测速与节点性能报告`}>
+  {textRecord20261019 && (
+    <div class="relative rounded-xl border border-observatory-border bg-observatory-bg text-observatory-text p-5 sm:p-6 overflow-hidden">
+      <div class="h-1 w-full absolute top-0 left-0" style={`background-color: ${accentColor}`}></div>
+
+      <div class="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-observatory-border">
+        <div>
+          <div class="text-[11px] font-mono uppercase tracking-wider text-observatory-muted">
+            Performance Monitoring Report · 资料数据重绘
+          </div>
+          <h2 class="text-base sm:text-lg font-bold text-white mt-0.5">
+            {brandName} 节点测速历史数据看板（{textRecord20261019.testedAt}）
+          </h2>
+        </div>
+        <span class="px-2.5 py-1 rounded border border-amber-500/40 bg-amber-500/10 text-[11px] font-mono text-amber-300">
+          Historical Data · {textRecord20261019.condition}
+        </span>
+      </div>
+
+      <div class="mt-4 space-y-3">
+        {nodeRows.map((n) => (
+          <div class="rounded-lg border border-observatory-border bg-observatory-panel p-3">
+            <div class="flex flex-wrap items-center justify-between gap-2 text-xs font-mono">
+              <div class="flex items-center gap-2 font-sans font-semibold text-white">
+                <span class={`w-2 h-2 rounded-full ${n.dotColor}`}></span>
+                <span>{n.region}</span>
+              </div>
+              <div class="flex items-center gap-4 tabular-nums">
+                <span class="text-observatory-muted">延迟：<strong class="text-white">{n.latencyRaw}</strong></span>
+                <span class="text-observatory-muted">下载：<strong class="text-observatory-cyan">{n.downloadRaw}</strong></span>
+              </div>
+            </div>
+            <div class="mt-2 h-2 rounded-full bg-observatory-bg overflow-hidden">
+              <div class="h-full rounded-full transition-all" style={`width: ${n.pct}%; background-color: ${accentColor}`}></div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Machine-readable HTML summary table for SEO & GEO */}
+      <div class="mt-5 overflow-x-auto">
+        <table class="w-full text-left border-collapse text-xs font-mono">
+          <thead>
+            <tr class="border-b border-observatory-border text-observatory-muted">
+              <th class="py-2 pr-3 font-sans">测试地区</th>
+              <th class="py-2 px-3">延迟</th>
+              <th class="py-2 pl-3">下载速度</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-observatory-border/60 tabular-nums">
+            {textRecord20261019.nodes.map((n) => (
+              <tr>
+                <td class="py-1.5 pr-3 font-sans text-white">{n.region}</td>
+                <td class="py-1.5 px-3 text-observatory-text">{n.latencyRaw}</td>
+                <td class="py-1.5 pl-3 text-observatory-cyan">{n.downloadRaw}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mt-4 pt-3 border-t border-observatory-border flex flex-wrap items-center justify-between gap-2 text-[11px] font-mono text-observatory-muted">
+        <span>口径说明：以上为上传资料记录的 {textRecord20261019.testedAt} 非晚高峰数据重绘，非本站重新实测，不可代表晚高峰或长期表现</span>
+        <span class="text-white/30 select-none">订阅指南 · dingyuezhinan.biz</span>
+      </div>
+    </div>
+  )}
+
+  {screenshot20260811 && (
+    <div class="rounded-xl border border-slate-200 bg-white p-5 space-y-4">
+      <div class="flex flex-wrap items-center justify-between gap-2">
+        <div>
+          <span class="text-[11px] font-mono uppercase tracking-wider text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded">
+            Measured Data · 原始测速截图证据
+          </span>
+          <h3 class="text-base font-bold text-ink mt-1.5">
+            {brandName} 节点测速实测截图（{screenshot20260811.testedAt.slice(0, 16).replace('T', ' ')} CST）
+          </h3>
+        </div>
+        <div class="text-xs font-mono text-ink-faint">
+          协议：{screenshot20260811.protocolDisplayed} · 工具：{screenshot20260811.toolFamily}
+        </div>
+      </div>
+
+      {screenshot20260811.reviewNote && (
+        <div class="rounded-lg border border-amber-200 bg-amber-50 px-3.5 py-2.5 text-xs text-amber-900">
+          <strong>时间口径复核提醒：</strong>图片底部未完整显示年月日，按同批次压缩包暂记为 2026-08-11，发布与参考时请注意核验原始记录。
+        </div>
+      )}
+
+      <figure class="rounded-lg border border-slate-200 bg-slate-50 p-3">
+        <a href={screenshot20260811.file} target="_blank" rel="noopener noreferrer" class="block">
+          <img
+            src={screenshot20260811.thumbFile || screenshot20260811.file}
+            alt={`${brandName} ${screenshot20260811.testedAt} ${screenshot20260811.protocolDisplayed} 节点测速实测截图`}
+            width={screenshot20260811.thumbWidth || 780}
+            height={screenshot20260811.thumbHeight || 975}
+            loading="lazy"
+            class="w-full max-w-2xl mx-auto rounded border border-slate-200 h-auto"
+          />
+        </a>
+        <figcaption class="mt-2.5 text-xs text-ink-muted text-center flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
+          <span>来源：`机场测速实测资料包_2026-08-11_发布整理版_V2` · 采集于单日特定时段，不保留跨品牌同台排名含义，亦不证明流媒体/AI长期解锁。</span>
+          <a href={screenshot20260811.file} target="_blank" rel="noopener noreferrer" class="text-brand font-medium hover:underline">
+            查看未裁剪原始 PNG 大图 ↗
+          </a>
+        </figcaption>
+      </figure>
+    </div>
+  )}
+
+  {additionalScreenshots.length > 0 && (
+    <div class="rounded-xl border border-slate-200 bg-white p-5 space-y-5">
+      <div>
+        <span class="text-[11px] font-mono text-brand bg-brand-soft border border-brand-border/70 px-2 py-0.5 rounded">
+          多运营商并发实测存档 · 2026-08-19
+        </span>
+        <h3 class="text-base font-bold text-ink mt-1.5">{brandName} 2026-08-19 实测截图档案（共 {additionalScreenshots.length} 张）</h3>
+        <p class="text-xs text-ink-muted mt-1">涵盖电信、移动、联通不同后端以及 VLESS+AnyTLS 70 节点流媒体/AI 检测原始图像。</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {additionalScreenshots.map((shot) => (
+          <figure class="rounded-lg border border-slate-200 bg-slate-50 p-3 flex flex-col justify-between">
+            <div>
+              <div class="text-xs font-bold text-ink mb-1">{shot.title}</div>
+              <div class="text-[11px] font-mono text-ink-faint mb-2 flex items-center justify-between gap-2">
+                <span>{shot.testedAt} · {shot.protocol} · {shot.backend}</span>
+                <a href={shot.file} target="_blank" rel="noopener noreferrer" class="text-brand hover:underline shrink-0">原图 ↗</a>
+              </div>
+              <a href={shot.file} target="_blank" rel="noopener noreferrer" class="block">
+                <img
+                  src={shot.thumbFile || shot.file}
+                  alt={`${shot.title} - ${shot.backend}`}
+                  width={shot.thumbWidth || 780}
+                  height={shot.thumbHeight || 780}
+                  loading="lazy"
+                  class="w-full rounded border border-slate-200 h-auto"
+                />
+              </a>
+            </div>
+            <figcaption class="mt-2.5 text-xs text-ink-muted leading-relaxed">
+              {shot.summary}
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  )}
+
+  {!textRecord20261019 && !screenshot20260811 && (
+    <div class="relative rounded-xl border border-observatory-border bg-observatory-bg text-observatory-text p-5">
+      <div class="flex items-center justify-between gap-2 pb-3 border-b border-observatory-border">
+        <div class="text-sm font-bold text-white">{brandName} 节点测速状态：Not Tested / 待补充实测</div>
+        <span class="px-2 py-0.5 rounded bg-amber-500/15 border border-amber-500/30 text-[11px] font-mono text-amber-300">
+          Not Tested
+        </span>
+      </div>
+      <p class="mt-3 text-xs text-observatory-muted leading-relaxed">
+        {specialSummaryNote || `当前资料库未收录 ${brandName} 的逐地区可用测速截图或延迟带宽表。订阅指南坚持不虚构任何延迟与速度数字，建议选型前仅购买最低月付档位自行在本地网络测试晚高峰表现。`}
+      </p>
+      <div class="mt-3 text-right text-[11px] font-mono text-white/30">订阅指南 · dingyuezhinan.biz</div>
+    </div>
+  )}
+</section>

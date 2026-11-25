@@ -1,0 +1,39 @@
+---
+---
+<div id="pagefind-search-container" class="w-full">
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+  <div id="search" class="bg-white rounded-xl border border-slate-200 p-4 sm:p-6"></div>
+  <script is:inline src="/pagefind/pagefind-ui.js"></script>
+  <script is:inline>
+    window.addEventListener('DOMContentLoaded', () => {
+      if (typeof PagefindUI !== 'undefined') {
+        const params = new URLSearchParams(window.location.search);
+        const initialQ = params.get('q') || '';
+        const ui = new PagefindUI({
+          element: '#search',
+          showSubResults: true,
+          showImages: false,
+          translations: {
+            placeholder: '搜索机场品牌（如 光速云）、客户端（Clash Verge Rev）、套餐或故障报错...',
+            clear_search: '清除',
+            load_more: '加载更多结果',
+            search_label: '全站检索',
+            filters_label: '筛选',
+            zero_results: '未找到与 [SEARCH_TERM] 匹配的内容，可尝试搜索品牌中文名或客户端名称。',
+            many_results: '找到 [COUNT] 条相关内容',
+            one_result: '找到 1 条相关内容',
+            searching: '正在检索本地索引...',
+          },
+        });
+        if (initialQ) {
+          ui.triggerSearch(initialQ);
+        }
+      } else {
+        const el = document.getElementById('search');
+        if (el) {
+          el.innerHTML = '<p class="text-sm text-slate-600">本地静态索引将在正式构建后生成（运行 npm run build）。开发模式下请通过顶部 10 大专题或 <a href="/brands/" class="text-cyan-700 underline">机场品牌库</a> 浏览。</p>';
+        }
+      }
+    });
+  </script>
+</div>

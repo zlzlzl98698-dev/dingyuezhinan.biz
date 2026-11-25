@@ -1,0 +1,60 @@
+---
+import TopicLayout from '../../layouts/TopicLayout.astro';
+import BrandCard from '../../components/brands/BrandCard.astro';
+import brands from '../../data/brands.json';
+import { buildCollectionPageSchema, buildFAQSchema } from '../../lib/seo';
+
+const sorted = [...brands].sort((a, b) => a.priorityRank - b.priorityRank);
+
+const reviewsFaqs = [
+  {
+    question: '为什么 31 家品牌页面里有的标注 measured，有的标注 historical 或 unverified？',
+    answer: '这反映各品牌在源资料采集周期内留存的证据完整度。拥有 2026-08-11 或 2026-08-19 原始测速/解锁截图的标注为 measured；仅存历史文本表的标为 historical；缺乏实测凭证与完整面板参数的保留 unverified。',
+  },
+  {
+    question: '排名靠前的品牌是否一定适合所有地区宽带和所有客户端？',
+    answer: '不是。列表顺序包含编辑精选与商业优先展示考量，实际使用还需结合你本地宽带对中转入口的兼容性，以及品牌是否限制专属客户端或仅支持第三方客户端订阅导入。',
+  },
+  {
+    question: '在进入单个品牌评测页后应该优先看哪几项指标？',
+    answer: '建议依次核对套餐流量单价、优惠码适用范围（部分轻量年付包不参与折扣）、客户端双轨兼容情况、多源资料冲突说明以及测速图表的测试日期条件。',
+  },
+];
+
+const collectionSchema = buildCollectionPageSchema(
+  '订阅指南全品牌深度评测汇总',
+  '汇总 31 家去重机场品牌的独立评测报告、214 档套餐记录与历史测速截图核验档案。',
+  '/reviews/',
+  sorted.map((b) => ({ name: `${b.name} 深度评测`, url: b.reviewUrl })),
+);
+const faqSchema = buildFAQSchema(reviewsFaqs);
+---
+
+<TopicLayout
+  title="机场品牌深度评测报告汇总（31家独立档案）| 订阅指南"
+  description="汇总 31 家机场品牌的深度评测报告，按完整套餐、2026-08-11/08-19 测速截图、AI/流媒体解锁状态与资料冲突进行透明建档。"
+  h1="机场品牌深度评测报告矩阵"
+  eyebrow="03 · Brand Deep Reviews"
+  breadcrumbs={[
+    { name: '首页', url: '/' },
+    { name: '机场品牌', url: '/brands/' },
+    { name: '品牌深度评测', url: '/reviews/' },
+  ]}
+  pubDate={new Date('2026-11-24')}
+  updatedDate={new Date('2026-11-25')}
+  dataStatus="measured"
+  showDisclosure={true}
+  faq={reviewsFaqs}
+  extraSchemas={[collectionSchema, ...(faqSchema ? [faqSchema] : [])]}
+  tags={['机场评测', '光速云评测', '机场推荐排行', '测速报告']}
+  relatedLinks={[
+    { title: '31 家机场品牌双边自由 PK 工具', href: '/compare/', category: '横向对比', description: '任意挑选两家品牌同屏对照价格与解锁状态' },
+    { title: '订阅指南编辑政策与五级数据状态说明', href: '/editorial-policy/', category: '编辑准则', description: '了解站内测试环境基准与商业合作隔离红线' },
+  ]}
+>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+    {sorted.map((brand) => (
+      <BrandCard brand={brand} />
+    ))}
+  </div>
+</TopicLayout>

@@ -1,0 +1,141 @@
+---
+import TopicLayout from '../layouts/TopicLayout.astro';
+import { buildFAQSchema } from '../lib/seo';
+
+const policyFaqs = [
+  {
+    question: '站内标注的推广联盟链接是否会影响评测得分或测速数据顺序？',
+    answer: '不会。首页精选位与商业推荐位展示顺序与技术测评结果严格隔离，所有推广跳转入口统一添加 rel="nofollow sponsored noopener" 属性，并禁止为了提升转化而改动任何原始截图、非晚高峰标识或冲突价格。',
+  },
+  {
+    question: '为什么同一个品牌页面会出现两个不一致的流量配额或优惠码？',
+    answer: '早期分批采集文档与后期汇总档案存在时间跨度，部分套餐配额或优惠码口径发生过调整。本站不自行猜词替换，而是以 conflicting 状态把双方原文同时呈现给读者并提醒以官方结算页为准。',
+  },
+  {
+    question: '历史测速截图和实时晚高峰表现有什么区别？',
+    answer: '站内收录的 2026-08-11、2026-08-19 截图及 2026-10-19 测速表均属于特定节点时段下的历史采样记录，部分记录属于非晚高峰数据。单次速率仅证明当时节点可连通，不能等同于当前或未来全天候的晚高峰保证。',
+  },
+  {
+    question: '发现品牌资料过期、官网入口失效或数据录入错误如何反馈纠错？',
+    answer: '读者可将目标页面 URL、最新官网截图或差异说明发送至编辑部纠错邮箱 contact@dingyuezhinan.biz，网络架构资料校验组会在核对原始凭据后更新状态标签并标注最近核实日期。',
+  },
+];
+
+const faqSchema = buildFAQSchema(policyFaqs);
+---
+
+<TopicLayout
+  title="编辑准则、评测方法论、数据状态标注与推广披露 | 订阅指南"
+  description="完整说明订阅指南（dingyuezhinan.biz）的编辑团队分工、测速采样环境与探针基准、五级数据状态定义、商业隔离红线及数据纠错通道。"
+  h1="订阅指南编辑政策、评测方法论与合规声明"
+  eyebrow="Editorial, E-E-A-T & Verification Policy"
+  breadcrumbs={[
+    { name: '首页', url: '/' },
+    { name: '编辑政策与数据状态', url: '/editorial-policy/' },
+  ]}
+  pubDate={new Date('2026-11-24')}
+  updatedDate={new Date('2026-11-25')}
+  dataStatus="measured"
+  showDisclosure={true}
+  faq={policyFaqs}
+  extraSchemas={faqSchema ? [faqSchema] : []}
+  tags={['编辑准则', '评测方法论', '数据状态', '推广披露', '订阅指南']}
+  relatedLinks={[
+    { title: '31 家机场品牌深度评测矩阵', href: '/reviews/', category: '评测目录', description: '按原始数据状态查阅全部品牌评测报告' },
+    { title: '全品牌优惠码与多源冲突核验表', href: '/deals/', category: '折扣核验', description: '集中对比不同批次资料记录的优惠码边界' },
+    { title: '机场购买风险与年付避坑清单', href: '/risks/selection-checklist/', category: '避坑指南', description: '下单前逐项核对跑路特征与退款规则' },
+  ]}
+>
+  <div class="prose-editorial bg-white rounded-xl border border-slate-200 p-6 sm:p-8">
+    <h2 id="editorial-team">1. 编辑团队分工与双轨复核流程</h2>
+    <p>
+      订阅指南（dingyuezhinan.biz）采用编辑撰写与数据复核分离的工作机制，所有正文页面在发布与修订时都会标明编写团队与校验团队署名，并将历史源资料归档日期与最近核实日期分开展示，方便读者追溯信息时效。
+    </p>
+    <ul>
+      <li><strong>订阅指南编辑部（主笔与结构整理）</strong>：负责将客户端源码文档、网络协议原理与多批次机场价格清单整理为可检索的中文指南，统一执行去重复实体归并与非推广化行文核查。</li>
+      <li><strong>网络架构资料校验组（数据交叉复核）</strong>：负责逐条比对 31 个品牌、214 档套餐配额、2026-08-11 与 2026-08-19 实测图片、2026-10-19 测速表以及 <code>src/data/affiliate-links.ts</code> 跳转隔离规则，对矛盾数值打上冲突标记而不作人工抹平。</li>
+    </ul>
+
+    <h2>2. 商业合作与独立资料的隔离原则</h2>
+    <p>
+      订阅指南部分品牌注册入口附带联盟推广链接（全站统一包裹 <code>rel="nofollow sponsored noopener"</code> 属性）。光速云等合作品牌在首页与商业精选榜单中获得优先展示位置，但这仅反映商业展示顺序，绝不等于性能排名，更不允许为了推广修改任何品牌的测速截图、延迟记录、缺失项或历史冲突数据。
+    </p>
+    <p>
+      所有评测文章正文内部禁止直接硬编码任何外部推广或返利链接，商业链接集中维护于独立的 <code>affiliate-links.ts</code> 配置映射中。在客户端词条页面（如 Mihomo、sing-box、Clash Verge Rev、Shadowrocket），所有下载参考入口均指向对应开源项目 GitHub 发布页、项目官方文档站点或官方 App Store 应用页，同样严格遵守独立参考标注。
+    </p>
+
+    <h2>3. 测速采样环境与资料核验基准</h2>
+    <p>
+      跨区域代理服务的真实体验受本地宽带运营商（电信、联通、移动）、本地路由策略、并发时段拥堵以及落地节点上游路由变动影响极深。为了避免脱离上下文的单向吹捧，站内收录的所有测速与解锁信息均受以下客观口径约束。
+    </p>
+    <ul>
+      <li><strong>多批次采样时间标识</strong>：站内图表严格区分 2026-08-11 客户端面板快照、2026-08-19 晚间实测截图（含后端协议类型与流媒体解锁图标）以及 2026-10-19 测速文字档案，不会把早期的非晚高峰测速包装成长期稳定的晚高峰表现。</li>
+      <li><strong>本地测试端条件说明</strong>：对明确标明“非晚高峰”“本地直连单线程”或“缺少三网并发对比”的历史记录，页面前端图表面板直接输出局限说明，提醒用户仅作基础连通性与协议可用性参考。</li>
+      <li><strong>流媒体与 AI 解锁边界</strong>：ChatGPT、Claude、Gemini、Netflix、Disney+、YouTube 与 Spotify 的可用性高度依赖落地 IP 段风控状态，站内仅呈现采样当下截图已展示的状态（如原生标记、Unlocked 或未测试留白），不承诺任何品牌永久解锁全区平台。</li>
+    </ul>
+
+    <h2>4. 五级数据状态标注规范对照表</h2>
+    <p>
+      全站所有品牌评测、价格比较与优惠汇总页面顶部均配备数据状态徽章，读者可结合下表快速判断页面数据来源的可信边界。
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>数据状态标识</th>
+          <th>原始证据要求</th>
+          <th>适用场景</th>
+          <th>阅读与决策建议</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>measured</code>（有测试证据）</td>
+          <td>具备 2026-08-11 或 2026-08-19 原始测速/解锁截图</td>
+          <td>旗舰评测及留存完整图表品牌</td>
+          <td>仍需核对测试日期是否为非晚高峰，切勿当作实时承诺</td>
+        </tr>
+        <tr>
+          <td><code>vendor</code>（品牌方宣称）</td>
+          <td>源自公开套餐说明表或协议介绍页</td>
+          <td>月付/年付套餐配额、节点列表</td>
+          <td>代表品牌方标注规格，建议配合小额月付实测再决定续费</td>
+        </tr>
+        <tr>
+          <td><code>historical</code>（历史档案）</td>
+          <td>源自 2026-08-09 旧档案或 2026-10-19 历史文本记录</td>
+          <td>老版本链接、历史停售或早期报价</td>
+          <td>仅作历史变迁档案参考，下单前须重核官网最新价格</td>
+        </tr>
+        <tr>
+          <td><code>unverified</code>（尚待核实）</td>
+          <td>源档案缺项、截图模糊遮挡或优惠码不明确</td>
+          <td>缺失面板细节的三梯队或新收录品牌</td>
+          <td>站点保留空白并标注待核实，决不为了补表编造参数</td>
+        </tr>
+        <tr>
+          <td><code>conflicting</code>（多源口径冲突）</td>
+          <td>两份源文档在流量、优惠码或协议上互相矛盾</td>
+          <td>如 59GB 与 69GB 口径差异、双优惠码记录</td>
+          <td>站内并列保留双方原文，以官方下单结算页实时数值为准</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="corrections">5. 内容更新策略与公开纠错通道</h2>
+    <p>
+      网络订阅品牌的价格调整、协议升级（如 Shadowsocks 向 VLESS / Hysteria2 / Trojan 迁移）与客户端维护状态变化较快，例如原 Clash 与 Clash.Meta 内核已全面演进为 Mihomo，部分旧款客户端停止更新或存在渠道风险。因此每篇指南均同时记录首次发布日期与最近核实更新日期。
+    </p>
+    <p>
+      如您发现站内任何品牌的官网入口变化、套餐流量配额调整、优惠码失效、客户端官方仓库迁移或技术参数疏漏，欢迎通过以下公开方式向编辑部提交校验线索（建议附上具体页面链接及可核验说明）。
+    </p>
+    <ul>
+      <li><strong>编辑纠错与资料补充邮箱</strong>：<code>contact@dingyuezhinan.biz</code></li>
+      <li><strong>核验处理时效</strong>：网络架构资料校验组收到完整凭据后，将在最近一轮资料复核周期内（常规 48 小时内）更新对应 JSON 档案、Markdown 正文与最近核实日期。</li>
+    </ul>
+
+    <h2>6. 合规与使用条件提醒</h2>
+    <p>
+      本站整理的代理客户端知识、网络协议参数、线路分析与跨境订阅价格对比仅面向网络工程学习、远程开发协作、跨境科研资讯检索与公开产品决策参考。涉及地区内容限制、软件下载校验与网络传输服务时，用户须严格遵守所在地法律法规及目标软件、AI 工具或流媒体平台的服务条款，在合法合规边界内使用相关工具。
+    </p>
+  </div>
+</TopicLayout>

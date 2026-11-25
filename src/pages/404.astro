@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { PILLAR_NAV } from '../data/navigation';
+---
+
+<BaseLayout
+  title="页面未找到 (404) | 订阅指南"
+  description="你访问的页面不存在或已迁移。可通过十大核心专题或机场品牌库继续浏览。"
+  canonicalUrl={null}
+  noindex={true}
+>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-16 space-y-8">
+    <div class="rounded-xl border border-slate-200 bg-white p-8 space-y-4">
+      <div class="text-xs font-mono text-brand">HTTP 404 · PAGE NOT FOUND</div>
+      <h1 class="text-3xl font-bold text-ink">该页面路径不存在</h1>
+      <p class="text-sm text-ink-muted leading-relaxed">
+        订阅指南采用标准小写英文路径，请检查输入地址是否完整，或从下方核心专题与品牌数据库中重新进入。
+      </p>
+      <div class="flex flex-wrap gap-3 pt-2">
+        <a href="/" class="px-4 py-2 rounded-lg bg-brand text-white text-xs font-medium hover:bg-brand-hover">
+          返回首页
+        </a>
+        <a href="/brands/" class="px-4 py-2 rounded-lg border border-slate-300 bg-white text-ink text-xs font-medium hover:bg-slate-50">
+          进入机场品牌库
+        </a>
+        <a href="/search/" class="px-4 py-2 rounded-lg border border-slate-300 bg-white text-ink text-xs font-medium hover:bg-slate-50">
+          全站搜索
+        </a>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-5 gap-3">
+      {PILLAR_NAV.map((p) => (
+        <a
+          href={p.href}
+          class="rounded-lg border border-slate-200 bg-white p-3 hover:border-brand/50 transition-colors"
+        >
+          <div class="text-[11px] font-mono text-brand">{p.order}</div>
+          <div class="text-xs font-semibold text-ink mt-0.5">{p.title}</div>
+        </a>
+      ))}
+    </div>
+  </div>
+</BaseLayout>

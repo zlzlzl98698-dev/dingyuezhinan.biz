@@ -1,0 +1,30 @@
+---
+import { ChevronRight } from 'lucide-react';
+import type { BreadcrumbItem } from '../../lib/seo';
+
+interface Props {
+  items: BreadcrumbItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<nav aria-label="面包屑导航" class="flex flex-wrap items-center gap-1.5 text-xs text-ink-muted mb-5">
+  {items.map((item, index) => {
+    const isLast = index === items.length - 1;
+    return (
+      <span class="inline-flex items-center gap-1.5">
+        {index > 0 && <ChevronRight className="w-3.5 h-3.5 text-slate-400 shrink-0" />}
+        {isLast ? (
+          <span class="font-medium text-ink truncate max-w-[260px]" aria-current="page">
+            {item.name}
+          </span>
+        ) : (
+          <a href={item.url} class="hover:text-brand transition-colors">
+            {item.name}
+          </a>
+        )}
+      </span>
+    );
+  })}
+</nav>
